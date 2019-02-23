@@ -1,0 +1,34 @@
+doctype
+html
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="description", content="Our apps offer a faster and easier approach to organizing events that eliminates stress so you can return to enjoying events.")
+    meta(property="og:locale", content="en_US")
+    meta(property="og:title", content="matheusagcosta")
+    meta(property="og:description", content="Our apps offer a faster and easier approach to organizing events that eliminates stress so you can return to enjoying events.")
+    meta(property="og:site_name", content="matheusagcosta")
+    meta(property="og:url", content="https://www.matheusagcosta.com")
+    meta(property="og:type", content="website")
+    meta(name="twitter:title", content="Matheus Costa - UX Designer / UI Developer")
+    meta(name="twitter:site", content="@matheusagcosta")
+    meta(name="keywords", content="ui developer, ui designer, ux designer, web designer, designer")
+    meta(name="author", content="matheusagcosta")
+    meta(name="theme-color", content="#C56552")
+    meta(name="msapplication-TileColor", content="#C56552")
+    link(rel="apple-touch-icon", sizes="180x180", href="/assets/favicon/apple-touch-icon.png")
+    link(rel="icon", type="image/png", sizes="32x32", href="/assets/favicon/favicon-32x32.png")
+    link(rel="icon", type="image/png", sizes="16x16", href="/assets/favicon/favicon-16x16.png")
+    link(rel="manifest", href="/assets/favicon/site.webmanifest")
+    link(rel="mask-icon", href="/assets/favicon/safari-pinned-tab.svg", color="#5bbad5")
+    link(href='https://fonts.googleapis.com/css?family=Prompt:300,400,700', rel='stylesheet')
+    link(rel="stylesheet" href="/css/main.css")
+
+    title #{ title }
+    // Google Analytics
+    script.
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-55240925-1', 'auto'); ga('send', 'pageview');
+
+  body
+    != yield
