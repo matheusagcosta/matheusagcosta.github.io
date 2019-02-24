@@ -1,10 +1,6 @@
 .footer {
+  @extend %box;
   background-color: $salmon;
-  display: block;
-  margin: 1rem;
-  max-width: 100%;
-  overflow: hidden;
-  text-align: center;
 
   * {
     color: $white;

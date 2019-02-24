@@ -1,0 +1,42 @@
+.about {
+  display: flex;
+
+  > * {
+    width: 50%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem 2rem 4rem;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__helper {
+    margin-top: 3rem;
+  }
+
+  &__picture {
+    position: relative;
+
+    &::before {
+      content: "";
+      background-color: $salmon;
+      height: 70%;
+      position: absolute;
+      top: -3.5rem;
+      width: 100%;
+      z-index: auto;
+    }
+  }
+
+  &__image {
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+}

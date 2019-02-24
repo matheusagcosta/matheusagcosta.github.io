@@ -1,17 +1,32 @@
 @import 'colors';
+@import 'header';
+@import 'about';
+@import 'work';
+@import 'talks';
+@import 'community';
 @import 'footer';
 
 body{
   font-family: 'Prompt', sans-serif;
-  padding: 0;
-  background: #f4f4f7;
+  background: $white;
   color: #444;
   margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 * {
   -webkit-overflow-scrolling: touch;
-  box-sizing: content-box;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.2;
+  margin: 0 0 1.5rem;
 }
 
 h2 {
@@ -20,4 +35,21 @@ h2 {
 
 h3 {
   font-weight: 300;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+%box {
+  display: block;
+  margin: 2rem;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 2rem 1rem;
+  text-align: center;
 }

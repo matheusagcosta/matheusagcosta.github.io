@@ -1,0 +1,11 @@
+.work {
+  background-color: $salmon;
+  margin: 1rem 0;
+  padding: 2rem;
+  width: 100%;
+
+  * {
+    color: $white;
+    text-align: center;
+  }
+}

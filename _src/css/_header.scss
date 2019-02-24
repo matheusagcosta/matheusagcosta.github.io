@@ -1,0 +1,15 @@
+.header {
+  padding: 0 1rem;
+
+  &__menu {
+    display: flex;
+    max-width: 50%;
+  }
+
+  &__link {
+    color: $black;
+    font-weight: bold;
+    padding: 1rem;
+    text-decoration: none;
+  }
+}

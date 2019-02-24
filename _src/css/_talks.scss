@@ -1,0 +1,28 @@
+.talks {
+  display: flex;
+
+  &__image {
+    padding: 2rem;
+    width: 40%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+    width: 60%;
+  }
+
+  &__item:not(:first-child) {
+    margin-top: 1rem;
+  }
+
+  &__headline {
+    margin: 0;
+  }
+
+  &__legend {
+    color: $gray;
+  }
+}

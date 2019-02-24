@@ -1,0 +1,13 @@
+section#talks.talks
+  .talks__image
+    img(src="../assets/image-speaking.png", alt="Speaking")
+  .talks__info
+    h2 Speaking
+    p I love to share things I've learned so I frequently prepare talks to speak at events
+    each talks, slug in public.templates.talks._data
+      .talks__item
+        h4.talks__headline
+          span #{ talks.title }
+          |  -
+          a.button.button--square.button--sky.button--light.no-space-out(href="#{ talks.url }" target="_blank")  #{ talks.link }
+        small.talks__legend #{ talks.event } - #{ talks.date }
