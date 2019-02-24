@@ -2,10 +2,10 @@
   background-color: $salmon;
   margin: 1rem 0;
   padding: 2rem;
+  text-align: center;
   width: 100%;
 
-  * {
+  *:not(a) {
     color: $white;
-    text-align: center;
   }
 }

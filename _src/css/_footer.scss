@@ -2,7 +2,7 @@
   @extend %box;
   background-color: $salmon;
 
-  * {
+  *:not(a) {
     color: $white;
   }
 }

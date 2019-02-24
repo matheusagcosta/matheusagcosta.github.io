@@ -15,13 +15,13 @@
   },
   "remote-culture": {
     "title": "Remote Culture",
-    "event": "DevTalks Bauru",
+    "event": "DevCamp",
     "date": "May 13, 2016",
     "link": "Video",
     "url": "https://www.infoq.com/br/presentations/to-remoto-ta-tranquilo-ta-favoravel"
   },
   "less-stylus-sass": {
-    "title": "Less, Stylus or Sass - Slides",
+    "title": "Less, Stylus or Sass",
     "event": "TheDevConfBR / RubyconfBR",
     "date": "September 18, 2015",
     "link": "Slides",

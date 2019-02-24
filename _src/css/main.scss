@@ -9,7 +9,7 @@
 body{
   font-family: 'Prompt', sans-serif;
   background: $white;
-  color: #444;
+  color: $black;
   margin: 0;
   padding: 0;
   max-width: 100%;
@@ -35,6 +35,15 @@ h2 {
 
 h3 {
   font-weight: 300;
+}
+
+a {
+  color: $nutmeg;
+  font-weight: normal;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 p {
