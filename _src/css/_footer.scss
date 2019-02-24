@@ -5,4 +5,15 @@
   *:not(a) {
     color: $white;
   }
+
+  &__nav {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icon {
+    margin: 1rem 1rem 0;
+    width: 24px;
+  }
 }
