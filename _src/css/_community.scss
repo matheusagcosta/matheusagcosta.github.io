@@ -1,4 +1,37 @@
 .community {
   @extend %box;
   background-color: $gainsboro;
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__link {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 2rem;
+    width: 450px;
+    text-decoration: none;
+  }
+
+  &__icon {
+    display: block;
+    height: 150px;
+    margin-bottom: 2.5rem;
+    width: 150px;
+  }
+
+  &__headline {
+    color: $black;
+  }
+
+  &__legend {
+    color: $gray;
+    margin-bottom: 1rem;
+  }
 }

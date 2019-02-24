@@ -1,0 +1,9 @@
+section#community.community
+  h2 Community
+  p I’m also a volunteer in two groups, which I help either organizing events or designing resources.
+  nav.community__nav
+    each community, slug in public.templates.community._data
+      a.community__link(href="#{ community.url }" target="_blank")
+        img.community__icon(src="../../assets/logo-#{ community.icon }-bauru.svg", alt="#{ community.legend }")
+        span.community__headline #{ slug } Bauru
+        small.community__legend #{ community.desc }

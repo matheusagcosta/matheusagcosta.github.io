@@ -1,0 +1,14 @@
+{
+  "Devtalks": {
+    "icon": "devtalks",
+    "legend": "Devtalks Bauru Logo",
+    "desc": "Events, talks and podcasts about development",
+    "url": "https://devtalksbauru.github.io/"
+  },
+  "IxDA": {
+    "icon": "ixda",
+    "legend": "IxDA Bauru Logo",
+    "desc": "Local chapter of Interaction Design Association",
+    "url": "https://ixdabauru.github.io/"
+  }
+}

@@ -12,8 +12,20 @@
     justify-content: center;
   }
 
+  &__link {
+    border-radius: 50%;
+    margin: 1rem .5rem 0;
+    overflow: hidden;
+    padding: .75rem;
+    transition: background .15s ease-in-out;
+
+    &:hover {
+      background-color: $nutmeg;
+    }
+  }
+
   &__icon {
-    margin: 1rem 1rem 0;
+    display: block;
     width: 24px;
   }
 }
