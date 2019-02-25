@@ -1,0 +1,20 @@
+{
+  "eventene": {
+    "title": "Eventene Web Application",
+    "legend": "Screenshot of Eventene Dashboard",
+    "desc": "I was hired to redesign both mobile and web applications. We also made a Webforms in React and the results are pretty awesome.",
+    "url": "https://eventene.com/"
+  },
+  "devtalks": {
+    "title": "Devtalks Bauru Website",
+    "legend": "Screenshot of Devtalks Homepage",
+    "desc": "Some",
+    "url": "https://devtalksbauru.github.io/"
+  },
+  "fintechdev": {
+    "title": "Fintechdev Design System",
+    "legend": "Screenshot of Fintechdev Design System",
+    "desc": "Fo",
+    "url": "https://fintechdev.github.io/x2-ui/"
+  }
+}
