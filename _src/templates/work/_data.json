@@ -2,7 +2,7 @@
   "eventene": {
     "title": "Eventene Applications",
     "legend": "Screenshot of Eventene Dashboard",
-    "desc": "I was hired to redesign both mobile and web applications. We also made a Webforms in React and the results are pretty awesome.",
+    "desc": "I was hired to redesign both mobile and web applications of this event planner. We also made a webforms in React for surveys.",
     "url": "https://eventene.com/"
   },
   "telemetrytv": {
@@ -14,7 +14,7 @@
   "fintechdev": {
     "title": "Fintechdev Design System",
     "legend": "Screenshot of Fintechdev Design System",
-    "desc": "I've built this following standards like atomic design, ITCSS and BEM, thus the rest of them could implement the SPA.",
+    "desc": "I've built this following best methodologies such as Atomic Design, ITCSS and BEM, thus the rest of the team could easily implement the SPAs.",
     "url": "https://fintechdev.github.io/x2-ui/"
   }
 }

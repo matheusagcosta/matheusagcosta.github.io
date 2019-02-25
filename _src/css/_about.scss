@@ -18,7 +18,14 @@
 
   &__info {
     justify-content: space-between;
-    padding: 4rem 2rem;
+
+    @media screen and (min-width: 1171px) {
+      padding: 4rem;
+    }
+
+    @media screen and (max-width: 1170px) {
+      padding: 4rem 2rem;
+    }
   }
 
   &__desc {
@@ -28,6 +35,11 @@
 
   &__title {
     margin-bottom: 3rem;
+  }
+
+  &__subtitle > * {
+    display: block;
+    margin-bottom: 2rem;
   }
 
   &__helper {
@@ -79,8 +91,11 @@
   }
 
   &__image {
+    display: block;
+    margin: auto;
     padding: 6%;
     position: relative;
+    width: 900px;
     z-index: 1;
   }
 }

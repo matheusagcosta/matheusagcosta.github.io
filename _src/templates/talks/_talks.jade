@@ -3,11 +3,11 @@ section#talks.talks
     img(src="../assets/image-speaking.png", alt="Photo of Matheus Speaking at DevCamp")
   .talks__info
     h2 Speaking
-    p I love to share things I've learned so I frequently prepare talks to speak at events
+    p I love to share knowledge so frequently I prepare talks to speak at technology events. Below you'll find some of my presentations.
     each talks, slug in public.templates.talks._data
       .talks__item
         h4.talks__headline
           span #{ talks.title }
           |  -  #{''}
-          a(href="#{ talks.url }" target="_blank") #{ talks.link }
+          a.talks__link(href="#{ talks.url }" target="_blank") #{ talks.link }
         small.talks__legend #{ talks.event } - #{ talks.date }
