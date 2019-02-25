@@ -2,6 +2,10 @@
   @extend %box;
   background-color: $gainsboro;
 
+  #contrast-on:target & {
+    background-color: darken($black, 10%);
+  }
+
   &__nav {
     display: flex;
     flex-wrap: wrap;
