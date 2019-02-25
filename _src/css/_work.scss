@@ -67,29 +67,22 @@
   }
 
   &__legend {
-    min-height: 80px;
+    min-height: 110px;
     padding: 0 1rem 1.5rem;
   }
 
   &__image {
     background-color: $whisper;
+    max-height: 300px;
     overflow: hidden;
     padding: 1rem 0 0;
     position: relative;
-
-    @media (min-width: 481px) {
-      height: 300px;
-    }
-
-    @media (max-width: 480px) {
-      height: 150px;
-    }
 
     * {
       bottom: -20px;
       filter: grayscale(10);
       margin-bottom: -1rem;
-      position: absolute;
+      position: relative;
       padding: 1rem;
       transition: filter, transform .175s ease-in-out;
       transform-origin: bottom;
