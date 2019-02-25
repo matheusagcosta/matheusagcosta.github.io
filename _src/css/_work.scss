@@ -33,7 +33,12 @@
     width: calc(100% / 3);
 
     @media (max-width: 1000px) {
+      height: 100%;
       min-width: 75%;
+    }
+
+    @media (max-width: 700px) {
+      min-width: 100%;
     }
 
     &:hover {
@@ -68,10 +73,17 @@
 
   &__image {
     background-color: $whisper;
-    height: 300px;
     overflow: hidden;
     padding: 1rem 0 0;
     position: relative;
+
+    @media (min-width: 481px) {
+      height: 300px;
+    }
+
+    @media (max-width: 480px) {
+      height: 150px;
+    }
 
     * {
       bottom: -20px;

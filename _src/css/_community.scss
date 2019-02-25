@@ -32,8 +32,16 @@
   &__icon {
     display: block;
     height: 150px;
-    margin-bottom: 2.5rem;
     width: 150px;
+
+    @media (min-width: 701px) {
+      margin-bottom: 2.5rem;
+    }
+
+    @media (max-width: 700px) {
+      margin-bottom: .5rem;
+      max-width: 90px;
+    }
   }
 
   &__headline {
