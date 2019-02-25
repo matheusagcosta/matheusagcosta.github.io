@@ -4,6 +4,7 @@ section#work.work
   nav.work__nav
     each work, slug in public.templates.work._data
       a.work__link(href="#{ work.url }" target="_blank")
-        img.work__icon(src="../../assets/logo-#{ work.icon }.jpg", alt="#{ work.legend }")
-        span.work__headline #{ work.title }
+        picture.work__image
+          img(src="../../assets/image-#{ slug }.png", alt="#{ work.legend }")
+        h4.work__headline #{ work.title }
         small.work__legend #{ work.desc }

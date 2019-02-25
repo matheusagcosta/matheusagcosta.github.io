@@ -1,20 +1,20 @@
 {
   "eventene": {
-    "title": "Eventene Web Application",
+    "title": "Eventene Applications",
     "legend": "Screenshot of Eventene Dashboard",
     "desc": "I was hired to redesign both mobile and web applications. We also made a Webforms in React and the results are pretty awesome.",
     "url": "https://eventene.com/"
   },
-  "devtalks": {
-    "title": "Devtalks Bauru Website",
-    "legend": "Screenshot of Devtalks Homepage",
-    "desc": "Some",
-    "url": "https://devtalksbauru.github.io/"
+  "telemetrytv": {
+    "title": "TelemetryTV Website",
+    "legend": "Screenshot of TelemetryTV Homepage",
+    "desc": "Worked redesigning the marketing pages and also creating some digital signage boards for the main application.",
+    "url": "https://telemetrytv.com/"
   },
   "fintechdev": {
     "title": "Fintechdev Design System",
     "legend": "Screenshot of Fintechdev Design System",
-    "desc": "Fo",
+    "desc": "I've built this following standards like atomic design, ITCSS and BEM, thus the rest of them could implement the SPA.",
     "url": "https://fintechdev.github.io/x2-ui/"
   }
 }

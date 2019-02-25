@@ -14,5 +14,10 @@
     font-weight: bold;
     padding: 1rem 2%;
     text-decoration: none;
+    transition: color .175s linear;
+
+    &:hover {
+      color: $salmon;
+    }
   }
 }
