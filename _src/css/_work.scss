@@ -41,6 +41,10 @@
       min-width: 100%;
     }
 
+    #contrast-on:target & {
+      background-color: $black;
+    }
+
     &:hover {
       box-shadow: 1px 1px 10px rgba($black,.5);
     }
@@ -61,6 +65,10 @@
     transition: color .175s linear;
     padding: 1.5rem 1rem 0;
 
+    #contrast-on:target .work__link:not(:hover) & {
+      color: $white;
+    }
+
     .work__link:hover & {
       color: $salmon;
     }
@@ -69,6 +77,10 @@
   &__legend {
     min-height: 110px;
     padding: 0 1rem 1.5rem;
+
+    #contrast-on:target & {
+      color: $white;
+    }
   }
 
   &__image {
@@ -77,6 +89,10 @@
     overflow: hidden;
     padding: 1rem 0 0;
     position: relative;
+
+    #contrast-on:target & {
+      background-color: $black;
+    }
 
     * {
       bottom: -20px;
