@@ -1,0 +1,52 @@
+.error {
+
+  &::before {
+    background-color: $salmon;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 50%;
+  }
+
+  &__holder {
+    background-color: $white;
+    border-left: 5px solid $nutmeg;
+    bottom: 0;
+    box-shadow: 1px 1px 10px rgba($black,.15);
+    height: 50%;
+    left: 0;
+    margin: auto;
+    max-width: 95%;
+    padding: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 500px;
+
+    #contrast-on:target & {
+      background-color: darken($black, 10%);
+    }
+  }
+
+  &__title {
+    font-size: 4rem;
+  }
+
+  &__link {
+
+    &:first-of-type {
+
+      #contrast-on:target & {
+        display: none;
+      }
+    }
+
+    &:last-of-type {
+      display: none;
+
+      #contrast-on:target & {
+        display: block;
+      }
+    }
+  }
+}
