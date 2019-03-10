@@ -1,0 +1,58 @@
+.cv {
+  padding: 1.5rem;
+
+  &__header {
+    background-color: $salmon;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 180px;
+  }
+
+  &__image {
+    margin: 1.5rem 1.5rem -5.5rem;
+  }
+
+  &__headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7rem 1.5rem 1.5rem;
+  }
+
+  &__headline * {
+    color: $white;
+  }
+
+  &__heading {
+    font-size: 3rem;
+  }
+
+  &__subheading {
+    font-size: 1.5rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7.5rem 1.5rem 1.5rem;
+  }
+
+  &__column:first-child {
+    margin-right: 2.5rem;
+    max-width: 426px;
+  }
+
+  &__column:last-child {
+    max-width: calc(100% - 466px);
+    min-width: 50%;
+  }
+
+  &__block + .cv__block {
+    margin-top: 2rem;
+  }
+
+  &__title {
+    color: $salmon;
+    font-size: 1.5rem;
+  }
+}
