@@ -38,13 +38,17 @@
   }
 
   &__column:first-child {
-    margin-right: 2.5rem;
-    max-width: 426px;
+    @media screen and (min-width: 1028px) {
+      margin-right: 2.5rem;
+      max-width: 426px;
+    }
   }
 
   &__column:last-child {
-    max-width: calc(100% - 466px);
-    min-width: 50%;
+    @media screen and (min-width: 1028px) {
+      max-width: calc(100% - 466px);
+      min-width: 50%;
+    }
   }
 
   &__block + .cv__block {

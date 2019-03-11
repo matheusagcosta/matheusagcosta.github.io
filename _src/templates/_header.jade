@@ -1,4 +1,7 @@
 header.header(role="banner")
   nav.header__menu
-    a.header__link(href="#contrast-on")
-    a.header__link(href="#contrast-off")
+    a.header__toggle(href="#contrast-on")
+    a.header__toggle(href="#contrast-off")
+    if current.source == 'cv'
+      a.header__link(href="/cv-matheusagcosta.pdf") Download
+      a.header__link(href="/") Home
