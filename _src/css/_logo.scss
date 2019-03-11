@@ -1,0 +1,10 @@
+.logo {
+
+  &__image {
+    fill: $black;
+
+    #contrast-on:target & {
+      fill: $white;
+    }
+  }
+}
