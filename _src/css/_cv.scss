@@ -36,6 +36,10 @@
     display: flex;
     flex-wrap: wrap;
     padding: 7.5rem 1.5rem 1.5rem;
+
+    @media screen and (max-width: 908px) {
+      padding-top: 2.5rem;
+    }
   }
 
   &__column:first-child {

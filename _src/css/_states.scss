@@ -1,0 +1,14 @@
+.is-light-visible {
+
+  #contrast-on:target & {
+    display: none;
+  }
+}
+
+.is-dark-visible {
+  display: none;
+
+  #contrast-on:target & {
+    display: inline-block;
+  }
+}

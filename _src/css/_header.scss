@@ -1,10 +1,19 @@
 .header {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
   padding: 1rem 1.5rem;
   position: absolute;
   width: 100%;
   z-index: 2;
 
+  &__logo {
+    display: block;
+    width: 24px;
+  }
+
   &__menu {
+    align-items: center;
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
@@ -21,9 +30,11 @@
   }
 
   &__toggle {
-    background-repeat: no-repeat;
     background-position: right;
-    min-width: 102px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    min-width: 95px;
+    padding-right: 30px;
     position: relative;
     text-decoration: none;
 
