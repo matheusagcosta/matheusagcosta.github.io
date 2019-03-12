@@ -16,12 +16,18 @@ section#about.about
         span
           | I strongly believe in open source, so feel free to view the #{''}
           a.about__link(href="https://github.com/matheusagcosta/matheusagcosta.github.io" target="_blank") code
-          | #{''} of my website, the #{''}
+          | #{''} of my website and the #{''}
           a.about__link(href="#projects") projects
-          | #{''} I contribute or check my resume #{''}
-          a.about__link.is-light-visible(href="/cv") here
-          a.about__link.is-dark-visible(href="/cv#contrast-on") here
-          | .
+          | #{''} I contribute.
+        span
+          | Interested to learn more? Read my #{''}
+          a.about__link.is-light-visible(href="/cv") resume
+          a.about__link.is-dark-visible(href="/cv#contrast-on") resume
+          | , check some of my #{''}
+          a.about__link(href="#work") work
+          | #{''} or just #{''}
+          a.about__link(href="mailto:hi@matheusagcosta.com") contact me
+          |.
     p.about__helper Keep Scrolling
   .about__picture
     img.about__image(src="../assets/image-about.png", alt="Photo of Matheus in a hackathon")
