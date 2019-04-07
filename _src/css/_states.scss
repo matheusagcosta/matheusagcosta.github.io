@@ -1,14 +1,7 @@
 .is-light-visible {
-
-  #contrast-on:target & {
-    display: none;
-  }
+  display: var(--is-shown);
 }
 
 .is-dark-visible {
-  display: none;
-
-  #contrast-on:target & {
-    display: inline-block;
-  }
+  display: var(--is-hidden);
 }

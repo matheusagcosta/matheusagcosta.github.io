@@ -58,7 +58,7 @@
 
     &::before,
     &::after {
-      border-color: $black;
+      border-color: var(--main-border-color);
       border-style: solid;
       content: '';
       display: block;
@@ -66,10 +66,6 @@
       position: absolute;
       top: 50%;
       transform-origin: 50% 50%;
-
-      #contrast-on:target & {
-        border-color: $white;
-      }
     }
 
     &::before {

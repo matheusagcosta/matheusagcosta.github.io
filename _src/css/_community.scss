@@ -1,10 +1,6 @@
 .community {
   @extend %box;
-  background-color: $gainsboro;
-
-  #contrast-on:target & {
-    background-color: darken($black, 10%);
-  }
+  background-color: var(--light-bg-color);
 
   &__nav {
     display: flex;
@@ -13,7 +9,7 @@
   }
 
   &__link {
-    background-color: $white;
+    background-color:var(--main-bg-color);
     border-left: 5px solid $salmon;
     display: flex;
     flex-direction: column;
@@ -26,10 +22,6 @@
 
     &:hover {
       box-shadow: 1px 1px 10px rgba($black,.15);
-    }
-
-    #contrast-on:target & {
-      background-color: $black;
     }
   }
 
@@ -49,12 +41,8 @@
   }
 
   &__headline {
-    color: $black;
+    color: var(--main-text-color);
     transition: color .175s linear;
-
-    #contrast-on:target .community__link:not(:hover) & {
-      color: $white;
-    }
 
     .community__link:hover & {
       color: $salmon;

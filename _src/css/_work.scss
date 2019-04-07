@@ -21,7 +21,7 @@
 
   &__link {
     align-items: flex-start;
-    background-color: $white;
+    background-color: var(--main-bg-color);
     border-bottom: 8px solid $nutmeg;
     display: flex;
     flex-direction: column;
@@ -41,10 +41,6 @@
       min-width: 100%;
     }
 
-    #contrast-on:target & {
-      background-color: $black;
-    }
-
     &:hover {
       box-shadow: 1px 1px 10px rgba($black,.5);
     }
@@ -52,7 +48,7 @@
 
   &__headline,
   &__legend {
-    color: $black;
+    color:var(--main-text-color);
   }
 
   &__headline,
@@ -65,10 +61,6 @@
     transition: color .175s linear;
     padding: 1.5rem 1rem 0;
 
-    #contrast-on:target .work__link:not(:hover) & {
-      color: $white;
-    }
-
     .work__link:hover & {
       color: $salmon;
     }
@@ -77,22 +69,14 @@
   &__legend {
     min-height: 110px;
     padding: 0 1rem 1.5rem;
-
-    #contrast-on:target & {
-      color: $white;
-    }
   }
 
   &__image {
-    background-color: $whisper;
+    background-color: var(--image-bg-color);
     max-height: 300px;
     overflow: hidden;
     padding: 1rem 0 0;
     position: relative;
-
-    #contrast-on:target & {
-      background-color: $black;
-    }
 
     * {
       bottom: -20px;

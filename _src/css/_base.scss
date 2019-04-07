@@ -1,16 +1,32 @@
+:root {
+  --main-bg-color: #{$white};
+  --main-border-color: #{$black};
+  --main-text-color: #{$black};
+  --light-bg-color: #{$gainsboro};
+  --image-bg-color: #{$whisper};
+  --is-hidden: none;
+  --is-shown: inline-block;
+}
+
+#contrast-on:target {
+  --main-bg-color: #{$black};
+  --main-border-color: #{$white};
+  --main-text-color: #{$white};
+  --light-bg-color: #{$mine};
+  --image-bg-color: #{$mine};
+  --is-hidden: inline-block;
+  --is-shown: none;
+}
+
 body{
+  font-display: auto;
   font-family: 'Prompt', sans-serif;
-  background: $white;
-  color: $black;
+  background: var(--main-bg-color);
+  color: var(--main-text-color);
   margin: 0;
   padding: 0;
   max-width: 100%;
   overflow-x: hidden;
-
-  &#contrast-on:target {
-    background-color: $black;
-    color: $white;
-  }
 }
 
 * {
