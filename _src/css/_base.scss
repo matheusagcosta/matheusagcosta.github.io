@@ -4,8 +4,12 @@
   --main-text-color: #{$black};
   --light-bg-color: #{$gainsboro};
   --image-bg-color: #{$whisper};
+  --switcher-bg-color: #{$darken-gainsboro};
   --is-hidden: none;
   --is-shown: inline-block;
+  --switcher-position: translateX(6px);
+  --switcher-opacity-active: 1;
+  --switcher-opacity-inactive: .8;
 }
 
 #contrast-on:target {
@@ -14,8 +18,12 @@
   --main-text-color: #{$white};
   --light-bg-color: #{$mine};
   --image-bg-color: #{$mine};
+  --switcher-bg-color: #{$mine};
   --is-hidden: inline-block;
   --is-shown: none;
+  --switcher-position: translateX(37px);
+  --switcher-opacity-active: .8;
+  --switcher-opacity-inactive: 1;
 }
 
 body{

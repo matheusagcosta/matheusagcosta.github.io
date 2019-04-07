@@ -2,5 +2,10 @@
 
   &__image {
     fill: var(--main-border-color);
+    transition: opacity .2s linear;
+  }
+
+  &__image:hover {
+    opacity: .75;
   }
 }
