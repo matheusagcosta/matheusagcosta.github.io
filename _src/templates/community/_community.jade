@@ -1,9 +1,13 @@
 section#projects.community
-  h2 Projects
-  p I'm very close to communities as well, helping organizing events, designing resources and pushing code.
+  h2 Side Projects
+  p Whether helping organizing events or designing and pushing code you can count on me.
   nav.community__nav
     each community, slug in public.templates.community._data
       a.community__link(href="#{ community.url }" target="_blank")
-        img.community__icon(src="../../assets/logo-#{ community.icon }-bauru.svg", alt="#{ community.legend }")
-        span.community__headline #{ slug } Bauru
+        if community.dark
+          img.community__icon.is-light-visible(src="../../assets/logo-#{ community.icon }.svg", alt="#{ community.legend }")
+          img.community__icon.is-dark-visible(src="../../assets/logo-#{ community.icon }-dark.svg", alt="#{ community.legend }")
+        else
+          img.community__icon(src="../../assets/logo-#{ community.icon }.svg", alt="#{ community.legend }")
+        span.community__headline #{ slug }
         small.community__legend #{ community.desc }

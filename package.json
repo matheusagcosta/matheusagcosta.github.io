@@ -9,8 +9,8 @@
     "build": "harp compile _src docs"
   },
   "devDependencies": {
-    "harp": "^0.29.0",
-    "browser-sync": "^2.26.3"
+    "browser-sync": "^2.26.7",
+    "harp": "^0.30.1"
   },
   "repository": {
     "type": "git",
