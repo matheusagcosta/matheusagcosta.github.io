@@ -55,12 +55,21 @@
     background-size: 20px;
     height: 16px;
     width: 20px;
-    position: relative;
     text-decoration: none;
     z-index: 10;
 
+    &::before {
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
     &:nth-child(1) {
       background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBkPSJNMzguMjUgMTBDMjIuODU2IDE2LjE3NyAxMiAzMS4wNjYgMTIgNDguNDY5IDEyIDcxLjQwNSAzMC44NCA5MCA1NC4wOTQgOTAgNjcuOTk3IDkwIDgwLjMzMyA4My4zNDIgODggNzMuMDk0YTQyLjU5MyA0Mi41OTMgMCAwIDEtMTUuODc1IDMuMDYyYy0yMy4yNTMgMC00Mi4wOTQtMTguNTk1LTQyLjA5NC00MS41MzEgMC05LjIyMiAzLjA2My0xNy43MzMgOC4yMTktMjQuNjI1em0xNS4zNDQgMTEuNzgxbC0yLjc4MSA1LjI4MS02LjIyLjg0NCA0LjUgNC4wOTQtMS4wNjIgNS43ODEgNS41NjMtMi43MTkgNS41NjIgMi43Mkw1OC4wOTQgMzJsNC41LTQuMDk0LTYuMjE5LS44NDQtMi43ODEtNS4yOHpNNjcuNSA0NS40MDZMNjQuMDk0IDUyIDU2LjUgNTMuMDYybDUuNSA1LjEyNi0xLjMxMiA3LjIxOEw2Ny41IDYybDYuNzgxIDMuNDA2TDczIDU4LjE4OGw1LjUtNS4xMjZMNzAuOTA2IDUyIDY3LjUgNDUuNDA2eiIgIGZpbGw9IiNDNTY1NTIiLz48L3N2Zz4=");
+      pointer-events: var(--no-click-inactive);
     }
 
     &:nth-child(1):not(:hover) {
@@ -69,6 +78,7 @@
 
     &:nth-child(2) {
       background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxjaXJjbGUgZmlsbD0iI0M1NjU1MiIgY3g9IjUwIiBjeT0iNTAiIHI9IjE2Ii8+PHBhdGggZD0iTTUwIDI4VjE4TTUwIDgyVjcyTTcyIDUwaDEwTTE4IDUwaDEwTTY1LjU1NiAzNC40NDRsNy4wNzEtNy4wNzFNMjcuMzczIDcyLjYyN2w3LjA3LTcuMDdNNjUuNTU2IDY1LjU1Nmw3LjA3MSA3LjA3MU0yNy4zNzMgMjcuMzczbDcuMDcgNy4wNyIgc3Ryb2tlPSIjQzU2NTUyIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvZz48L3N2Zz4=");
+      pointer-events: var(--no-click-active);
     }
 
     &:nth-child(2):not(:hover) {
@@ -83,6 +93,7 @@
     border-radius: 50%;
     display: block;
     left: 0;
+    pointer-events: none;
     position: absolute;
     top: 4px;
     transform: var(--switcher-position);

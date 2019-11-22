@@ -10,6 +10,8 @@
   --switcher-position: translateX(6px);
   --switcher-opacity-active: 1;
   --switcher-opacity-inactive: .8;
+  --no-click-active: none;
+  --no-click-inactive: all;
 }
 
 #contrast-on:target {
@@ -24,6 +26,42 @@
   --switcher-position: translateX(37px);
   --switcher-opacity-active: .8;
   --switcher-opacity-inactive: 1;
+  --no-click-active: all;
+  --no-click-inactive: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-bg-color: #{$black};
+    --main-border-color: #{$white};
+    --main-text-color: #{$white};
+    --light-bg-color: #{$mine};
+    --image-bg-color: #{$mine};
+    --switcher-bg-color: #{$mine};
+    --is-hidden: inline-block;
+    --is-shown: none;
+    --switcher-position: translateX(37px);
+    --switcher-opacity-active: .8;
+    --switcher-opacity-inactive: 1;
+    --no-click-active: none;
+    --no-click-inactive: all;
+  }
+
+  #contrast-on:target {
+    --main-bg-color: #{$white};
+    --main-border-color: #{$black};
+    --main-text-color: #{$black};
+    --light-bg-color: #{$gainsboro};
+    --image-bg-color: #{$whisper};
+    --switcher-bg-color: #{$darken-gainsboro};
+    --is-hidden: none;
+    --is-shown: inline-block;
+    --switcher-position: translateX(6px);
+    --switcher-opacity-active: 1;
+    --switcher-opacity-inactive: .8;
+    --no-click-active: all;
+    --no-click-inactive: none;
+  }
 }
 
 body{
