@@ -1,70 +1,24 @@
-:root {
-  --main-bg-color: #{$white};
-  --main-border-color: #{$black};
-  --main-text-color: #{$black};
-  --light-bg-color: #{$gainsboro};
-  --image-bg-color: #{$whisper};
-  --switcher-bg-color: #{$darken-gainsboro};
-  --is-hidden: none;
-  --is-shown: inline-block;
-  --switcher-position: translateX(6px);
-  --switcher-opacity-active: 1;
-  --switcher-opacity-inactive: .8;
-  --no-click-active: none;
-  --no-click-inactive: all;
-}
+@media screen, print, (prefers-color-scheme: light) {
+  :root {
+    @include themeLight(true);
+  }
 
-#contrast-on:target {
-  --main-bg-color: #{$black};
-  --main-border-color: #{$white};
-  --main-text-color: #{$white};
-  --light-bg-color: #{$mine};
-  --image-bg-color: #{$mine};
-  --switcher-bg-color: #{$mine};
-  --is-hidden: inline-block;
-  --is-shown: none;
-  --switcher-position: translateX(37px);
-  --switcher-opacity-active: .8;
-  --switcher-opacity-inactive: 1;
-  --no-click-active: all;
-  --no-click-inactive: none;
+  #contrast-on:target {
+    @include themeDark(true);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --main-bg-color: #{$black};
-    --main-border-color: #{$white};
-    --main-text-color: #{$white};
-    --light-bg-color: #{$mine};
-    --image-bg-color: #{$mine};
-    --switcher-bg-color: #{$mine};
-    --is-hidden: inline-block;
-    --is-shown: none;
-    --switcher-position: translateX(37px);
-    --switcher-opacity-active: .8;
-    --switcher-opacity-inactive: 1;
-    --no-click-active: none;
-    --no-click-inactive: all;
+    @include themeDark(false);
   }
 
   #contrast-on:target {
-    --main-bg-color: #{$white};
-    --main-border-color: #{$black};
-    --main-text-color: #{$black};
-    --light-bg-color: #{$gainsboro};
-    --image-bg-color: #{$whisper};
-    --switcher-bg-color: #{$darken-gainsboro};
-    --is-hidden: none;
-    --is-shown: inline-block;
-    --switcher-position: translateX(6px);
-    --switcher-opacity-active: 1;
-    --switcher-opacity-inactive: .8;
-    --no-click-active: all;
-    --no-click-inactive: none;
+    @include themeLight(false);
   }
 }
 
-body{
+body {
   font-display: auto;
   font-family: 'Prompt', sans-serif;
   background: var(--main-bg-color);
