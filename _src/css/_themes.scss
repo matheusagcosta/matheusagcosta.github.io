@@ -8,6 +8,9 @@
   --switcher-position: translateX(6px);
   --switcher-opacity-active: 1;
   --switcher-opacity-inactive: .8;
+  --community-icon: inline-block;
+  --community-icon-hidden: none;
+
   @if $bool {
     --is-hidden: none;
     --is-shown: inline-block;
@@ -31,6 +34,9 @@
   --switcher-position: translateX(37px);
   --switcher-opacity-active: .8;
   --switcher-opacity-inactive: 1;
+  --community-icon: none;
+  --community-icon-hidden: inline-block;
+
   @if $bool {
     --is-hidden: inline-block;
     --is-shown: none;

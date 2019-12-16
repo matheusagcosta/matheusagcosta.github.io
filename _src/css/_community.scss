@@ -29,9 +29,20 @@
   }
 
   &__icon {
-    display: block;
     height: 150px;
     width: 150px;
+
+    &:first-of-type:last-of-type {
+      display: block;
+    }
+
+    &:first-of-type:not(:last-of-type) {
+      display: var(--community-icon);
+    }
+
+    &:last-of-type:not(:first-of-type) {
+      display: var(--community-icon-hidden);
+    }
 
     @media (min-width: 701px) {
       margin-bottom: 2.5rem;

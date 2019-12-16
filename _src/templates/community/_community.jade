@@ -5,8 +5,8 @@ section#projects.community
     each community, slug in public.templates.community._data
       a.community__link(href="#{ community.url }" target="_blank")
         if community.dark
-          img.community__icon.is-light-visible(src="../../assets/logo-#{ community.icon }.svg", alt="#{ community.legend }")
-          img.community__icon.is-dark-visible(src="../../assets/logo-#{ community.icon }-dark.svg", alt="#{ community.legend }")
+          img.community__icon(src="../../assets/logo-#{ community.icon }.svg", alt="#{ community.legend }")
+          img.community__icon(src="../../assets/logo-#{ community.icon }-dark.svg", alt="#{ community.legend }")
         else
           img.community__icon(src="../../assets/logo-#{ community.icon }.svg", alt="#{ community.legend }")
         span.community__headline #{ slug }
