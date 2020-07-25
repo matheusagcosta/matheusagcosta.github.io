@@ -19,4 +19,4 @@ This project is built with [harp](http://harpjs.com/)
 
 - Deploy:
 
-  - Just commit and push. Github Pages deploys automatically based on `docs` folder from `master` branch
+  - `yarn build` => Updates `docs` folder on master with develop branch changes.
