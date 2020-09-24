@@ -75,22 +75,20 @@
     background-color: var(--image-bg-color);
     max-height: 300px;
     overflow: hidden;
-    padding: 1rem 0 0;
+    padding: 0;
     position: relative;
 
     * {
-      bottom: -20px;
       filter: grayscale(10);
-      margin-bottom: -1rem;
       position: relative;
-      padding: 1rem;
-      transition: filter, transform .175s ease-in-out;
-      transform-origin: bottom;
+      transform: scale(1.15);
+      transition: filter, transform .25s ease-in-out;
+      transform-origin: center;
       width: 100%;
 
       .work__link:hover & {
         filter: none;
-        transform: translateY(-10px);
+        transform: scale(1.35);
       }
     }
   }
