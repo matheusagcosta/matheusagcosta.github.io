@@ -3,7 +3,7 @@ section#projects.community
   p Whether helping organizing events or designing and pushing code you can count on me.
   nav.community__nav
     each community, slug in public.templates.community._data
-      a.community__link(href="#{ community.url }" target="_blank")
+      a.community__link(href="#{ community.url }" target="_blank" aria-label="#{ community.desc }")
         if community.dark
           img.community__icon(src="../../assets/logo-#{ community.icon }.svg", alt="#{ community.legend }")
           img.community__icon(src="../../assets/logo-#{ community.icon }-dark.svg", alt="#{ community.legend }")
