@@ -36,17 +36,20 @@
     border-bottom: 8px solid $nutmeg;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    min-width: 500px;
     text-align: left;
     text-decoration: none;
     transition: box-shadow .175s linear;
     width: calc(100% / 3);
-
+    
+    @media (min-width: 1001px) {
+      justify-content: space-between;
+      min-width: 500px;
+    }
+    
     @media (max-width: 1000px) {
-      min-width: 55%;
+      min-width: 65%;
     }
   }
 
