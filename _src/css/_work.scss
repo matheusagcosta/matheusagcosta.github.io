@@ -1,7 +1,7 @@
 .work {
   background-color: $salmon;
   margin: 1rem 0;
-  padding: 4rem 2rem;
+  padding: 4rem 0;
   width: 100%;
 
   > *:not(a) {
@@ -9,14 +9,25 @@
     text-align: center;
   }
 
+  &__text {
+    margin: 0 2rem;
+  }
+
   &__nav {
     display: flex;
-    justify-content: center;
+    overflow-x: auto;
     padding: 2rem 0;
+  }
 
-    @media (max-width: 1000px) {
-      flex-wrap: wrap;
-    }
+  &__nav::before,
+  &__nav::after {
+    background: transparent;
+    color: transparent;
+    content: '.';
+    display: block;
+    height: 0;
+    position: relative;
+    width: 0;
   }
 
   &__link {
@@ -26,24 +37,35 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    min-width: 500px;
     text-align: left;
     text-decoration: none;
     transition: box-shadow .175s linear;
     width: calc(100% / 3);
 
     @media (max-width: 1000px) {
-      height: 100%;
-      min-width: 75%;
+      min-width: 55%;
     }
+  }
 
-    @media (max-width: 700px) {
-      min-width: 100%;
-    }
+  &__link:hover {
+    box-shadow: 1px 1px 10px rgba($black,.5);
+  }
 
-    &:hover {
-      box-shadow: 1px 1px 10px rgba($black,.5);
-    }
+  &__link:not(:first-of-type),
+  &__link:not(:last-of-type) {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  &__link:first-of-type {
+    margin-left: 2rem;
+  }
+
+  &__link:last-of-type {
+    margin-right: 2rem;
   }
 
   &__headline,

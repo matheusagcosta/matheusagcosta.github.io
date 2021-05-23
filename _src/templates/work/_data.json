@@ -1,4 +1,16 @@
 {
+  "biosinergia": {
+    "title": "Biosinergia Landing Page",
+    "legend": "Screenshot of Biosinergia Homepage",
+    "desc": "Website made for a composting company exploring illustrations and animations.",
+    "url": "https://biosinergia.com.br/"
+  },
+  "aceitacafe": {
+    "title": "Aceita Café Landing Page",
+    "legend": "Screenshot of Aceita Café Homepage",
+    "desc": "Website made for a coffee store.",
+    "url": "https://aceitacafe.com.br/"
+  },
   "eventene": {
     "title": "Eventene Applications",
     "legend": "Screenshot of Eventene Dashboard",

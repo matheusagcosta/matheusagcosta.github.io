@@ -20,7 +20,7 @@
     justify-content: space-between;
 
     @media screen and (min-width: 1171px) {
-      padding: 6rem 4rem;
+      padding: 6rem 2rem;
     }
 
     @media screen and (max-width: 1170px) {
@@ -104,7 +104,10 @@
     margin: auto;
     padding: 4rem 6% 0;
     position: relative;
-    width: 900px;
     z-index: 1;
+    
+    @media screen and (min-width: 801px) {
+      min-width: 735px;
+    }
   }
 }
