@@ -1,7 +1,10 @@
 .work {
   background-color: $salmon;
   margin: 1rem 0;
+  max-height: 760px;
+  overflow: hidden;
   padding: 4rem 0;
+  position: relative;
   width: 100%;
 
   > *:not(a) {
@@ -16,7 +19,7 @@
   &__nav {
     display: flex;
     overflow-x: auto;
-    padding: 2rem 0;
+    padding: 2rem 0 10rem;
   }
 
   &__nav::before,
@@ -45,7 +48,7 @@
     
     @media (min-width: 1001px) {
       justify-content: space-between;
-      min-width: 500px;
+      min-width: 35%;
     }
     
     @media (max-width: 1000px) {

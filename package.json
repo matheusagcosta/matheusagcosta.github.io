@@ -10,7 +10,7 @@
     "deploy": "git subtree push --prefix docs origin master"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.14",
     "harp": "^0.34.0"
   },
   "repository": {
