@@ -39,3 +39,5 @@ html.no-js(lang="en")
   body#contrast-on
     != partial("templates/_header")
     != yield
+    if current.source == 'index'
+      script(src="./js/drag.js" defer) 

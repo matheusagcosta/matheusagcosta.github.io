@@ -17,6 +17,7 @@
   }
 
   &__nav {
+    cursor: grab;
     display: flex;
     overflow-x: auto;
     padding: 2rem 0 10rem;
@@ -33,9 +34,13 @@
     width: 0;
   }
 
-  &__link {
-    align-items: flex-start;
+  &__card,
+  &__image {
     background-color: var(--main-bg-color);
+  }
+
+  &__card {
+    align-items: flex-start;
     border-bottom: 8px solid $nutmeg;
     display: flex;
     flex-direction: column;
@@ -56,26 +61,27 @@
     }
   }
 
-  &__link:hover {
+  &__card:hover {
     box-shadow: 1px 1px 10px rgba($black,.5);
   }
 
-  &__link:not(:first-of-type),
-  &__link:not(:last-of-type) {
+  &__card:not(:first-of-type),
+  &__card:not(:last-of-type) {
     margin-right: 1rem;
     margin-left: 1rem;
   }
 
-  &__link:first-of-type {
+  &__card:first-of-type {
     margin-left: 2rem;
   }
 
-  &__link:last-of-type {
+  &__card:last-of-type {
     margin-right: 2rem;
   }
 
   &__headline,
-  &__legend {
+  &__legend,
+  &__link:not(:hover) {
     color:var(--main-text-color);
   }
 
@@ -88,36 +94,40 @@
   &__headline {
     transition: color .175s linear;
     padding: 1.5rem 1rem 0;
-
-    .work__link:hover & {
-      color: $salmon;
-    }
   }
 
   &__legend {
-    min-height: 110px;
+    // min-height: 110px;
     padding: 0 1rem 1.5rem;
   }
 
+  &__link {
+    background-color: var(--light-bg-color);
+    font-size: .85rem;
+    margin: 0 1rem 1.5rem;
+    padding: .25rem .75rem;
+    text-decoration: none;
+    transition: color, background .25s ease-in-out;
+  }
+
+  &__link:hover {
+    background-color: $salmon;
+    color: $white;
+  }
+
   &__image {
-    background-color: var(--image-bg-color);
     max-height: 300px;
     overflow: hidden;
     padding: 0;
+    pointer-events: none;
     position: relative;
 
     * {
-      filter: grayscale(10);
+      min-height: 106%;
       position: relative;
-      transform: scale(1.15);
-      transition: filter, transform .25s ease-in-out;
+      transition: filter .25s ease-in-out;
       transform-origin: center;
       width: 100%;
-
-      .work__link:hover & {
-        filter: none;
-        transform: scale(1.35);
-      }
     }
   }
 }

@@ -8,7 +8,7 @@
   "aceitacafe": {
     "title": "Aceita Café Landing Page",
     "legend": "Screenshot of Aceita Café Homepage",
-    "desc": "Website made for a coffee store showcasing their products and photos.",
+    "desc": "Website made for a coffee store showcasing their products, services and photos.",
     "url": "https://aceitacafe.com.br/"
   },
   "eventene": {
@@ -26,7 +26,7 @@
   "fintechdev": {
     "title": "Fintechdev Design System",
     "legend": "Screenshot of Fintechdev Design System",
-    "desc": "I've built this project following best methodologies such as Atomic Design, ITCSS and BEM, thus the rest of the team could easily implement the SPAs.",
+    "desc": "I've built this project using Jekyll and following best methodologies such as Atomic Design, ITCSS and BEM.",
     "url": "https://fintechdev.github.io/x2-ui/"
   }
 }
