@@ -81,7 +81,7 @@
 
   &__headline,
   &__legend,
-  &__link:not(:hover) {
+  &__button:not(:hover) {
     color:var(--main-text-color);
   }
 
@@ -101,7 +101,12 @@
     padding: 0 1rem 1.5rem;
   }
 
-  &__link {
+  &__link,
+  &__link:hover {
+    color: $nutmeg;
+  }
+
+  &__button {
     background-color: var(--light-bg-color);
     font-size: .85rem;
     margin: 0 1rem 1.5rem;
@@ -110,7 +115,7 @@
     transition: color, background .25s ease-in-out;
   }
 
-  &__link:hover {
+  &__button:hover {
     background-color: $salmon;
     color: $white;
   }

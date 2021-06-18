@@ -1,6 +1,6 @@
 section#work.work
   h2 Recent Work
-  p.work__text Here are the latest products I’ve been working on. You might also want take a look on my <a href="https://dribbble.com/matheusagcosta" target="_blank" rel="noopener" aria-label="My Dribbble Profile">Dribbble</a> and <a href="https://behance.net/matheusagcosta" target="_blank" rel="noopener" aria-label="My Behance Profile">Behance</a> to check a few more.
+  p.work__text Here are the latest products I’ve been working on. You might also want take a look on my <a class="work__link" href="https://dribbble.com/matheusagcosta" target="_blank" rel="noopener" aria-label="My Dribbble Profile">Dribbble</a> and <a class="work__link" href="https://behance.net/matheusagcosta" target="_blank" rel="noopener" aria-label="My Behance Profile">Behance</a> to check a few more.
   nav#drag.work__nav
     each work, slug in public.templates.work._data
       .work__card(href="#{ work.url }" target="_blank" rel="noopener" aria-label="#{ work.legend }")
@@ -8,4 +8,4 @@ section#work.work
           img(src="../../assets/image-#{ slug }.png", alt="#{ work.legend }")
         h4.work__headline #{ work.title }
         small.work__legend #{ work.desc }
-        a.work__link(href="#{ work.url }" target="_blank" rel="noopener" aria-label="Link to Project") View Project
+        a.work__button(href="#{ work.url }" target="_blank" rel="noopener" aria-label="Link to Project") View Project

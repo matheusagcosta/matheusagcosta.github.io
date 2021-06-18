@@ -32,10 +32,11 @@
 
   &__heading {
     font-size: 3rem;
+    margin-bottom: .5rem;
   }
 
   &__subheading {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   &__content {
@@ -64,6 +65,10 @@
 
   &__block + .cv__block {
     margin-top: 2rem;
+  }
+
+  &__block:last-of-type {
+    margin-bottom: 2rem;
   }
 
   &__title {

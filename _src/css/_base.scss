@@ -51,11 +51,25 @@ h3 {
 }
 
 a {
-  color: $nutmeg;
   font-weight: normal;
+
+  &,
+  &:hover,
+  &:active,
+  &:visited {
+    color: var(--main-link-color);
+  }
 
   &:hover {
     text-decoration: none;
+  }
+
+  &:visited {
+    filter: brightness(.75);
+  }
+
+  &:active {
+    filter: brightness(.9);
   }
 }
 
