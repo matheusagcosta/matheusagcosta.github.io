@@ -3,9 +3,17 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-  position: absolute;
   width: 100%;
   z-index: 2;
+  
+  &:not(.header--fixed) {
+    position: absolute;
+  }
+
+  &--fixed {
+    background: var(--main-bg-color);
+    position: fixed;
+  }
 
   &__logo {
     align-self: center;

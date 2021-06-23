@@ -1,4 +1,4 @@
-header.header(role="banner")
+header.header(role="banner" class="#{ current.source == 'cv' ? 'header--fixed' : '' }")
   if current.source == 'cv'
     a.header__logo.logo.is-light-visible(href="/" aria-hidden="true")
       svg.logo__image(viewBox='0 0 42 42', fill='none', xmlns='http://www.w3.org/2000/svg')
