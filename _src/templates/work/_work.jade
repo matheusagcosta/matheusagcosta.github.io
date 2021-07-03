@@ -5,6 +5,8 @@ section#work.work
     each work, slug in public.templates.work._data
       .work__card(href="#{ work.url }" target="_blank" rel="noopener" aria-label="#{ work.legend }")
         picture.work__image
+          source(src="../../assets/image-#{ slug }.webp", type="image/webp")
+          source(src="../../assets/image-#{ slug }.png", type="image/png")
           img(src="../../assets/image-#{ slug }.png", alt="#{ work.legend }")
         h3.work__headline #{ work.title }
         small.work__legend #{ work.desc }
