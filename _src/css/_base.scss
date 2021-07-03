@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap');
+
 @media screen, print, (prefers-color-scheme: light) {
   :root {
     @include themeLight(true);
@@ -47,7 +49,7 @@ h2 {
 }
 
 h3 {
-  font-weight: 300;
+  font-size: 16px;
 }
 
 a {

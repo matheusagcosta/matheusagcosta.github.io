@@ -92,8 +92,9 @@
   }
 
   &__headline {
-    transition: color .175s linear;
+    margin-bottom: .5rem;
     padding: 1.5rem 1rem 0;
+    transition: color .175s linear;
   }
 
   &__legend {

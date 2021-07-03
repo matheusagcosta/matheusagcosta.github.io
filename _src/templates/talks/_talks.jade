@@ -6,7 +6,7 @@ section#talks.talks
     p I love to share knowledge so frequently I prepare talks to speak at technology events. You'll find more details about my presentations below.
     each talks, slug in public.templates.talks._data
       .talks__item
-        h4.talks__headline
+        h3.talks__headline
           span #{ talks.title }
           |  -  #{''}
           a.talks__link(href="#{ talks.url }" target="_blank" rel="noopener" aria-label="#{ talks.title }") #{ talks.link }
