@@ -14,8 +14,13 @@
     min-height: 180px;
   }
 
+  &__avatar {
+    max-width: 466px;
+  }
+
   &__image {
-    margin: 1.5rem 1.5rem -5.5rem;
+    filter: saturate(1.5);
+    margin: 0 1.5rem -5.5rem;
     width: 82%;
   }
 
@@ -36,6 +41,7 @@
   }
 
   &__subheading {
+    font-weight: normal;
     font-size: 1.25rem;
   }
 

@@ -1,10 +1,13 @@
 main.resume
   section.resume__header
     .resume__avatar
-      img.resume__image(src="../assets/image-cv.png", alt="Photo of Matheus in a company")
+      picture
+        source.resume__image(srcset="../assets/image-cv.webp", type="image/webp")
+        source.resume__image(srcset="../assets/image-cv.png", type="image/png")
+        img.resume__image(src="../assets/image-cv.png", alt="Photo of Matheus in a company")
     .resume__headline
       h1.resume__heading Matheus Costa
-      h3.resume__subheading Senior UX Developer & UI Designer
+      h2.resume__subheading Senior UX Developer & UI Designer
 
   section.resume__content
     .resume__column

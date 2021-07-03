@@ -5,8 +5,9 @@
   margin: 0 0 2rem;
 
   &__image {
-    padding: 2rem;
+    filter: saturate(1.25);
     min-width: 320px;
+    padding: 2rem;
     width: 40%;
   }
 
