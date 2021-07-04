@@ -60,16 +60,19 @@
   }
 
   &__headline {
-    color: var(--main-text-color);
     transition: color .175s linear;
-
+    
     .community__link:hover & {
       color: $salmon;
     }
   }
+  
+  &__headline,
+  &__legend {
+    color: var(--main-text-color);
+  }
 
   &__legend {
-    color: $gray;
     margin-bottom: 1rem;
   }
 }

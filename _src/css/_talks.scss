@@ -6,6 +6,7 @@
 
   &__image {
     filter: saturate(1.25);
+    max-width: 854px;
     min-width: 320px;
     padding: 2rem;
     width: 40%;
