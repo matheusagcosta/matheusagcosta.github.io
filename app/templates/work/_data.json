@@ -11,9 +11,21 @@
     "desc": "Website made for a coffee store showcasing their products, services and photos.",
     "url": "https://aceitacafe.com.br/"
   },
-  "eventene": {
-    "title": "Eventene Applications",
+  "eventene-web": {
+    "title": "Eventene WebApp",
     "legend": "Screenshot of Eventene Dashboard",
+    "desc": "Redesigned Eventene`s both mobile and web applications besides making a web form in React for surveys.",
+    "url": "https://app.eventene.com/"
+  },
+  "eventene-mobile": {
+    "title": "Eventene Mobile Apps",
+    "legend": "Screenshot of Eventene App",
+    "desc": "Redesigned Eventene`s both mobile and web applications besides making a web form in React for surveys.",
+    "url": "https://eventene.com/"
+  },
+  "unicorn": {
+    "title": "Unicorn Design System",
+    "legend": "Screenshot of Unicorn Design System",
     "desc": "Redesigned Eventene`s both mobile and web applications besides making a web form in React for surveys.",
     "url": "https://eventene.com/"
   },
