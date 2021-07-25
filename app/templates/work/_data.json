@@ -1,44 +1,51 @@
 {
+  "eventene-app": {
+    "title": "Eventene Mobile Apps",
+    "legend": "Screenshot of Eventene App",
+    "desc": "A complete redesign for both Android and iOS apps.",
+    "url": "https://apps.apple.com/us/app/eventene/id1235322186#?platform=iphone",
+    "action": "Download App"
+  },
+  "unicorn": {
+    "title": "Unicorn Design System",
+    "legend": "Screenshot of Unicorn Design System",
+    "desc": "Atomic Design System built for Eventene products.",
+    "url": "https://unicorn.eventene.com/",
+    "action": "View Project"
+  },
+  "eventene-web": {
+    "title": "Eventene WebApp",
+    "legend": "Screenshot of Eventene Dashboard",
+    "desc": "A revamped dashboard for event organizers.",
+    "url": "https://app.eventene.com/",
+    "action": "View Project"
+  },
   "biosinergia": {
     "title": "Biosinergia Landing Page",
     "legend": "Screenshot of Biosinergia Homepage",
     "desc": "Website made for a composting company exploring illustrations and animations.",
-    "url": "https://biosinergia.com.br/"
+    "url": "https://biosinergia.com.br/",
+    "action": "View Project"
   },
   "aceitacafe": {
     "title": "Aceita Café Landing Page",
     "legend": "Screenshot of Aceita Café Homepage",
     "desc": "Website made for a coffee store showcasing their products, services and photos.",
-    "url": "https://aceitacafe.com.br/"
-  },
-  "eventene-web": {
-    "title": "Eventene WebApp",
-    "legend": "Screenshot of Eventene Dashboard",
-    "desc": "Redesigned Eventene`s both mobile and web applications besides making a web form in React for surveys.",
-    "url": "https://app.eventene.com/"
-  },
-  "eventene-mobile": {
-    "title": "Eventene Mobile Apps",
-    "legend": "Screenshot of Eventene App",
-    "desc": "Redesigned Eventene`s both mobile and web applications besides making a web form in React for surveys.",
-    "url": "https://eventene.com/"
-  },
-  "unicorn": {
-    "title": "Unicorn Design System",
-    "legend": "Screenshot of Unicorn Design System",
-    "desc": "Redesigned Eventene`s both mobile and web applications besides making a web form in React for surveys.",
-    "url": "https://eventene.com/"
+    "url": "https://aceitacafe.com.br/",
+    "action": "View Project"
   },
   "taina": {
     "title": "Tainá's Website",
     "legend": "Screenshot of Tainá Homepage",
     "desc": "New website version of an architect / researcher following a minimalist concept.",
-    "url": "https://tainasilva.com.br/"
+    "url": "https://tainasilva.com.br/",
+    "action": "View Project"
   },
   "fintechdev": {
     "title": "Fintechdev Design System",
     "legend": "Screenshot of Fintechdev Design System",
-    "desc": "I've built this project using Jekyll and following best methodologies such as Atomic Design, ITCSS and BEM.",
-    "url": "https://fintechdev.github.io/x2-ui/"
+    "desc": "Components library made for a merchant dashboard.",
+    "url": "https://fintechdev.github.io/x2-ui/",
+    "action": "View Project"
   }
 }
