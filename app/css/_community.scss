@@ -1,6 +1,7 @@
 .community {
   @extend %box;
   background-color: var(--light-bg-color);
+  padding: 4rem 1.5rem;
 
   &__nav {
     display: flex;
@@ -17,15 +18,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     padding: 2rem;
     text-decoration: none;
     transition: box-shadow .175s linear;
     width: 450px;
+  }
 
-    &:hover {
-      box-shadow: 1px 1px 10px rgba($black,.15);
+  @media screen and (min-width: 1171px) {
+    &__link:first-of-type {
+      margin-left: 0;
     }
+
+    &__link:not(:first-of-type) {
+      margin-left: .75rem;
+    }
+
+    &__link:last-of-type {
+      margin-right: 0;
+    }
+
+    &__link:not(:last-of-type) {
+      margin-right: .75rem;
+    }
+  }
+
+  &__link:hover {
+    box-shadow: 1px 1px 10px rgba($black,.15);
   }
 
   &__icon {
@@ -61,12 +81,12 @@
 
   &__headline {
     transition: color .175s linear;
-    
+
     .community__link:hover & {
       color: $salmon;
     }
   }
-  
+
   &__headline,
   &__legend {
     color: var(--main-text-color);

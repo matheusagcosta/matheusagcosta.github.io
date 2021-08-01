@@ -36,7 +36,8 @@ html.no-js(lang="en")
     link(rel="stylesheet" href="/css/#{ current.source }.css")
     title #{ title }
   body#contrast-on
-    != partial("templates/_header")
+    if current.source != '404'
+      != partial("templates/_header")
     != yield
     if current.source == 'index'
-      script(src="./js/drag.js" defer) 
+      script(src="./js/drag.js" defer)

@@ -1,21 +1,23 @@
-header.header(role="banner" class="#{ current.source == 'cv' ? 'header--fixed' : '' }")
-  if current.source == 'cv'
-    a.header__logo.logo.is-light-visible(href="/" aria-label="logo")
-      svg.logo__image(viewBox='0 0 42 42', fill='none', xmlns='http://www.w3.org/2000/svg')
-        path(fill-rule='evenodd', clip-rule='evenodd', d='M38 4H4v34h34V4zM0 0v42h42V0H0z')
-        path(d='M24.767 29v-8.228l-2.618 5.786h-2.288l-2.618-5.786V29h-4.29V13.38h4.686l3.366 7.348 3.388-7.348h4.664V29h-4.29z')
-    a.header__logo.logo.is-dark-visible(href="/#contrast-on" aria-label="logo")
-      svg.logo__image(viewBox='0 0 42 42', fill='none', xmlns='http://www.w3.org/2000/svg')
-        path(fill-rule='evenodd', clip-rule='evenodd', d='M38 4H4v34h34V4zM0 0v42h42V0H0z')
-        path(d='M24.767 29v-8.228l-2.618 5.786h-2.288l-2.618-5.786V29h-4.29V13.38h4.686l3.366 7.348 3.388-7.348h4.664V29h-4.29z')
+header.header.header--fixed(role="banner")
+  a.header__logo.logo.is-light-visible(href="/" aria-label="logo")
+    svg.logo__image(viewBox='0 0 42 42', fill='none', xmlns='http://www.w3.org/2000/svg')
+      path(fill-rule='evenodd', clip-rule='evenodd', d='M38 4H4v34h34V4zM0 0v42h42V0H0z')
+      path(d='M24.767 29v-8.228l-2.618 5.786h-2.288l-2.618-5.786V29h-4.29V13.38h4.686l3.366 7.348 3.388-7.348h4.664V29h-4.29z')
+  a.header__logo.logo.is-dark-visible(href="/#contrast-on" aria-label="logo")
+    svg.logo__image(viewBox='0 0 42 42', fill='none', xmlns='http://www.w3.org/2000/svg')
+      path(fill-rule='evenodd', clip-rule='evenodd', d='M38 4H4v34h34V4zM0 0v42h42V0H0z')
+      path(d='M24.767 29v-8.228l-2.618 5.786h-2.288l-2.618-5.786V29h-4.29V13.38h4.686l3.366 7.348 3.388-7.348h4.664V29h-4.29z')
 
   .header__actions
     nav.header__switcher
       a.header__toggle(href="#contrast-on" aria-label="Dark")
       a.header__toggle(href="#contrast-off" aria-label="Light")
       span.header__button
-    if current.source == 'cv'
-      nav.header__menu
+    nav.header__menu
+      if current.source == 'cv'
         a.header__link(href="/cv-matheusagcosta.pdf" aria-label="Link to Download") Download
-        a.header__link.is-light-visible(href="/" aria-label="Link to Home") Home
-        a.header__link.is-dark-visible(href="/#contrast-on" aria-label="Link to Home") Home
+      else
+        a.header__link.is-light-visible(href="/cv" aria-label="Link to my Resume") CV
+        a.header__link.is-dark-visible(href="/cv#contrast-on" aria-label="Link to my Resume") CV
+      a.header__link.is-light-visible(href="/" aria-label="Link to Home") Home
+      a.header__link.is-dark-visible(href="/#contrast-on" aria-label="Link to Home") Home

@@ -4,8 +4,8 @@
   justify-content: space-between;
   padding: 1rem 1.5rem;
   width: 100%;
-  z-index: 2;
-  
+  z-index: 222;
+
   &:not(.header--fixed) {
     position: absolute;
   }
@@ -51,10 +51,10 @@
     text-decoration: none;
     color: $salmon;
     padding-right: .85rem;
+  }
 
-    &:hover {
-      opacity: .85;
-    }
+  &__link:hover {
+    opacity: .85;
   }
 
   &__toggle {

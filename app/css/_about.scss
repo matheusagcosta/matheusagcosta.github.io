@@ -18,14 +18,7 @@
 
   &__info {
     justify-content: space-between;
-
-    @media screen and (min-width: 1171px) {
-      padding: 6rem 2rem;
-    }
-
-    @media screen and (max-width: 1170px) {
-      padding: 6rem 2rem;
-    }
+    padding: 6rem 1.5rem;
   }
 
   &__desc {
@@ -88,16 +81,26 @@
   &__photo {
     min-width: 320px;
     position: relative;
+  }
 
-    &::before {
-      content: "";
-      background-color: $salmon;
-      height: 70%;
-      position: absolute;
-      top: -3.5rem;
-      width: 100%;
-      z-index: auto;
-    }
+  &__photo::before,
+  &__photo::after {
+    content: "";
+    background: $salmon;
+    position: absolute;
+    width: 100%;
+  }
+
+  &__photo::before {
+    height: 70%;
+    top: 0;
+    z-index: auto;
+  }
+
+  &__photo::after {
+    height: 50px;
+    top: 64px;
+    z-index: 9;
   }
 
   &__image {
@@ -106,7 +109,7 @@
     padding: 4rem 6% 0;
     position: relative;
     z-index: 1;
-    
+
     @media screen and (min-width: 801px) {
       min-width: 735px;
     }

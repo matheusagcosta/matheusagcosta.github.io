@@ -50,12 +50,12 @@
     text-decoration: none;
     transition: box-shadow .175s linear;
     width: calc(100% / 3);
-    
+
     @media (min-width: 1001px) {
       justify-content: space-between;
       min-width: 35%;
     }
-    
+
     @media (max-width: 1000px) {
       min-width: 65%;
     }
@@ -67,16 +67,16 @@
 
   &__card:not(:first-of-type),
   &__card:not(:last-of-type) {
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: .75rem;
+    margin-left: .75rem;
   }
 
   &__card:first-of-type {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
   }
 
   &__card:last-of-type {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
   }
 
   &__headline,

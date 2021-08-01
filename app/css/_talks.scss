@@ -8,7 +8,7 @@
     filter: saturate(1.25);
     max-width: 854px;
     min-width: 320px;
-    padding: 2rem;
+    padding: 2rem 1.5rem;
     width: 40%;
   }
 
@@ -16,13 +16,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 2rem;
 
     @media screen and (min-width: 1171px) {
+      padding: 0 2rem;
       width: 60%;
     }
 
     @media screen and (max-width: 1170px) {
+      padding: 0 1.5rem;
       width: 100%;
     }
   }
