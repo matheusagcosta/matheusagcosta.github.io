@@ -1,10 +1,4 @@
 {
-  "Devtalks Bauru": {
-    "icon": "devtalks-bauru",
-    "legend": "Devtalks Bauru Logo",
-    "desc": "Events, talks and podcasts about development",
-    "url": "https://devtalksbauru.github.io/"
-  },
   "IxDA Bauru": {
     "dark": true,
     "icon": "ixda-bauru",
@@ -12,11 +6,17 @@
     "desc": "Local chapter of Interaction Design Association",
     "url": "https://ixdabauru.github.io/"
   },
-  "Camélias - P & S": {
+  "Devtalks Bauru": {
+    "icon": "devtalks-bauru",
+    "legend": "Devtalks Bauru Logo",
+    "desc": "Events, talks and podcasts about development",
+    "url": "https://devtalksbauru.github.io/"
+  },
+  "Unsplash Photos": {
     "dark": true,
-    "icon": "camelias",
-    "legend": "Camélias Logo",
-    "desc": "List of Services providers from a neighborhood",
-    "url": "https://camelias-residencial.github.io/produtos-servicos/"
+    "icon": "unsplash",
+    "legend": "Unsplash Logo",
+    "desc": "Some of my clicks free to use",
+    "url": "https://unsplash.com/@matheusagcosta"
   }
 }

@@ -4,10 +4,20 @@
     "legend": "Linkedin Icon",
     "url": "https://www.linkedin.com/in/matheusagcosta"
   },
+  "dribbble": {
+    "icon": "dribbble",
+    "legend": "Dribbble Icon",
+    "url": "https://dribbble.com/matheusagcosta"
+  },
   "pinterest": {
     "icon": "pinterest",
     "legend": "Pinterest Icon",
     "url": "https://www.pinterest.com/matheusagcosta/"
+  },
+  "behance": {
+    "icon": "behance",
+    "legend": "Behance Icon",
+    "url": "https://www.behance.net/matheusagcosta"
   },
   "codepen": {
     "icon": "codepen",
@@ -18,15 +28,5 @@
     "icon": "github",
     "legend": "Github Icon",
     "url": "https://github.com/matheusagcosta"
-  },
-  "behance": {
-    "icon": "behance",
-    "legend": "Behance Icon",
-    "url": "https://www.behance.net/matheusagcosta"
-  },
-  "dribbble": {
-    "icon": "dribbble",
-    "legend": "Dribbble Icon",
-    "url": "https://dribbble.com/matheusagcosta"
   }
 }

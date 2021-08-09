@@ -1,5 +1,6 @@
 .header {
   align-items: flex-start;
+  background: var(--main-bg-color);
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
@@ -11,7 +12,6 @@
   }
 
   &--fixed {
-    background: var(--main-bg-color);
     position: fixed;
   }
 
