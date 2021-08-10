@@ -17,12 +17,13 @@
   }
 
   &__info {
+    height: 100%;
     justify-content: space-between;
-    padding: 6rem 1.5rem;
+    min-height: 100vh;
+    padding: 6rem 1.5rem 0;
   }
 
   &__desc {
-    justify-content: center;
     height: 100%;
   }
 
@@ -46,9 +47,9 @@
   }
 
   &__helper {
-    margin-top: 5rem;
-    position: relative;
+    bottom: 10px;
     padding: 1rem 1.5rem 1.5rem;
+    position: relative;
 
     &::before,
     &::after {
@@ -113,5 +114,10 @@
     @media screen and (min-width: 801px) {
       min-width: 735px;
     }
+  }
+
+  &__picture {
+    width: 100%;
+    min-width: 734px;
   }
 }
