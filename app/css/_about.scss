@@ -99,15 +99,19 @@
   }
 
   &__photo::after {
-    height: 50px;
-    top: 64px;
-    z-index: 9;
+    @media screen and (min-width: 801px) {
+      height: 50px;
+      top: 64px;
+      z-index: 9;
+    }
   }
 
   &__image {
     display: block;
     margin: auto;
-    padding: 4rem 6% 0;
+    padding-right: 6%;
+    padding-left: 6%;
+    padding-top: 4rem;
     position: relative;
     z-index: 1;
 
@@ -118,6 +122,9 @@
 
   &__picture {
     width: 100%;
-    min-width: 734px;
+
+    @media screen and (min-width: 801px) {
+      min-width: 734px;
+    }
   }
 }
