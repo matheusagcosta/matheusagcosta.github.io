@@ -3,8 +3,6 @@
   flex-wrap: wrap;
 
   > * {
-    width: 50%;
-
     @media screen and (max-width: 800px) {
       width: 100%;
     }
@@ -12,19 +10,23 @@
 
   &__info,
   &__desc {
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    width: 100%;
   }
 
   &__info {
-    height: 100%;
-    justify-content: space-between;
-    min-height: 100vh;
-    padding: 6rem 1.5rem 0;
+    padding: 4.5rem 1.5rem 0;
   }
 
   &__desc {
-    height: 100%;
+    @media screen and (min-width: 1024px) {
+      min-height: 80vh;
+    }
+
+    @media screen and (max-width: 800px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 
   &__logo {
@@ -33,7 +35,14 @@
   }
 
   &__title {
-    margin-bottom: 3rem;
+    @media screen and (min-width: 801px) {
+      margin-bottom: 3rem;
+    }
+
+    @media screen and (max-width: 800px) {
+      margin-bottom: 1.5rem;
+      order: 1;
+    }
   }
 
   &__subtitle > * {
@@ -47,53 +56,48 @@
   }
 
   &__helper {
-    bottom: 10px;
+    margin-top: 1rem;
     padding: 1rem 1.5rem 1.5rem;
     position: relative;
+  }
 
-    &::before,
-    &::after {
-      border-color: var(--main-border-color);
-      border-style: solid;
-      content: '';
-      display: block;
-      left: 0;
-      position: absolute;
-      top: 50%;
-      transform-origin: 50% 50%;
-    }
+  &__helper::before,
+  &__helper::after {
+    border-color: var(--main-border-color);
+    border-style: solid;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform-origin: 50% 50%;
+  }
 
-    &::before {
-      border-width: 2px 2px 0 0;
-      height: 10px;
-      margin: 5px 0 0 -5px;
-      transform: rotate(135deg);
-      width: 10px;
-    }
+  &__helper::before {
+    border-width: 2px 2px 0 0;
+    height: 10px;
+    margin: 5px 0 0 -5px;
+    transform: rotate(135deg);
+    width: 10px;
+  }
 
-    &::after {
-      border-width: 0 2px 0 0;
-      height: 40px;
-      transform: translate(-1px, -26px);
-      width: 0;
-    }
+  &__helper::after {
+    border-width: 0 2px 0 0;
+    height: 40px;
+    transform: translate(-1px, -26px);
+    width: 0;
   }
 
   &__photo {
-    min-width: 320px;
+    margin-bottom: 1.5rem;
     position: relative;
-  }
-
-  &__photo::after {
-    content: "";
-    background: $salmon;
-    position: absolute;
-    width: 100%;
 
     @media screen and (min-width: 801px) {
-      height: 50px;
-      top: 64px;
-      z-index: 9;
+      float: right;
+      margin-left: 1.5rem;
+      max-width: 700px;
+      min-width: 320px;
+      width: 45%;
     }
   }
 
@@ -101,9 +105,7 @@
     background: $salmon;
     display: block;
     margin: auto;
-    padding-right: 6%;
-    padding-left: 6%;
-    padding-top: 4rem;
+    padding: 3rem 6% 1rem;
     position: relative;
     z-index: 1;
   }

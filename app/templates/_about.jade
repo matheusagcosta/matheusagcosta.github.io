@@ -9,6 +9,11 @@ section#about.about
     //-     path(fill-rule='evenodd', clip-rule='evenodd', d='M38 4H4v34h34V4zM0 0v42h42V0H0z')
     //-     path(d='M24.767 29v-8.228l-2.618 5.786h-2.288l-2.618-5.786V29h-4.29V13.38h4.686l3.366 7.348 3.388-7.348h4.664V29h-4.29z')
     .about__desc
+      .about__photo
+        picture.about__image
+          source(srcset="../assets/image-about.webp", type="image/webp")
+          source(srcset="../assets/image-about.png", type="image/png")
+          img.about__picture(src="../assets/image-about.png", alt="Photo of Matheus in a hackathon", width="100%", height="834")
       h2.about__title
         | Hey! I’m Matheus Costa.
         br
@@ -33,8 +38,3 @@ section#about.about
           a.about__link(href="mailto:hi@matheusagcosta.com" aria-label="Link to Contact") contact me
           |.
     p.about__helper Keep Scrolling
-  .about__photo
-    picture.about__image
-      source(srcset="../assets/image-about.webp", type="image/webp")
-      source(srcset="../assets/image-about.png", type="image/png")
-      img.about__picture(src="../assets/image-about.png", alt="Photo of Matheus in a hackathon", width="100%", height="834")

@@ -1,17 +1,17 @@
 {
-  "eventene-app": {
-    "title": "Eventene Mobile Apps",
-    "legend": "Screenshot of Eventene App",
-    "desc": "A complete redesign for both Android and iOS apps.",
-    "url": "https://apps.apple.com/us/app/eventene/id1235322186#?platform=iphone",
-    "action": "Download App"
-  },
   "unicorn": {
     "title": "Unicorn Design System",
     "legend": "Screenshot of Unicorn Design System",
     "desc": "Atomic Design System built for Eventene products.",
     "url": "https://unicorn.eventene.com/",
     "action": "View Project"
+  },
+  "eventene-app": {
+    "title": "Eventene Mobile Apps",
+    "legend": "Screenshot of Eventene App",
+    "desc": "A complete redesign for both Android and iOS apps.",
+    "url": "https://apps.apple.com/us/app/eventene/id1235322186#?platform=iphone",
+    "action": "Download App"
   },
   "eventene-web": {
     "title": "Eventene WebApp",
