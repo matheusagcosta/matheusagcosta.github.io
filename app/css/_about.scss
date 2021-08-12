@@ -84,21 +84,12 @@
     position: relative;
   }
 
-  &__photo::before,
   &__photo::after {
     content: "";
     background: $salmon;
     position: absolute;
     width: 100%;
-  }
 
-  &__photo::before {
-    height: 70%;
-    top: 0;
-    z-index: auto;
-  }
-
-  &__photo::after {
     @media screen and (min-width: 801px) {
       height: 50px;
       top: 64px;
@@ -107,6 +98,7 @@
   }
 
   &__image {
+    background: $salmon;
     display: block;
     margin: auto;
     padding-right: 6%;
@@ -114,17 +106,9 @@
     padding-top: 4rem;
     position: relative;
     z-index: 1;
-
-    @media screen and (min-width: 801px) {
-      min-width: 735px;
-    }
   }
 
   &__picture {
     width: 100%;
-
-    @media screen and (min-width: 801px) {
-      min-width: 734px;
-    }
   }
 }
