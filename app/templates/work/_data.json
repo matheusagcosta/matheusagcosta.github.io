@@ -1,5 +1,6 @@
 {
   "unicorn": {
+    "show": true,
     "title": "Unicorn Design System",
     "legend": "Screenshot of Unicorn Design System",
     "desc": "Atomic Design System built for Eventene products.",
@@ -7,6 +8,7 @@
     "action": "View Project"
   },
   "eventene-app": {
+    "show": true,
     "title": "Eventene Mobile Apps",
     "legend": "Screenshot of Eventene App",
     "desc": "A complete redesign for both Android and iOS apps.",
@@ -14,34 +16,39 @@
     "action": "Download App"
   },
   "eventene-web": {
-    "title": "Eventene WebApp",
+    "show": true,
+    "title": "Eventene Web App",
     "legend": "Screenshot of Eventene Dashboard",
     "desc": "A revamped dashboard for event organizers.",
     "url": "https://app.eventene.com/",
     "action": "View Project"
   },
   "biosinergia": {
+    "show": true,
     "title": "Biosinergia Landing Page",
     "legend": "Screenshot of Biosinergia Homepage",
     "desc": "Website made for a composting company exploring illustrations and animations.",
     "url": "https://biosinergia.com.br/",
     "action": "View Project"
   },
-  "aceitacafe": {
-    "title": "Aceita Café Landing Page",
-    "legend": "Screenshot of Aceita Café Homepage",
-    "desc": "Website made for a coffee store showcasing their products, services and photos.",
-    "url": "https://aceitacafe.com.br/",
-    "action": "View Project"
-  },
   "taina": {
+    "show": true,
     "title": "Tainá's Website",
     "legend": "Screenshot of Tainá Homepage",
     "desc": "New website version of an architect / researcher following a minimalist concept.",
     "url": "https://tainasilva.com.br/",
     "action": "View Project"
   },
+  "aceitacafe": {
+    "show": false,
+    "title": "Aceita Café Landing Page",
+    "legend": "Screenshot of Aceita Café Homepage",
+    "desc": "Website made for a coffee store showcasing their products, services and photos.",
+    "url": "https://aceitacafe.com.br/",
+    "action": "View Project"
+  },
   "fintechdev": {
+    "show": false,
     "title": "Fintechdev Design System",
     "legend": "Screenshot of Fintechdev Design System",
     "desc": "Components library made for a merchant dashboard.",

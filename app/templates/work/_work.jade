@@ -3,11 +3,12 @@ section#work.work
   p.work__text Here are the latest products I’ve been working on. You might also want take a look on my <a class="work__link" href="https://dribbble.com/matheusagcosta" target="_blank" rel="noopener" aria-label="My Dribbble Profile">Dribbble</a> and <a class="work__link" href="https://behance.net/matheusagcosta" target="_blank" rel="noopener" aria-label="My Behance Profile">Behance</a> to check a few more.
   nav#drag.work__nav
     each work, slug in public.templates.work._data
-      .work__card(href="#{ work.url }" target="_blank" rel="noopener" aria-label="#{ work.legend }")
-        picture.work__image
-          source(srcset="../../assets/image-#{ slug }.webp", type="image/webp")
-          source(srcset="../../assets/image-#{ slug }.png", type="image/png")
-          img(src="../../assets/image-#{ slug }.png", alt="#{ work.legend }", width="758", height="506")
-        h3.work__headline #{ work.title }
-        small.work__legend #{ work.desc }
-        a.work__button(href="#{ work.url }" target="_blank" rel="noopener" aria-label="Link to Project") #{ work.action }
+      if work.show == true
+        .work__card(href="#{ work.url }" target="_blank" rel="noopener" aria-label="#{ work.legend }")
+          picture.work__image
+            source(srcset="../../assets/image-#{ slug }.webp", type="image/webp")
+            source(srcset="../../assets/image-#{ slug }.png", type="image/png")
+            img(src="../../assets/image-#{ slug }.png", alt="#{ work.legend }", width="758", height="506")
+          h3.work__headline #{ work.title }
+          small.work__legend #{ work.desc }
+          a.work__button(href="#{ work.url }" target="_blank" rel="noopener" aria-label="Link to Project") #{ work.action }
