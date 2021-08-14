@@ -9,10 +9,10 @@
   },
   "eventene-app": {
     "show": true,
-    "title": "Eventene Mobile Apps",
+    "title": "Eventene Mobile App",
     "legend": "Screenshot of Eventene App",
     "desc": "A complete redesign for both Android and iOS apps.",
-    "url": "https://apps.apple.com/us/app/eventene/id1235322186#?platform=iphone",
+    "url": "https://play.google.com/store/apps/details?id=com.eventene.bobcatmobile",
     "action": "Download App"
   },
   "eventene-web": {
