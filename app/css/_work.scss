@@ -1,5 +1,5 @@
 .work {
-  background-color: $salmon;
+  background-color: var(--light-bg-color);
   max-height: 770px;
   overflow: hidden;
   padding: 4.5rem 0;
@@ -7,7 +7,6 @@
   width: 100%;
 
   > *:not(a) {
-    color: $white;
     text-align: center;
   }
 
@@ -40,7 +39,7 @@
 
   &__card {
     align-items: flex-start;
-    border-bottom: 8px solid $nutmeg;
+    border-bottom: 8px solid $salmon;
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
