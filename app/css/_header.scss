@@ -3,6 +3,10 @@
   background: var(--main-bg-color);
   display: flex;
   justify-content: space-between;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 1440px;
   padding: 1rem 1.5rem;
   width: 100%;
   z-index: 222;
