@@ -6,9 +6,11 @@
   &__nav {
     display: flex;
     justify-content: center;
+    margin: auto;
+    max-width: 1440px;
 
     @media (max-width: 1000px) {
-      flex-wrap: wrap;
+      flex-direction: column;
     }
   }
 
@@ -23,29 +25,21 @@
     padding: 2rem;
     text-decoration: none;
     transition: box-shadow .175s linear;
-    width: 450px;
-  }
 
-  @media screen and (min-width: 1171px) {
-    &__link:first-of-type {
-      margin-left: 0;
-    }
-
-    &__link:not(:first-of-type) {
-      margin-left: .75rem;
-    }
-
-    &__link:last-of-type {
-      margin-right: 0;
-    }
-
-    &__link:not(:last-of-type) {
-      margin-right: .75rem;
+    @media (min-width: 1001px) {
+      width: calc(100% / 3);
     }
   }
 
   &__link:hover {
     box-shadow: 1px 1px 10px rgba($black,.15);
+  }
+
+  &__link:not(:first-of-type):not(:last-of-type) {
+    @media (min-width: 1001px) {
+      margin-right: 1.5rem;
+      margin-left: 1.5rem;
+    }
   }
 
   &__icon {
