@@ -1,22 +1,25 @@
 {
   "unicorn": {
     "show": true,
+    "target": "_self",
     "title": "Unicorn Design System",
     "legend": "Screenshot of Unicorn Design System",
     "desc": "Atomic Design System built for Eventene products.",
-    "url": "https://unicorn.eventene.com/",
-    "action": "View Project"
+    "url": "/eventene",
+    "action": "See Details"
   },
   "eventene-web": {
     "show": true,
+    "target": "_blank",
     "title": "Eventene Web App",
     "legend": "Screenshot of Eventene Dashboard",
     "desc": "A revamped dashboard for event organizers.",
     "url": "https://app.eventene.com/",
-    "action": "View Project"
+    "action": "Open Page"
   },
   "eventene-app": {
     "show": true,
+    "target": "_blank",
     "title": "Eventene Mobile App",
     "legend": "Screenshot of Eventene App",
     "desc": "A complete redesign for both Android and iOS apps.",

@@ -1,0 +1,24 @@
+.project {
+  max-width: 1440px;
+  padding: 4.5rem 1.5rem 4rem;
+
+  &,
+  &__block {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  &__block {
+    width: 66.6%;
+  }
+
+  &__block,
+  &__image {
+    margin-bottom: 65px;
+  }
+
+  &__headline {
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,89 @@
+main.project(role="main")
+  img.project__image(src="../assets/project-eventene-cover.png", alt="Eventene Project Cover")
+  .project__block
+    h2.project__headline Scaling Design at Eventene
+    h5 Nov 2018 ~ Jul 2021
+  .project__block
+    h3 Goals
+    ul
+      li
+        p Improve the connection between the brand and products.
+      li
+        p Create a nice handoff among design and development.
+      li
+        p Organize and document every single UI element.
+  .project__block
+    h3 Context
+    p
+      a(href="https://eventene.com" target="_blank" rel="noopener" aria-label="Eventene Home Page") Eventene
+      | #{''} is an event management system for creating, organizing and running events in a single platform.
+    p It was a startup with 5 team members (at the time) looking for their space in the business.
+    p As a full remote team we had our weekly calls and additional design meetings to discuss what’s working or not.
+    p Since we were small, to prioritize things the CEO talked to customers and gave us their feedback about the current product and new things coming.
+  img.project__image(src="../assets/project-eventene-context.png", alt="Eventene CEO and Matheus in a meeting")
+  .project__block
+    h3 The Problem
+    p Their product was amazing, it had a lot of features but some of them were hard to discover and implement.
+    p Part of that is beacuse the company didn’t know any Design Principles. So I had a very long journey from throwing everything away and starting over.
+    p To begin the process I had to perform a small branding update, bringing modern color shades and applying gradients to stand out a bit more and giving a fresh look to the product.
+  img.project__image(src="../assets/project-eventene-colors.png", alt="Old and New Eventene Colors")
+  .project__block
+    h3 Foundation
+    p Internally each Eventene application has an animal codename. So Bobcat stands to the main app since it’s robust and the bigger one, Falcon goes to the mobile app because it’s small and fast and Unicorn is the best to describe the design elements for being a lengedary creature and its relationship to fantasy.
+    p
+      | As a solution we aimed at the #{''}
+      a(href="https://atomicdesign.bradfrost.com/table-of-contents/" target="_blank" rel="noopener" aria-label="Atomic Design Ebook") Atomic Design
+      | #{''} methodology which consists of creating the UI components from basic to complex, comparing to chemistry.
+  img.project__image(src="../assets/project-eventene-atomic-default.png", alt="Default Atomic Design Model")
+  .project__block
+    p In our model we had a slight difference through the steps, keeping the pages as templates so wireframes are only visible for designers, that way we could remove the friction for developers.
+    p We also created a closer language by using the unicorn paradigm so the team can find which piece of the animal is missing associating that with the UI component.
+  img.project__image(src="../assets/project-eventene-atomic-unicorn.png", alt="Unicorn's Atomic Design Model")
+  .project__block
+    p Having that in mind we decided to use Figma to create the basic variation of each atomic level and then document and specify them in a static page.
+    p Another reason to do that is to see all components behaving properly, since design tools are limited and not 100% responsive.
+  img.project__image(src="../assets/project-eventene-figma.png", alt="Design Atoms on Figma")
+  .project__block
+    p
+      | To start organizing the pieces in a web page our main references were #{''}
+      a(href="https://patternlab.io/" target="_blank" rel="noopener" aria-label="Pattern Lab Home Page") Pattern Lab
+      | #{''} and #{''}
+      a(href="https://material.io/" target="_blank" rel="noopener" aria-label="Material Home Page") Material Design
+      | . We liked the way to demo and organize components, although we missed the ability to copy and paste the styles / markup and see them running afterwards, which is handy for developers.
+  img.project__image(src="../assets/project-eventene-references.png", alt="Design References")
+  .project__block
+    p So we created a Github page centralizing and documenting all the UI elements, assets and patterns. It’s also a static staging version of the main product so we can test and navigate through the template pages before importing in real data products.
+  img.project__image(src="../assets/project-eventene-home.png", alt="Unicorn Home Page")
+  .project__block
+    p To prioritize the components, we essentialy based on most used pages according to analytics. So we broke down the basic elements from each one and started to reuse over others.
+  img.project__image(src="../assets/project-eventene-details-page.png", alt="Unicorn Details Page")
+  .project__block
+    h3 Maintainability
+    p When it comes to code we know how hard it is to keep things organized as it scales so we had to apply a few methodologies to not be overwhelmed and run in sync with the designs.
+    p
+      | To organize files and folders we used #{''}
+      a(href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/" target="_blank" rel="noopener" aria-label="ITCSS Article") ITCSS
+      | #{''}. Basically you draw an inverted triangle and slice it by folders as layers from low-specificity selectors to more specific ones and from generic styles to explicit ones.
+  img.project__image(src="../assets/project-eventene-itcss.png", alt="Inverted Triangle Methodology")
+  .project__block
+    p
+      | Regarding the class names usage, we adopted #{''}
+      a(href="http://getbem.com/introduction/" target="_blank" rel="noopener" aria-label="BEM Documentation") BEM
+      | #{''} methodology and combining to #{''}
+      a(href="https://sass-lang.com/" target="_blank" rel="noopener" aria-label="Sass Documentation") Sass
+      | #{''} preprocessor it worked like a charm to find nested rules quickly.
+  img.project__image(src="../assets/project-eventene-bem.png", alt="Block Element Modifier Methodology")
+  .project__block
+    p To use these styles across all the products we created a Github package and each new version we simply add a tag number. So if for some reason a page breaks that can be quickly rolled back to the previous version.
+  img.project__image(src="../assets/project-eventene-github.png", alt="Github's Tag System")
+  .project__block
+    h3 Outcomes
+    ul
+      li
+        p The team increased their speed when developing new features.
+      li
+        p Reduced the learning curve for new developers by following the guidelines.
+      li
+        p Changed the number of inconsistent assets and elements to zero.
+    a(href="http://unicorn.eventene.com" target="_blank" rel="noopener" aria-label="Unicorn Home Page") Visit Page
+!= partial("templates/footer/_footer")
