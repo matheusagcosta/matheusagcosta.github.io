@@ -49,7 +49,8 @@
     color: $white;
   }
 
-  &__card:not(:first-of-type):not(:last-of-type) {
+  &__card:nth-child(3),
+  &__card:nth-child(4) {
     @media (min-width: 1001px) {
       margin-right: 1.5rem;
       margin-left: 1.5rem;
@@ -75,6 +76,7 @@
   }
 
   &__legend {
+    display: block;
     padding: 0 1rem 1.5rem;
   }
 
@@ -86,7 +88,7 @@
   &__button {
     background-color: var(--light-bg-color);
     font-size: .85rem;
-    margin: 1rem 1rem 1.5rem;
+    margin: 0 1rem 1.5rem;
     padding: .5rem .75rem;
     text-decoration: none;
     transition: color, background .25s ease-in-out;
