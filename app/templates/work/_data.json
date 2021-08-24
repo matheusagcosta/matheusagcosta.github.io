@@ -2,7 +2,7 @@
   "unicorn": {
     "show": true,
     "target": "_self",
-    "title": "Unicorn Design System",
+    "title": "Scaling Design at Eventene",
     "legend": "Screenshot of Unicorn Design System",
     "desc": "Atomic Design System built for Eventene products.",
     "url": "/eventene",
