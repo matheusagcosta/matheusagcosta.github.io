@@ -18,6 +18,7 @@
     }
   }
 
+  &__frame,
   &__block,
   &__image {
     @media screen and (min-width: 801px) {
@@ -26,6 +27,32 @@
     @media screen and (max-width: 800px) {
       margin-bottom: 30px;
     }
+  }
+
+  &__frame {
+    background-color: var(--light-bg-color);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+
+    img:not(.has-no-shadow) {
+      box-shadow: 0 0 5px rgba($black,.1);
+    }
+
+    & + & {
+      @media screen and (min-width: 801px) {
+        margin-top: -1.5rem;
+      }
+      @media screen and (max-width: 800px) {
+        margin-top: -.25rem;
+      }
+    }
+  }
+
+  &__frame--eventene {
+    background-color: var(--eventene-bg-color);
   }
 
   &__headline {
@@ -38,5 +65,13 @@
 
   &__text {
     font-size: 18px;
+  }
+
+  &__legend {
+    margin-top: 2rem;
+  }
+
+  &__legend:not(:last-of-type) {
+    margin-bottom: 2rem;
   }
 }
