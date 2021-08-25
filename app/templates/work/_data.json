@@ -1,6 +1,7 @@
 {
   "unicorn": {
     "show": true,
+    "case": true,
     "target": "_self",
     "title": "Scaling Design at Eventene",
     "legend": "Screenshot of Unicorn Design System",
@@ -10,6 +11,7 @@
   },
   "eventene-web": {
     "show": true,
+    "case": false,
     "target": "_blank",
     "title": "Eventene Web App",
     "legend": "Screenshot of Eventene Dashboard",
@@ -19,6 +21,7 @@
   },
   "eventene-app": {
     "show": true,
+    "case": false,
     "target": "_blank",
     "title": "Eventene Mobile App",
     "legend": "Screenshot of Eventene App",
@@ -28,6 +31,7 @@
   },
   "biosinergia": {
     "show": false,
+    "case": false,
     "title": "Biosinergia Landing Page",
     "legend": "Screenshot of Biosinergia Homepage",
     "desc": "Website made for a composting company exploring illustrations and animations.",
@@ -36,6 +40,7 @@
   },
   "taina": {
     "show": false,
+    "case": false,
     "title": "Tainá's Website",
     "legend": "Screenshot of Tainá Homepage",
     "desc": "New website version of an architect / researcher following a minimalist concept.",
@@ -44,6 +49,7 @@
   },
   "aceitacafe": {
     "show": false,
+    "case": false,
     "title": "Aceita Café Landing Page",
     "legend": "Screenshot of Aceita Café Homepage",
     "desc": "Website made for a coffee store showcasing their products, services and photos.",
@@ -52,6 +58,7 @@
   },
   "fintechdev": {
     "show": false,
+    "case": false,
     "title": "Fintechdev Design System",
     "legend": "Screenshot of Fintechdev Design System",
     "desc": "Components library made for a merchant dashboard.",

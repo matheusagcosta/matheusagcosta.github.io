@@ -75,9 +75,14 @@
     transition: color .175s linear;
   }
 
+  &__alert,
   &__legend {
     display: block;
     padding: 0 1rem 1.5rem;
+  }
+
+  &__alert {
+    font-style: italic;
   }
 
   &__link,
