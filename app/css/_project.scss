@@ -18,6 +18,7 @@
     }
   }
 
+  &__cover,
   &__frame,
   &__block,
   &__image {
@@ -29,8 +30,16 @@
     }
   }
 
+  &__cover {
+    padding: 1.5rem;
+  }
+
+  &__cover,
   &__frame {
     background-color: var(--light-bg-color);
+  }
+
+  &__frame {
     align-items: center;
     display: flex;
     flex-direction: column;
