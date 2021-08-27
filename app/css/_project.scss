@@ -83,4 +83,8 @@
   &__legend:not(:last-of-type) {
     margin-bottom: 2rem;
   }
+
+  &__list {
+    margin: 0;
+  }
 }
