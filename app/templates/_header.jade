@@ -13,9 +13,9 @@ header.header(role="banner")
       a.header__toggle(href="#contrast-on" aria-label="Dark")
       a.header__toggle(href="#contrast-off" aria-label="Light")
       span.header__button
-    if current.source != 'eventene'
-      nav.header__menu
-        a.header__link.is-light-visible(href="/cv" aria-label="Link to my Resume" class="#{ current.source == 'cv' ? 'is-active' : '' }") Resume
-        a.header__link.is-dark-visible(href="/cv#contrast-on" aria-label="Link to my Resume" class="#{ current.source == 'cv' ? 'is-active' : '' }") Resume
-        a.header__link.is-light-visible(href="/" aria-label="Link to Home" class="#{ current.source == 'index' ? 'is-active' : '' }") Home
-        a.header__link.is-dark-visible(href="/#contrast-on" aria-label="Link to Home" class="#{ current.source == 'index' ? 'is-active' : '' }") Home
+    //- if current.source != 'eventene'
+    //-   nav.header__menu
+    //-     a.header__link.is-light-visible(href="/cv" aria-label="Link to my Resume" class="#{ current.source == 'cv' ? 'is-active' : '' }") Resume
+    //-     a.header__link.is-dark-visible(href="/cv#contrast-on" aria-label="Link to my Resume" class="#{ current.source == 'cv' ? 'is-active' : '' }") Resume
+    //-     a.header__link.is-light-visible(href="/" aria-label="Link to Home" class="#{ current.source == 'index' ? 'is-active' : '' }") Home
+    //-     a.header__link.is-dark-visible(href="/#contrast-on" aria-label="Link to Home" class="#{ current.source == 'index' ? 'is-active' : '' }") Home
