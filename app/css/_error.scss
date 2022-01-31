@@ -36,8 +36,8 @@
     content: '';
     animation: blob infinite 2s linear, rotation infinite 5s linear;
     background-color: var(--light-bg-color);
-    height: calc(100% + 4rem);
-    width: calc(100% + 4rem);
+    height: 300px;
+    width: 300px;
     z-index: -1;
   }
 
