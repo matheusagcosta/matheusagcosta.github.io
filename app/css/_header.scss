@@ -54,10 +54,8 @@
 
   &__link {
     color: $salmon;
-    height: 30px;
     padding: 0 .45rem;
     position: relative;
-    text-decoration: none;
     transition: opacity .25s linear;
   }
 
@@ -65,30 +63,10 @@
     opacity: .85;
   }
 
-  &__link::before {
-    background-color: $salmon;
-    border-radius: 25px;
-    bottom: 0;
-    content: '';
-    height: 3px;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    width: 15px;
-    transition: background, opacity .25s linear;
-  }
-
-  &__link:not(.is-active)::before {
-    opacity: 0;
-  }
-
-  &__link:not(.is-active):hover::before {
-    opacity: .4;
-  }
-
-  &__link.is-active::before {
-    opacity: 1;
+  &__link.is-active {
+    color: var(--main-text-color);
+    pointer-events: none;
+    text-decoration: none;
   }
 
   &__toggle {

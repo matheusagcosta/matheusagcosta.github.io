@@ -26,17 +26,23 @@
   &__card {
     align-items: flex-start;
     border-bottom: 8px solid $salmon;
+    border-radius: 10px 10px 0 0;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
-    margin-top: 1rem;
+    overflow: hidden;
     text-align: left;
     text-decoration: none;
     transition: box-shadow .175s linear;
 
     @media (min-width: 1001px) {
+      margin-top: 2rem;
       width: calc(100% / 3);
+    }
+
+    @media (max-width: 1000px) {
+      margin-top: 1rem;
     }
   }
 
