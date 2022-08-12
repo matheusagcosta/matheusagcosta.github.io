@@ -9,8 +9,18 @@
     "url": "/eventene",
     "action": "See Details"
   },
-  "eventene-web": {
+  "camelias": {
     "show": true,
+    "case": true,
+    "target": "_self",
+    "title": "Connecting Residents at Camelias",
+    "legend": "Screenshot of Camelias Dashboard",
+    "desc": "Provide a digital solution for service providers.",
+    "url": "/camelias",
+    "action": "See Details"
+  },
+  "eventene-web": {
+    "show": false,
     "case": false,
     "target": "_blank",
     "title": "Eventene Web App",

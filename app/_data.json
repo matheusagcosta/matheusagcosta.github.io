@@ -1,7 +1,7 @@
 {
   "cv": {
     "title": "Matheus Costa • Resume",
-    "description": "This is Matheus's resume. You can either check online or download the pdf version"
+    "description": "This is the responsive view of my resume"
   },
   "404": {
     "title": "Matheus Costa • Not Found"
@@ -9,5 +9,9 @@
   "eventene": {
     "title": "Matheus Costa • Eventene",
     "description": "Scaling Design at Eventene"
+  },
+  "camelias": {
+    "title": "Matheus Costa • Camelias",
+    "description": "Connecting Residents at Camelias"
   }
 }

@@ -1,0 +1,185 @@
+main.project(role="main")
+  .project__cover
+    img.has-no-shadow(src="../assets/camelias/project-camelias-cover.jpg", alt="Camelias Project Cover")
+  .project__block
+    h2.project__headline Connecting Residents at Camelias
+    h5 Aug 2019 ~ Apr 2020
+  .project__block
+    h3.project__subheading
+      | Goals
+    ul.project__list
+      li
+        p.project__text
+          | Provide a digital alternative to replace the manual paper print process.
+      li
+        p.project__text
+          | Build a zero-cost project for service providers.
+      li
+        p.project__text
+          | Automate data collection to avoid bottlenecks.
+      //- li
+        p.project__text
+          | Do mentoring sessions
+  .project__block
+    h3.project__subheading
+      | Context
+    p.project__text
+      | Camelias is the given name of a condo where I used to live.
+    p.project__text
+      | It has 48 buildings, 16 apartments each, with around 2000 people living there, and at the time, 10% of the residents were service providers.
+  img.project__image(src="../assets/camelias/project-camelias-context.jpg", alt="Camelias condo")
+  .project__block
+    h3.project__subheading
+      | Opportunity
+    p.project__text
+      | People weren’t very close, so they didn’t know there were some service providers they could request.
+    p.project__text
+      | When they needed a plumber, for example, the first thing to do was to search on Google and wait for someone that sometimes could take several hours to be there and do the job.
+    p.project__text
+      | As a remedy, one resident created a Whatsapp group and started to list the name, number, and the services the residents provided in the condo so based on that the receivers in the group could see who could potentially solve their problems nearby.
+  .project__frame.project__frame--eventene
+    img.has-no-shadow(src="../assets/camelias/project-camelias-print.png", alt="One of their printed lists")
+    legend.project__legend
+      | Printed list
+  .project__block
+    p.project__text
+      | Considering the fact they didn’t have a budget to build something robust, that worked, but they still had to deal with a difficult process:
+    ol
+      li
+        p.project__text
+          | Add all the info in an Excel spreadsheet.
+      li
+        p.project__text
+          | Print that spreadsheet.
+      li
+        p.project__text
+          | Take a photo of the paper.
+      li
+        p.project__text
+          | Share the photo on Whatsapp group.
+      li
+        p.project__text
+          | Redo all the steps above for every new person to be included.
+  .project__block
+    h3.project__subheading
+      | Discovery
+    p.project__text
+      | Seeing that, I started to interview some residents and ask for pain points and requests in a way this could be improved. So they told me things like:
+    ul
+      li
+        p.project__text
+          | Having too many outdated images.
+      li
+        p.project__text
+          | Phone storage was often full due to the size of the photos.
+      li
+        p.project__text
+          | It’s hard to scan the information.
+      li
+        p.project__text
+          | There’s no way to search.
+      li
+        p.project__text
+          | The owner’s availability to update the requests is not ideal.
+      li
+        p.project__text
+          | It would be nice to see more details, such as a website or social media.
+  .project__block
+    p.project__text
+      | I also identified the following data when speaking to the audience:
+    ul
+      li
+        p.project__text
+          | 82% of the service providers aged 24-30
+      li
+        p.project__text
+          | 69% of service receivers aged 53-65
+      li
+        p.project__text
+          | 76% of the residents were using mobile devices
+      li
+        p.project__text
+          | Their preferred and most used website: Google
+  .project__block
+    h3.project__subheading
+      | References
+    p.project__text
+      | I’ve explored many alternatives, searching for something that made sense to their context and a UI that could reflect on their expectations.
+  .project__frame
+    img.has-no-shadow(src="../assets/camelias/project-camelias-references.png", alt="Design References")
+    legend.project__legend
+      | UI references
+  .project__block
+    h3.project__subheading
+      | Prototyping
+    p.project__text
+      | Then I created simple prototypes to see it in action and get feedback from users.
+    p.project__text
+      | The concept was a page to list the available people with cards, an action button at the top to open a modal where they can fill their info and send, and a fixed search bar.
+  .project__frame
+    img.has-no-shadow(src="../assets/camelias/project-camelias-wireframes.png", alt="Wireframes")
+    legend.project__legend
+      | Wireframes
+  .project__block
+    p.project__text
+      | The users approved the concept, so we were able to come up with the final designs.
+    p.project__text
+      | Each card can show up to 3 tags containing the services the person can provide and an action row where is placed their phone to call, Whatsapp to send a message, and a website link.
+  .project__frame
+    img.has-no-shadow(src="../assets/camelias/project-camelias-mockups-home.png", alt="Home Page")
+    legend.project__legend
+      | Home Page
+  .project__block
+    p.project__text
+      | The modal for adding new services is composed of the fields: name, services, phone number, and link.
+    p.project__text
+      | We also added two required fields to the building and apartment numbers, so we can avoid spammers and people that don’t live there.
+  .project__frame
+    img.has-no-shadow(src="../assets/camelias/project-camelias-mockups-modal.png", alt="Modal")
+    legend.project__legend
+      | Modal
+  .project__block
+    p.project__text
+      | The off-canvas menu is being used to display some helpful information about the condo, like gate numbers, management, postal office, and billing.
+  .project__frame
+    img.has-no-shadow(src="../assets/camelias/project-camelias-mockups-menu.png", alt="Off-canvas menu")
+    legend.project__legend
+      | Off-canvas menu
+  .project__block
+    h3.project__subheading
+      | Implementing
+    p.project__text
+      | The first step was to improve the Excel file, so we moved to Google Sheets to keep in the cloud, and several people could edit together, removing friction.
+    p.project__text
+      | We also added a new column for the websites and adopted the tag concept for the services.
+  .project__frame.project__frame--eventene
+    img.has-no-shadow(src="../assets/camelias/project-camelias-spreadsheet.png", alt="Updated Spreadsheet")
+    legend.project__legend
+      | Updated Spreadsheet
+  .project__block
+    p.project__text
+      | Next, we automated the requests with Zapier, so on every form submission on the website, we create a new issue on Github so one of the admins must review and approve it, then the spreadsheet and the website could be both updated with new data.
+  .project__frame.project__frame--eventene
+    img.has-no-shadow(src="../assets/camelias/project-camelias-automating.png", alt="Zapier Automation")
+    legend.project__legend
+      | Zapier Automation
+  .project__block
+    h3.project__subheading
+      | Outcomes
+    p.project__text
+      | Here are some highlights after some months of usage:
+    ul.project__list
+      li
+        p.project__text
+          | More than 20 requests on Github.
+      li
+        p.project__text
+          | Around 26 active users.
+      li
+        p.project__text
+          | More than 900 accesses.
+      li
+        p.project__text
+          | No more issues about outdated info or storage almost full.
+    a(href="https://camelias-residencial.github.io/produtos-servicos/" target="_blank" rel="noopener" aria-label="Camelias Home Page") Visit Page
+!= partial("templates/footer/_footer")
