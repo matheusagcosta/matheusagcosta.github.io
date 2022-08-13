@@ -15,9 +15,29 @@
     "target": "_self",
     "title": "Connecting Residents at Camelias",
     "legend": "Screenshot of Camelias Dashboard",
-    "desc": "Provide a digital solution for service providers.",
+    "desc": "Provide a digital solution for nearby service providers.",
     "url": "/camelias",
     "action": "See Details"
+  },
+  "rockford": {
+    "show": true,
+    "case": false,
+    "target": "_blank",
+    "title": "Enhancing Data Visualization at RF",
+    "legend": "Screenshot of RF Dashboard",
+    "desc": "Create a better user experience for their customers.",
+    "url": "https://db.rockfordcorp.com/",
+    "action": "Visit Site"
+  },
+  "eventene-app": {
+    "show": false,
+    "case": false,
+    "target": "_blank",
+    "title": "Eventene Mobile App",
+    "legend": "Screenshot of Eventene App",
+    "desc": "A complete redesign for both Android and iOS platforms.",
+    "url": "https://play.google.com/store/apps/details?id=com.eventene.bobcatmobile",
+    "action": "Download App"
   },
   "eventene-web": {
     "show": false,
@@ -28,16 +48,6 @@
     "desc": "A revamped dashboard for event organizers.",
     "url": "https://app.eventene.com/",
     "action": "Open Page"
-  },
-  "eventene-app": {
-    "show": true,
-    "case": false,
-    "target": "_blank",
-    "title": "Eventene Mobile App",
-    "legend": "Screenshot of Eventene App",
-    "desc": "A complete redesign for both Android and iOS apps.",
-    "url": "https://play.google.com/store/apps/details?id=com.eventene.bobcatmobile",
-    "action": "Download App"
   },
   "biosinergia": {
     "show": false,
@@ -73,6 +83,6 @@
     "legend": "Screenshot of Fintechdev Design System",
     "desc": "Components library made for a merchant dashboard.",
     "url": "https://fintechdev.github.io/x2-ui/",
-    "action": "View Project"
+    "action": "Visit Site"
   }
 }

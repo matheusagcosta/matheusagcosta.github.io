@@ -10,6 +10,7 @@
 
   &__nav {
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     max-width: 1440px;
 
@@ -38,7 +39,7 @@
 
     @media (min-width: 1001px) {
       margin-top: 2rem;
-      width: calc(100% / 3);
+      width: calc(100% / 3 - 1rem);
     }
 
     @media (max-width: 1000px) {
@@ -55,8 +56,16 @@
     color: $white;
   }
 
+  &__card:hover .work__icon {
+    fill: $white;
+  }
+
   &__card:nth-child(3),
-  &__card:nth-child(4) {
+  &__card:nth-child(4),
+  &__card:nth-child(8),
+  &__card:nth-child(9),
+  &__card:nth-child(14),
+  &__card:nth-child(15) {
     @media (min-width: 1001px) {
       margin-right: 1.5rem;
       margin-left: 1.5rem;
@@ -98,6 +107,7 @@
 
   &__button {
     background-color: var(--light-bg-color);
+    display: flex;
     font-size: .85rem;
     margin: 0 1rem 1.5rem;
     padding: .5rem .75rem;
@@ -118,5 +128,10 @@
       transform-origin: center;
       width: 100%;
     }
+  }
+
+  &__icon {
+    max-width: 16px;
+    margin-left: 5px;
   }
 }
