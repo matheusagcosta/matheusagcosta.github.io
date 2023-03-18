@@ -11,15 +11,15 @@
     min-height: 180px;
   }
 
-  &__header::before {
-    background: $salmon;
-    content: '';
-    height: 308px;
-    left: 1.5rem;
-    position: absolute;
-    width: calc(100% - 3rem);
-    z-index: -1;
-  }
+  // &__header::before {
+  //   background: $salmon;
+  //   content: '';
+  //   height: 308px;
+  //   left: 1.5rem;
+  //   position: absolute;
+  //   width: calc(100% - 3rem);
+  //   z-index: -1;
+  // }
 
   &__avatar {
     max-width: 422px;
@@ -37,7 +37,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 7rem 1.5rem 1.5rem;
+    padding: 1.5rem;
   }
 
   &__headline * {
@@ -59,12 +59,13 @@
   &__subheading {
     font-weight: normal;
     font-size: 1.25rem;
+    margin: 0;
   }
 
   &__content {
     display: flex;
     flex-wrap: wrap;
-    padding: 7.5rem 1.5rem 1.5rem;
+    padding: 1.5rem;
 
     @media screen and (max-width: 816px) {
       padding-top: 2.5rem;
