@@ -9,3 +9,5 @@ Thumbs.db
 public
 *.log
 .vscode/
+
+node_modules
