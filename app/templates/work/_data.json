@@ -1,4 +1,14 @@
 {
+  "hs": {
+    "show": true,
+    "case": true,
+    "target": "_self",
+    "title": "Enhancing Employee Management at HS",
+    "legend": "Screenshot of HS Members",
+    "desc": "Help customers leverage their members' information.",
+    "url": "/hs",
+    "action": "See Details"
+  },
   "unicorn": {
     "show": true,
     "case": true,
@@ -20,7 +30,7 @@
     "action": "See Details"
   },
   "rockford": {
-    "show": true,
+    "show": false,
     "case": false,
     "target": "_blank",
     "title": "Enhancing Data Visualization at RF",
