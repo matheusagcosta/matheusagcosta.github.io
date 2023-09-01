@@ -6,8 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "harp server app & browser-sync start --no-open --proxy 'localhost:9000' --files '**/*.jade, **/*.scss, **/*.json, **/*.js, **/*.md' --no-notify",
-    "build": "harp compile app docs && echo matheusagcosta.com >> docs/CNAME",
-    "deploy": "git push origin develop && git subtree push --prefix docs origin master"
+    "build": "harp compile app docs && echo matheusagcosta.com >> docs/CNAME"
   },
   "devDependencies": {
     "browser-sync": "^2.27.1",
