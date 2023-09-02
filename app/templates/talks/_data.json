@@ -1,29 +1,57 @@
 {
+  "calendly": {
+    "title": "Mentorship",
+    "event": "Calendly",
+    "date": "2023",
+    "link": "Calendly",
+    "url": "https://calendly.com/matheusagcosta/one-on-one?back=1&month=2023-09"
+  },
+  "design-system": {
+    "title": "Design System",
+    "event": "HiTech Podcast",
+    "date": "2023",
+    "link": "Spotify",
+    "url": "https://open.spotify.com/episode/5R9MGsykxbUjqpMR51C8FA?si=118edbaa9f82404e"
+  },
+  "unsplash": {
+    "title": "Free Photos",
+    "event": "Unsplash",
+    "date": "2021",
+    "link": "Unsplash",
+    "url": "https://unsplash.com/@matheusagcosta"
+  },
   "home-office": {
     "title": "Home Office",
     "event": "DevTalks Bauru",
-    "date": "March 22, 2018",
+    "date": "2018",
     "link": "Slides",
     "url": "https://docs.google.com/presentation/d/e/2PACX-1vTYFkCaXtMgDIHXCmWiCVjNH33oPjWM2lhNcQQZkc86Nv853u_ImpCNoacdI6M6jIRgmgOrJB-c-JQ3/pub?start=false&loop=false&delayms=3000#slide=id.p"
+  },
+  "hackathon": {
+    "title": "Hackathon",
+    "event": "DevTalks Podcast",
+    "date": "2018",
+    "link": "Github",
+    "url": "https://devtalksbauru.github.io/podcasts/02"
   },
   "atomic-design": {
     "title": "Atomic Design",
     "event": "DevTalks Bauru",
-    "date": "July 06, 2017",
+    "date": "2017",
     "link": "Slides",
     "url": "https://speakerdeck.com/matheusagcosta/back-end-and-front-end-em-harmonia-com-atomic-design"
   },
   "remote-culture": {
     "title": "Remote Culture",
     "event": "DevCamp",
-    "date": "May 13, 2016",
+    "date": "2016",
     "link": "Video",
     "url": "https://www.infoq.com/br/presentations/to-remoto-ta-tranquilo-ta-favoravel"
   },
   "less-stylus-sass": {
     "title": "Less, Stylus or Sass",
-    "event": "TheDevConfBR / RubyconfBR",
-    "date": "September 18, 2015",
+    "event": "TheDevConfBR",
+    "date": "2015",
     "link": "Slides",
     "url": "https://slideshare.net/tdc-globalcode/pra-mim-tanto-faz-se-less-stylus-ou-sass-53384931?qid=0704d88f-c1d0-47f5-902f-d356175bd137&v=&b=&from_search=1"
   }

@@ -1,18 +1,12 @@
 section#talks.talks
-  picture.talks__image
-    source(srcset="../assets/image-speaking.webp", type="image/webp")
-    source(srcset="../assets/image-speaking.png", type="image/png")
-    img(src="../assets/image-speaking.png", alt="Photo of Matheus Speaking at DevCamp", width="854", height="1112")
+  //- picture.talks__image
+  //-   source(srcset="../assets/image-speaking.webp", type="image/webp")
+  //-   source(srcset="../assets/image-speaking.png", type="image/png")
+  //-   img(src="../assets/image-speaking.png", alt="Photo of Matheus Speaking at DevCamp", width="854", height="1112")
   .talks__info
-    h2 Speaking
-    p
-      | I love to share knowledge, so frequently I prepare talks to speak at technology events.
-      br
-      | You can find more details about my presentations below.
+    h2 Talks & Side Projects
     each talks, slug in public.templates.talks._data
       .talks__item
         h3.talks__headline
-          span #{ talks.title }
-          |  -  #{''}
-          a.talks__link(href="#{ talks.url }" target="_blank" rel="noopener" aria-label="#{ talks.title }") #{ talks.link }
-        small.talks__legend #{ talks.event } - #{ talks.date }
+          a.talks__link(href="#{ talks.url }" target="_blank" rel="noopener" aria-label="#{ talks.title }") #{ talks.title }
+        small.talks__legend #{ talks.event }, #{ talks.date }
