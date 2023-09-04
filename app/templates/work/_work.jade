@@ -1,6 +1,7 @@
 section#work.work
-  h2 Selected Projects
-  p.work__text Notable work and contributions
+  .work__info
+    h2 Selected Projects
+    p.work__text Notable work and contributions
   nav#drag.work__nav
     each work, slug in public.templates.work._data
       if work.show == true

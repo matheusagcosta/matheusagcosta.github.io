@@ -37,6 +37,10 @@
     justify-content: space-between;
   }
 
+  &__item:first-of-type {
+    margin-top: 1rem;
+  }
+
   &__item:not(:first-of-type) {
     margin-top: 1rem;
     padding-top: 1rem;
@@ -53,5 +57,7 @@
 
   &__legend {
     color: $gray;
+    margin-left: 1rem;
+    text-align: right;
   }
 }

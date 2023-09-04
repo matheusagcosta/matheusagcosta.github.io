@@ -1,6 +1,7 @@
 .footer {
   @extend %box;
   background-color: $salmon;
+  margin: 0;
 
   *:not(a) {
     color: $white;

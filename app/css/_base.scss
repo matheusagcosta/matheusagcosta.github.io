@@ -67,7 +67,7 @@ a {
     color: var(--main-link-color);
   }
 
-  &:hover {
+  &:not(:hover) {
     text-decoration: none;
   }
 

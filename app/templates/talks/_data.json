@@ -1,13 +1,13 @@
 {
   "calendly": {
-    "title": "Mentorship",
+    "title": "Free Mentorship",
     "event": "Calendly",
     "date": "2023",
     "link": "Calendly",
     "url": "https://calendly.com/matheusagcosta/one-on-one?back=1&month=2023-09"
   },
   "design-system": {
-    "title": "Design System",
+    "title": "Dev + Design System",
     "event": "HiTech Podcast",
     "date": "2023",
     "link": "Spotify",
@@ -21,21 +21,21 @@
     "url": "https://unsplash.com/@matheusagcosta"
   },
   "home-office": {
-    "title": "Home Office",
+    "title": "Home Office: Are you ready?",
     "event": "DevTalks Bauru",
     "date": "2018",
     "link": "Slides",
     "url": "https://docs.google.com/presentation/d/e/2PACX-1vTYFkCaXtMgDIHXCmWiCVjNH33oPjWM2lhNcQQZkc86Nv853u_ImpCNoacdI6M6jIRgmgOrJB-c-JQ3/pub?start=false&loop=false&delayms=3000#slide=id.p"
   },
   "hackathon": {
-    "title": "Hackathon",
+    "title": "How to Hackathon",
     "event": "DevTalks Podcast",
     "date": "2018",
     "link": "Github",
     "url": "https://devtalksbauru.github.io/podcasts/02"
   },
   "atomic-design": {
-    "title": "Atomic Design",
+    "title": "Atomic Design Harmony",
     "event": "DevTalks Bauru",
     "date": "2017",
     "link": "Slides",

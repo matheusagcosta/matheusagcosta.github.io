@@ -9,11 +9,15 @@
     text-align: left;
   }
 
+  &__info,
+  &__nav {
+    margin: auto;
+    max-width: 1440px;
+  }
+
   &__nav {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-    max-width: 1440px;
 
     @media (max-width: 1000px) {
       flex-direction: column;
