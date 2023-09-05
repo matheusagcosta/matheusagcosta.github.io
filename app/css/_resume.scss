@@ -90,6 +90,10 @@
     margin-top: 2rem;
   }
 
+  &__block p:not(:last-of-type) {
+    margin-bottom: .25rem;
+  }
+
   &__block:last-of-type {
     margin-bottom: 2rem;
   }
