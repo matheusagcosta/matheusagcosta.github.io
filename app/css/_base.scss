@@ -65,9 +65,6 @@ a {
   &:active,
   &:visited {
     color: var(--main-link-color);
-  }
-
-  &:not(:hover) {
     text-decoration: none;
   }
 

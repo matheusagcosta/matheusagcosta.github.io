@@ -1,6 +1,6 @@
 .footer {
   @extend %box;
-  background-color: $salmon;
+  background-color: $mine;
   margin: 0;
 
   *:not(a) {
@@ -13,9 +13,17 @@
     justify-content: center;
   }
 
+  &__link {
+    font-weight: bold;
+  }
+
   &__link,
   &__link:hover {
-    color: $mine;
+    color: $white;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
   }
 
   &__button {

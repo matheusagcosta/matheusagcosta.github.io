@@ -8,23 +8,21 @@
     }
   }
 
-  &__info,
-  &__desc {
-    height: 100%;
-    width: 100%;
-  }
-
   &__info {
     margin: auto;
     max-width: 1440px;
-    padding: 4.5rem 1.5rem 4rem;
+    padding: 4.5rem 1.5rem 0;
+    position: relative;
   }
 
   &__desc {
 
-    @media screen and (max-width: 800px) {
-      display: flex;
-      flex-direction: column-reverse;
+    @media screen and (min-width: 1025px) {
+      max-width: 45%;
+    }
+
+    @media screen and (max-width: 1024px) {
+
     }
   }
 
@@ -53,7 +51,11 @@
   }
 
   &__link {
-    color: $salmon;
+    font-weight: bold;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
   }
 
   &__helper {
@@ -61,11 +63,11 @@
     position: relative;
 
     @media screen and (min-width: 801px) {
-      margin-top: 3rem;
+      margin: 3rem 0;
     }
 
     @media screen and (max-width: 800px) {
-      margin-top: 1rem;
+      margin: 1rem 0;
     }
   }
 
@@ -99,19 +101,26 @@
   &__photo,
   &__picture {
     @media screen and (min-width: 801px) {
-      float: right;
+      position: relative;
     }
   }
 
   &__photo {
-    margin-bottom: .5rem;
-    position: relative;
 
-    @media screen and (min-width: 801px) {
-      margin-left: 2rem;
-      max-width: 700px;
-      min-width: 320px;
+    @media screen and (min-width: 1025px) {
+      max-width: 100%;
+      min-height: 100%;
+      min-width: 890px;
+      mix-blend-mode: multiply;
+      position: absolute;
+      right: -10%;
+      top: 0;
       width: 45%;
+      z-index: -1;
+    }
+
+    @media screen and (max-width: 1024px) {
+      display: none;
     }
   }
 
@@ -119,26 +128,16 @@
     // background: linear-gradient(to top, $salmon 0%,$salmon 50%,transparent 50%,transparent 100%);
     display: block;
     margin: auto;
-    padding-bottom: 1rem;
-    padding-top: 3rem;
-    padding-left: 6%;
     position: relative;
     z-index: 1;
 
-    @media screen and (max-width: 800px) {
-      padding-right: 6%;
-    }
+    // @media screen and (max-width: 1000px) {
+    //   opacity: .25;
+    // }
   }
 
   &__picture {
-    border-radius: 0 50px 0 0;
-
-    @media screen and (min-width: 801px) {
-      width: 90%;
-    }
-    @media screen and (max-width: 800px) {
-      width: 100%;
-    }
+    width: 100%;
   }
 
   &__emoji {

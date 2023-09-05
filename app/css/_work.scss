@@ -16,48 +16,39 @@
   }
 
   &__title {
-    margin-bottom: .5rem;
+    margin-bottom: 1.5rem;
   }
 
   &__nav {
     display: flex;
-    flex-wrap: wrap;
-
-    @media (max-width: 1000px) {
-      flex-direction: column;
-    }
+    flex-direction: column;
   }
 
-  &__card,
-  &__image {
+  &__details {
     background-color: var(--main-bg-color);
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+
+    @media (min-width: 1001px) {
+      height: 100%;
+      right: 0;
+      max-width: calc(100% - 400px);
+    }
   }
 
   &__card {
     align-items: flex-start;
-    border-bottom: 8px solid $salmon;
-    border-radius: 10px 10px 0 0;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
+    margin-top: 1rem;
     overflow: hidden;
+    position: relative;
     text-align: left;
     text-decoration: none;
-    transition: box-shadow .175s linear;
-
-    @media (min-width: 1001px) {
-      margin-top: 2rem;
-      width: calc(100% / 3 - 1rem);
-    }
-
-    @media (max-width: 1000px) {
-      margin-top: 1rem;
-    }
-  }
-
-  &__card:hover {
-    box-shadow: 1px 1px 10px rgba($black,.5);
+    transition: opacity .175s linear;
   }
 
   &__card:hover .work__button {
@@ -67,18 +58,6 @@
 
   &__card:hover .work__icon {
     fill: $white;
-  }
-
-  &__card:nth-child(3),
-  &__card:nth-child(4),
-  &__card:nth-child(8),
-  &__card:nth-child(9),
-  &__card:nth-child(14),
-  &__card:nth-child(15) {
-    @media (min-width: 1001px) {
-      margin-right: 1.5rem;
-      margin-left: 1.5rem;
-    }
   }
 
   &__headline,
@@ -95,14 +74,26 @@
 
   &__headline {
     margin-bottom: .5rem;
-    padding: 1.5rem 1rem 0;
+    padding: 1.5rem 1.5rem 0;
     transition: color .175s linear;
+
+    @media (min-width: 1001px) {
+      font-size: 1.75rem;
+    }
+
+    @media (max-width: 1000px) {
+      font-size: 1.2rem;
+    }
   }
 
   &__alert,
   &__legend {
     display: block;
-    padding: 0 1rem 1.5rem;
+    padding: 0 1.5rem 1.5rem;
+  }
+
+  &__legend {
+    font-size: 1.2rem;
   }
 
   &__alert {
@@ -116,12 +107,20 @@
 
   &__button {
     background-color: var(--light-bg-color);
-    display: flex;
-    font-size: .85rem;
-    margin: 0 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 1.5rem 1.5rem;
     padding: .5rem .75rem;
     text-decoration: none;
     transition: color, background .25s ease-in-out;
+
+    @media (min-width: 1001px) {
+      display: flex;
+    }
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
   }
 
   &__image {
@@ -136,6 +135,11 @@
       transition: filter .25s ease-in-out;
       transform-origin: center;
       width: 100%;
+
+      @media (min-width: 1001px) {
+        display: block;
+        max-width: 400px;
+      }
     }
   }
 

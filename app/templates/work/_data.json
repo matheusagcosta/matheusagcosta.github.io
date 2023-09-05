@@ -7,7 +7,7 @@
     "legend": "Screenshot of HS Members",
     "desc": "Help customers leverage their members' information.",
     "url": "/hs",
-    "action": "See Details"
+    "action": "Read More"
   },
   "unicorn": {
     "show": true,
@@ -17,7 +17,7 @@
     "legend": "Screenshot of Unicorn Design System",
     "desc": "Develop a common language to align the products.",
     "url": "/eventene",
-    "action": "See Details"
+    "action": "Read More"
   },
   "camelias": {
     "show": true,
@@ -25,9 +25,9 @@
     "target": "_self",
     "title": "Connecting Residents at Camelias",
     "legend": "Screenshot of Camelias Dashboard",
-    "desc": "Provide a digital solution for nearby service providers.",
+    "desc": "Provide a digital solution for service providers.",
     "url": "/camelias",
-    "action": "See Details"
+    "action": "Read More"
   },
   "rockford": {
     "show": false,

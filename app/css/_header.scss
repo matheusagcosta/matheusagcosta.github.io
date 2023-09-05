@@ -1,6 +1,6 @@
 .header {
   align-items: flex-start;
-  background: var(--main-bg-color);
+  // background: var(--main-bg-color);
   display: flex;
   justify-content: space-between;
   left: 0;
@@ -53,7 +53,6 @@
   }
 
   &__link {
-    color: $salmon;
     padding: 0 .45rem;
     position: relative;
     transition: opacity .25s linear;
@@ -63,8 +62,12 @@
     opacity: .85;
   }
 
+  &__link:hover {
+    text-decoration: underline;
+  }
+
   &__link.is-active {
-    color: var(--main-text-color);
+    font-weight: bold;
     pointer-events: none;
     text-decoration: none;
   }

@@ -15,46 +15,34 @@
     width: 40%;
   }
 
-  &__info {
+  &__info,
+  &__nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-
-    // @media screen and (min-width: 1171px) {
-    //   padding: 1.5rem 2rem 0;
-    //   width: 60%;
-    // }
-
-    // @media screen and (max-width: 1170px) {
-    //   padding: 1.5rem 0 0;
-    //   width: 100%;
-    // }
   }
 
   &__item {
     align-items: center;
+    border-bottom: 1px solid $gray;
     display: flex;
     justify-content: space-between;
+    padding: 1rem 0;
+    transition: opacity .25s linear,border .25s linear;
   }
 
-  &__item:first-of-type {
-    margin-top: 1rem;
-  }
-
-  &__item:not(:first-of-type) {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid $gray;
+  &__nav:hover .talks__item:not(:hover) {
+    opacity: .25;
   }
 
   &__headline {
     margin: 0;
   }
 
-  &__link {
-    color: $salmon;
-  }
+  // &__link {
+  //   color: var(--main-link-color);
+  // }
 
   &__legend {
     color: $gray;

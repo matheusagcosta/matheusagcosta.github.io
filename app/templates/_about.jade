@@ -1,11 +1,6 @@
 section#about.about
   .about__info
     .about__desc
-      .about__photo
-        picture.about__image
-          source(srcset="../assets/image-about.webp", type="image/webp")
-          source(srcset="../assets/image-about.png", type="image/png")
-          img.about__picture(src="../assets/image-about.png", alt="Photo of Matheus in a hackathon", width="100%", height="834")
       h2.about__title
         | Hey! #{''}
         //- span.about__emoji 👋
@@ -23,4 +18,9 @@ section#about.about
           | #{''} or just #{''}
           a.about__link(href="mailto:hi@matheusagcosta.com" aria-label="Link to Contact") contact me
           |.
-    p.about__helper Keep Scrolling
+      p.about__helper Keep Scrolling
+    .about__photo
+      picture.about__image
+        source(srcset="../assets/image-about.webp", type="image/webp")
+        source(srcset="../assets/image-about.png", type="image/png")
+        img.about__picture(src="../assets/image-about.png", alt="Profile Picture", width="100%", height="834")

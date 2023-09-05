@@ -5,8 +5,9 @@ section#talks.talks
   //-   img(src="../assets/image-speaking.png", alt="Photo of Matheus Speaking at DevCamp", width="854", height="1112")
   .talks__info
     h2 Talks & Side Projects
-    each talks, slug in public.templates.talks._data
-      .talks__item
-        h3.talks__headline
-          a.talks__link(href="#{ talks.url }" target="_blank" rel="noopener" aria-label="#{ talks.title }") #{ talks.title }
-        small.talks__legend #{ talks.event }, #{ talks.date }
+    nav.talks__nav
+      each talks, slug in public.templates.talks._data
+        a.talks__item(href="#{ talks.url }" target="_blank" rel="noopener" aria-label="#{ talks.title }")
+          h3.talks__headline
+            .talks__link #{ talks.title }
+          small.talks__legend #{ talks.event }, #{ talks.date }
