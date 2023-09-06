@@ -28,6 +28,7 @@
     background-color: var(--main-bg-color);
     bottom: 0;
     position: absolute;
+    z-index: 223;
     width: 100%;
 
     @media (min-width: 1001px) {
@@ -140,6 +141,25 @@
         display: block;
         max-width: 40%;
       }
+    }
+  }
+
+  &__card::before {
+    @media (min-width: 1001px) {
+      content: '';
+      background: rgba(0,0,0,.35);
+      height: 100%;
+      left: 0;
+      position: absolute;
+      transition: background ease-in-out .25s;
+      z-index: 222;
+      width: 40%;
+    }
+  }
+
+  &__card:hover::before {
+    @media (min-width: 1001px) {
+      background-color: transparent;
     }
   }
 
