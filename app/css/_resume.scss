@@ -4,6 +4,10 @@
   padding-bottom: 4rem;
   padding-top: 4rem;
 
+  a:not(:hover) {
+    text-decoration: underline;
+  }
+
   &__header {
     background-color: $mine;
     display: flex;
