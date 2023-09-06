@@ -1,6 +1,6 @@
 {
   "design-system": {
-    "title": "Dev + Design System",
+    "title": "Dev + Design System Connection",
     "event": "HiTech Podcast",
     "date": "2023",
     "link": "Spotify",
@@ -28,7 +28,7 @@
     "url": "https://docs.google.com/presentation/d/e/2PACX-1vTYFkCaXtMgDIHXCmWiCVjNH33oPjWM2lhNcQQZkc86Nv853u_ImpCNoacdI6M6jIRgmgOrJB-c-JQ3/pub?start=false&loop=false&delayms=3000#slide=id.p"
   },
   "hackathon": {
-    "title": "How to Hackathon",
+    "title": "How to run a Hackathon",
     "event": "DevTalks Podcast",
     "date": "2018",
     "link": "Github",
@@ -42,7 +42,7 @@
     "url": "https://speakerdeck.com/matheusagcosta/back-end-and-front-end-em-harmonia-com-atomic-design"
   },
   "remote-culture": {
-    "title": "Remote Culture",
+    "title": "Benefits of Working Remote",
     "event": "DevCamp",
     "date": "2016",
     "link": "Video",
