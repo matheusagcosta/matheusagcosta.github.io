@@ -4,15 +4,16 @@ section#work.work
   nav#drag.work__nav
     each work, slug in public.templates.work._data
       if work.show == true
-        a.work__card.is-light-visible(href="#{ work.url }" target="#{ work.target }" rel="noopener" aria-label="#{ work.legend }")
-          picture.work__image
-            source(srcset="../../assets/image-#{ slug }.webp", type="image/webp")
-            source(srcset="../../assets/image-#{ slug }.png", type="image/png")
-            img(src="../../assets/image-#{ slug }.png", alt="#{ work.legend }", width="758", height="506")
+        .work__card.is-light-visible
+          a.work__preview(href="#{ work.url }" target="#{ work.target }" rel="noopener" aria-label="#{ work.legend }")
+            picture.work__image
+              source(srcset="../../assets/image-#{ slug }.webp", type="image/webp")
+              source(srcset="../../assets/image-#{ slug }.png", type="image/png")
+              img(src="../../assets/image-#{ slug }.png", alt="#{ work.legend }", width="758", height="506")
           .work__details
             h3.work__headline #{ work.title }
             small.work__legend #{ work.desc }
-            button.work__button
+            a.work__button(href="#{ work.url }" target="#{ work.target }" rel="noopener" aria-label="#{ work.legend }")
               | #{ work.action }
               if work.case == false
                 svg.work__icon(version='1.1' viewBox='0 0 752 752' xmlns='http://www.w3.org/2000/svg')
@@ -22,15 +23,16 @@ section#work.work
                   g(clip-path='url(#a)')
                     path(d='m533.7 273.23-159.6 160.07-55.883-55.883 159.12-159.12-62.039 0.003906v-79.09h197.48v197.48h-79.09zm-394.49-134.02h197.48v79.09h-118.39v315.88h315.88v-118.39l78.613-0.003906v197.01h-473.58z')
 
-        a.work__card.is-dark-visible(href="#{ work.url }#contrast-on" target="#{ work.target }" rel="noopener" aria-label="#{ work.legend }")
-          picture.work__image
-            source(srcset="../../assets/image-#{ slug }.webp", type="image/webp")
-            source(srcset="../../assets/image-#{ slug }.png", type="image/png")
-            img(src="../../assets/image-#{ slug }.png", alt="#{ work.legend }", width="758", height="506")
+        .work__card.is-dark-visible
+          a.work__preview(href="#{ work.url }#contrast-on" target="#{ work.target }" rel="noopener" aria-label="#{ work.legend }")
+            picture.work__image
+              source(srcset="../../assets/image-#{ slug }.webp", type="image/webp")
+              source(srcset="../../assets/image-#{ slug }.png", type="image/png")
+              img(src="../../assets/image-#{ slug }.png", alt="#{ work.legend }", width="758", height="506")
           .work__details
             h3.work__headline #{ work.title }
             small.work__legend #{ work.desc }
-            button.work__button
+            a.work__button(href="#{ work.url }#contrast-on" target="#{ work.target }" rel="noopener" aria-label="#{ work.legend }")
               | #{ work.action }
               if work.case == false
                 svg.work__icon(version='1.1' viewBox='0 0 752 752' xmlns='http://www.w3.org/2000/svg')
