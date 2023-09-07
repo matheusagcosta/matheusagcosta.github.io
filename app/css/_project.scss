@@ -4,6 +4,7 @@
 
   &,
   &__block {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -50,6 +51,7 @@
 
   &__frame {
     background-color: var(--light-bg-color);
+    width: 100%;
   }
 
   &__frame {
@@ -100,5 +102,12 @@
 
   &__list {
     margin: 0;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
