@@ -2,7 +2,7 @@
   @extend %box;
   background-color: var(--light-bg-color);
   margin: 0 !important;
-  padding: 4.5rem 0;
+  padding: 4.5rem 0 0;
   position: relative;
 
   > *:not(a) {
@@ -17,7 +17,10 @@
 
   &__title {
     padding: 0 1.5rem;
-    margin-bottom: 3rem;
+
+    @media (min-width: 1001px) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__nav {
@@ -43,7 +46,7 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
+    margin: 1rem 1.5rem;
     overflow: hidden;
     position: relative;
     text-align: left;
@@ -51,7 +54,7 @@
     transition: opacity .175s linear;
 
     @media (min-width: 1001px) {
-      margin: 0 1.5rem 6rem;
+      margin-bottom: 6rem;
       width: calc(100% / 2 - 3rem);
     }
   }

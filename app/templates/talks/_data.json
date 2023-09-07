@@ -4,6 +4,7 @@
     "event": "HiTech Podcast",
     "date": "2023",
     "link": "Spotify",
+    "icon": "🎵",
     "url": "https://open.spotify.com/episode/5R9MGsykxbUjqpMR51C8FA?si=118edbaa9f82404e"
   },
   "calendly": {
@@ -11,6 +12,7 @@
     "event": "Calendly",
     "date": "2023",
     "link": "Calendly",
+    "icon": "🗓",
     "url": "https://calendly.com/matheusagcosta/one-on-one?back=1&month=2023-09"
   },
   "unsplash": {
@@ -18,6 +20,7 @@
     "event": "Unsplash",
     "date": "2021",
     "link": "Unsplash",
+    "icon": "📸",
     "url": "https://unsplash.com/@matheusagcosta"
   },
   "home-office": {
@@ -25,6 +28,7 @@
     "event": "DevTalks Bauru",
     "date": "2018",
     "link": "Slides",
+    "icon": "🖼",
     "url": "https://docs.google.com/presentation/d/e/2PACX-1vTYFkCaXtMgDIHXCmWiCVjNH33oPjWM2lhNcQQZkc86Nv853u_ImpCNoacdI6M6jIRgmgOrJB-c-JQ3/pub?start=false&loop=false&delayms=3000#slide=id.p"
   },
   "hackathon": {
@@ -32,6 +36,7 @@
     "event": "DevTalks Podcast",
     "date": "2018",
     "link": "Github",
+    "icon": "🎵",
     "url": "https://devtalksbauru.github.io/podcasts/02"
   },
   "atomic-design": {
@@ -39,6 +44,7 @@
     "event": "DevTalks Bauru",
     "date": "2017",
     "link": "Slides",
+    "icon": "🖼",
     "url": "https://speakerdeck.com/matheusagcosta/back-end-and-front-end-em-harmonia-com-atomic-design"
   },
   "remote-culture": {
@@ -46,6 +52,7 @@
     "event": "DevCamp",
     "date": "2016",
     "link": "Video",
+    "icon": "🎥",
     "url": "https://www.infoq.com/br/presentations/to-remoto-ta-tranquilo-ta-favoravel"
   },
   "less-stylus-sass": {
@@ -53,6 +60,7 @@
     "event": "TheDevConfBR",
     "date": "2015",
     "link": "Slides",
+    "icon": "🖼",
     "url": "https://slideshare.net/tdc-globalcode/pra-mim-tanto-faz-se-less-stylus-ou-sass-53384931?qid=0704d88f-c1d0-47f5-902f-d356175bd137&v=&b=&from_search=1"
   }
 }
