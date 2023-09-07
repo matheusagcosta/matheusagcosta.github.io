@@ -2,7 +2,7 @@
   @extend %box;
   background-color: var(--light-bg-color);
   margin: 0 !important;
-  padding: 4.5rem 1.5rem;
+  padding: 4.5rem 0;
   position: relative;
 
   > *:not(a) {
@@ -16,12 +16,20 @@
   }
 
   &__title {
+    padding: 0 1.5rem;
     margin-bottom: 3rem;
   }
 
   &__nav {
     display: flex;
-    flex-direction: column;
+
+    @media (min-width: 1001px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
   }
 
   &__details {
@@ -29,16 +37,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-
-    // @media (min-width: 1001px) {
-    //   bottom: 0;
-    //   height: 100%;
-    //   max-width: 47%;
-    //   padding: 0 1.5rem;
-    //   position: absolute;
-    //   right: 0;
-    //   z-index: 223;
-    // }
   }
 
   &__card {
@@ -53,7 +51,8 @@
     transition: opacity .175s linear;
 
     @media (min-width: 1001px) {
-      margin-bottom: 6rem;
+      margin: 0 1.5rem 6rem;
+      width: calc(100% / 2 - 3rem);
     }
   }
 
@@ -93,7 +92,8 @@
   }
 
   &__button {
-    border: 1px solid var(--main-border-color);
+    align-items: center;
+    border: 2px solid var(--main-border-color);
     border-radius: .75rem;
     display: flex;
     justify-content: center;
@@ -108,14 +108,14 @@
   &__preview {
     display: block;
     border-radius: 25px;
-    max-height: 500px;
+    max-height: 428px;
     overflow: hidden;
   }
 
   &__image:not(:hover) {
 
     .is-dark-visible & {
-      filter: brightness(.4);
+      filter: brightness(.65);
     }
   }
 

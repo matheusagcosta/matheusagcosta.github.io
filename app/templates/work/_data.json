@@ -30,12 +30,12 @@
     "action": "Read More"
   },
   "rockford": {
-    "show": false,
+    "show": true,
     "case": false,
     "target": "_blank",
-    "title": "Enhancing Data Visualization at RF",
+    "title": "Elevating RockfordFosgate dashboard",
     "legend": "Screenshot of RF Dashboard",
-    "desc": "Create a better user experience for their customers.",
+    "desc": "Deliver a better user experience for internal and external users.",
     "url": "https://db.rockfordcorp.com/",
     "action": "Visit Site"
   },
