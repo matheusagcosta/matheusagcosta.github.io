@@ -16,12 +16,7 @@ section#work.work
             a.work__button(href="#{ work.url }" target="#{ work.target }" rel="noopener" aria-label="#{ work.legend }")
               | #{ work.action }
               if work.case == false
-                svg.work__icon(version='1.1' viewBox='0 0 752 752' xmlns='http://www.w3.org/2000/svg')
-                  defs
-                    clippath#a
-                      path(d='m139.21 139.21h473.58v473.58h-473.58z')
-                  g(clip-path='url(#a)')
-                    path(d='m533.7 273.23-159.6 160.07-55.883-55.883 159.12-159.12-62.039 0.003906v-79.09h197.48v197.48h-79.09zm-394.49-134.02h197.48v79.09h-118.39v315.88h315.88v-118.39l78.613-0.003906v197.01h-473.58z')
+                span.work__icon ↗️
 
         .work__card.is-dark-visible
           a.work__preview(href="#{ work.url }#contrast-on" target="#{ work.target }" rel="noopener" aria-label="#{ work.legend }")
@@ -35,10 +30,4 @@ section#work.work
             a.work__button(href="#{ work.url }#contrast-on" target="#{ work.target }" rel="noopener" aria-label="#{ work.legend }")
               | #{ work.action }
               if work.case == false
-                svg.work__icon(version='1.1' viewBox='0 0 752 752' xmlns='http://www.w3.org/2000/svg')
-                  defs
-                    clippath#a
-                      path(d='m139.21 139.21h473.58v473.58h-473.58z')
-                  g(clip-path='url(#a)')
-                    path(d='m533.7 273.23-159.6 160.07-55.883-55.883 159.12-159.12-62.039 0.003906v-79.09h197.48v197.48h-79.09zm-394.49-134.02h197.48v79.09h-118.39v315.88h315.88v-118.39l78.613-0.003906v197.01h-473.58z')
-
+                span.work__icon ↗️
