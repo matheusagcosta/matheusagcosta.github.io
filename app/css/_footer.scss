@@ -2,14 +2,31 @@
   @extend %box;
   background-color: $mine;
   margin: 0;
+  padding: 3rem 0;
 
   *:not(a) {
     color: $white;
   }
 
+  &__info {
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 1.5rem;
+  }
+
+  &__info,
   &__nav {
     align-items: center;
     display: flex;
+  }
+
+  &__heading,
+  &__nav {
+    margin: .5rem 0;
+  }
+
+  &__nav {
     justify-content: center;
   }
 
@@ -20,15 +37,15 @@
   &__link,
   &__link:hover {
     color: $white;
+    text-decoration: underline;
   }
 
   &__link:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   &__button {
     border-radius: 10px;
-    margin: 1rem 0 0;
     overflow: hidden;
     padding: .75rem;
     transition: background .15s ease-in-out;

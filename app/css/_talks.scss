@@ -1,9 +1,10 @@
 .talks {
+  background: var(--main-bg-color);
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0;
   padding: 4.5rem 0;
-  max-width: 1440px;
+  z-index: 912;
 
   &__image {
     border-radius: 50px 0 0;
@@ -55,6 +56,8 @@
   }
 
   &__info {
+    margin: auto;
+    max-width: 1440px;
     padding: 0 1.5rem;
   }
 

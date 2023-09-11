@@ -11,6 +11,7 @@
   --switcher-opacity-inactive: .8;
   --community-icon: inline-block;
   --community-icon-hidden: none;
+  --title-effect: multiply;
 
   @if $bool {
     --is-hidden: none;
@@ -38,6 +39,7 @@
   --switcher-opacity-inactive: 1;
   --community-icon: none;
   --community-icon-hidden: inline-block;
+  --title-effect: difference;
 
   @if $bool {
     --is-hidden: inline-block;
