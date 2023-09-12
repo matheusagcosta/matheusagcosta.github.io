@@ -53,7 +53,7 @@
     transition: opacity .175s linear;
 
     @media (min-width: 1001px) {
-      margin-bottom: 6rem;
+      margin-bottom: 4rem;
       width: calc(100% / 2 - 3rem);
     }
   }
@@ -97,13 +97,6 @@
     border-radius: 25px;
     max-height: 428px;
     overflow: hidden;
-  }
-
-  &__image:not(:hover) {
-
-    .is-dark-visible & {
-      filter: brightness(.65);
-    }
   }
 
   &__image:hover * {
