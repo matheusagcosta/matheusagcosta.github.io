@@ -29,7 +29,11 @@ section#about.about
               textpath(xlink:href='#circlePath') Scroll down for more • Scroll down for more •
 
     .about__photo
-      picture.about__image
+      picture.about__image.is-light-visible
         source(srcset="../assets/image-about.webp", type="image/webp")
         source(srcset="../assets/image-about.png", type="image/png")
         img.about__picture(src="../assets/image-about.png", alt="Profile Picture", width="100%", height="834")
+      picture.about__image.is-dark-visible
+        source(srcset="../assets/image-about-dark.webp", type="image/webp")
+        source(srcset="../assets/image-about-dark.png", type="image/png")
+        img.about__picture(src="../assets/image-about-dark.png", alt="Profile Picture", width="100%", height="834")

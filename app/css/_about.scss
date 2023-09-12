@@ -68,7 +68,7 @@
 
     @media screen and (max-width: 800px) {
       display: flex;
-      margin-bottom: -50px;
+      margin: -25px 0 -50px;
       max-width: 300px;
       transform: translateX(-100px);
     }
@@ -129,7 +129,6 @@
   }
 
   &__photo {
-    mix-blend-mode: multiply;
     position: fixed;
     z-index: -1;
     top: 0;
