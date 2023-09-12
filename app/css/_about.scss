@@ -1,192 +1,95 @@
 .about {
-  display: flex;
-  flex-wrap: wrap;
+  @extend %box;
+  padding: 4.5rem 1.5rem;
 
-  > * {
-    @media screen and (max-width: 800px) {
-      width: 100%;
-    }
-  }
-
-  &__info {
+  &__nav {
+    display: flex;
+    justify-content: center;
     margin: auto;
     max-width: 1440px;
-    padding: 4.5rem 1.5rem 0;
-    position: relative;
-  }
 
-  // &__desc {
-
-  //   @media screen and (max-width: 680px) {
-  //     hyphens: auto;
-  //     word-break: break-word;
-  //   }
-  // }
-
-  &__logo {
-    margin: -1rem 0 1.5rem;
-    width: 54px;
-  }
-
-  &__title {
-    margin-bottom: 0;
-    mix-blend-mode: var(--title-effect);
-    width: 100%;
-
-    @media screen and (min-width: 1025px) {
-      margin: 0 auto;
-      padding-top: 3rem;
-      display: block;
-      min-width: 1044px;
-      max-width: 75%;
+    @media (max-width: 1000px) {
+      flex-direction: column;
     }
-  }
-
-  &__subtitle > * {
-    display: block;
-    font-weight: normal;
-    line-height: 1.8rem;
-    margin-bottom: 2rem;
   }
 
   &__link {
-    font-weight: bold;
+    background-color:var(--main-bg-color);
+    border-left: 5px solid $salmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    text-decoration: none;
+    transition: box-shadow .175s linear;
+
+    @media (min-width: 1001px) {
+      margin-top: 2rem;
+      width: calc(100% / 3);
+    }
+
+    @media (max-width: 1000px) {
+      margin-top: 1rem;
+    }
   }
 
   &__link:hover {
-    text-decoration: underline;
+    box-shadow: 1px 1px 10px rgba($black,.15);
   }
 
-  &__helper {
-    mix-blend-mode: difference;
-    padding: 0 1.5rem;
-    position: relative;
-
-    @media screen and (min-width: 801px) {
-      margin: 1rem 0;
-    }
-
-    @media screen and (max-width: 800px) {
-      display: flex;
-      margin: -25px 0 -50px;
-      max-width: 300px;
-      transform: translateX(-100px);
-    }
-
-    * {
-      font-size: 13.6px;
-      text-transform: uppercase;
+  &__link:not(:first-of-type):not(:last-of-type) {
+    @media (min-width: 1001px) {
+      margin-right: 1.5rem;
+      margin-left: 1.5rem;
     }
   }
 
-  &__badge {
-    animation: rotate 5s linear infinite;
-    fill: var(--main-border-color);
-    position: relative;
-    display: block;
-    top: -10px;
-  }
+  &__icon {
+    height: 150px;
+    transition: transform .25s ease-in-out;
+    width: 150px;
 
-  &__badge,
-  &__helper::before,
-  &__helper::after {
-    left: 0;
-    margin: auto;
-    right: 0;
-  }
+    &:first-of-type:last-of-type {
+      display: block;
+    }
 
-  &__helper::before,
-  &__helper::after {
-    animation: fade 1.5s linear infinite alternate;
-    border-color: var(--main-border-color);
-    border-style: solid;
-    content: '';
-    display: block;
-    top: 50%;
-    position: absolute;
-    transform-origin: 50% 50%;
-  }
+    &:first-of-type:not(:last-of-type) {
+      display: var(--about-icon);
+    }
 
-  &__helper::before {
-    border-width: 2px 2px 0 0;
-    height: 10px;
-    transform: rotate(135deg);
-    width: 10px;
-  }
+    &:last-of-type:not(:first-of-type) {
+      display: var(--about-icon-hidden);
+    }
 
-  &__helper::after {
-    border-width: 0 2px 0 0;
-    height: 40px;
-    transform: translate(0px, -30px);
-    width: 0;
-  }
+    @media (min-width: 701px) {
+      margin-bottom: 2.5rem;
+    }
 
-  &__photo,
-  &__picture {
-    @media screen and (min-width: 801px) {
-      position: relative;
+    @media (max-width: 700px) {
+      margin-bottom: .5rem;
+      max-width: 90px;
+    }
+
+    .about__link:hover & {
+      transform: translateY(10px);
     }
   }
 
-  &__photo {
-    position: fixed;
-    z-index: -1;
-    top: 0;
+  &__headline {
+    transition: color .175s linear;
 
-    @media screen and (min-width: 1025px) {
-      margin: auto;
-      left: 0;
-      right: 0;
-      max-width: 890px;
-      min-height: 100%;
-      min-width: 890px;
-      width: 35%;
-      opacity: .6;
-    }
-
-    @media screen and (max-width: 1024px) {
-      min-width: 550px;
-      opacity: .45;
-      width: 100%;
+    .about__link:hover & {
+      color: $salmon;
     }
   }
 
-  &__image {
-    // background: linear-gradient(to top, $salmon 0%,$salmon 50%,transparent 50%,transparent 100%);
-    display: block;
-    margin: auto;
-    position: relative;
-    z-index: 1;
-
-    // @media screen and (max-width: 1000px) {
-    //   opacity: .25;
-    // }
+  &__headline,
+  &__legend {
+    color: var(--main-text-color);
   }
 
-  &__picture {
-    width: 100%;
-  }
-
-  // &__emoji {
-  //   animation: wave infinite 1s linear;
-  //   display: inline-block;
-  // }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(-360deg);
-  }
-  to {
-    transform: rotate(0);
+  &__legend {
+    margin-bottom: 1rem;
   }
 }

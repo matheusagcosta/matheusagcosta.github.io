@@ -9,8 +9,8 @@
   --switcher-position: translateX(6px);
   --switcher-opacity-active: 1;
   --switcher-opacity-inactive: .8;
-  --community-icon: inline-block;
-  --community-icon-hidden: none;
+  --about-icon: inline-block;
+  --about-icon-hidden: none;
   --title-effect: multiply;
 
   @if $bool {
@@ -37,8 +37,8 @@
   --switcher-position: translateX(37px);
   --switcher-opacity-active: .8;
   --switcher-opacity-inactive: 1;
-  --community-icon: none;
-  --community-icon-hidden: inline-block;
+  --about-icon: none;
+  --about-icon-hidden: inline-block;
   --title-effect: difference;
 
   @if $bool {
