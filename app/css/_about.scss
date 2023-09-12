@@ -1,95 +1,42 @@
 .about {
   @extend %box;
-  padding: 4.5rem 1.5rem;
+  background: var(--main-bg-color);
+  padding: 4.5rem 0 0;
 
-  &__nav {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    max-width: 1440px;
-
-    @media (max-width: 1000px) {
-      flex-direction: column;
-    }
-  }
-
-  &__link {
-    background-color:var(--main-bg-color);
-    border-left: 5px solid $salmon;
-    display: flex;
-    flex-direction: column;
+  &__info {
     align-items: center;
-    margin-bottom: 1rem;
-    padding: 2rem;
-    text-decoration: none;
-    transition: box-shadow .175s linear;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 1.5rem;
 
-    @media (min-width: 1001px) {
-      margin-top: 2rem;
-      width: calc(100% / 3);
-    }
-
-    @media (max-width: 1000px) {
-      margin-top: 1rem;
+    @media screen and (min-width: 1025px) {
+      justify-content: space-evenly;
     }
   }
 
-  &__link:hover {
-    box-shadow: 1px 1px 10px rgba($black,.15);
-  }
+  &__desc {
+    text-align: left;
 
-  &__link:not(:first-of-type):not(:last-of-type) {
-    @media (min-width: 1001px) {
-      margin-right: 1.5rem;
-      margin-left: 1.5rem;
-    }
-  }
-
-  &__icon {
-    height: 150px;
-    transition: transform .25s ease-in-out;
-    width: 150px;
-
-    &:first-of-type:last-of-type {
-      display: block;
-    }
-
-    &:first-of-type:not(:last-of-type) {
-      display: var(--about-icon);
-    }
-
-    &:last-of-type:not(:first-of-type) {
-      display: var(--about-icon-hidden);
-    }
-
-    @media (min-width: 701px) {
-      margin-bottom: 2.5rem;
-    }
-
-    @media (max-width: 700px) {
-      margin-bottom: .5rem;
-      max-width: 90px;
-    }
-
-    .about__link:hover & {
-      transform: translateY(10px);
+    @media screen and (min-width: 1025px) {
+      width: 45%;
     }
   }
 
   &__headline {
-    transition: color .175s linear;
+    font-size: 54px;
+  }
 
-    .about__link:hover & {
-      color: $salmon;
+  &__photo {
+    margin: 0 3rem 1.5rem 0;
+    max-width: 35%;
+    min-width: 200px;
+    width: 100%;
+    overflow: hidden;
+
+    * {
+      border-radius: 1.5rem 2rem 4rem 8rem;
     }
-  }
-
-  &__headline,
-  &__legend {
-    color: var(--main-text-color);
-  }
-
-  &__legend {
-    margin-bottom: 1rem;
   }
 }

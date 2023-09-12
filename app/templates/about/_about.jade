@@ -1,13 +1,14 @@
 section#projects.about
-  h2 Software is the medium through which I express myself.
-  p During my free time I try to help mentoring people, organizing events or design and code free projects.
-  //- nav.about__nav
-  //-   each community, slug in public.templates.about._data
-  //-     a.about__link(href="#{ community.url }" target="_blank" rel="noopener" aria-label="#{ community.desc }")
-  //-       if community.dark
-  //-         img.about__icon(src="../../assets/logo-#{ community.icon }.svg", alt="#{ community.legend }", width="150", height="150")
-  //-         img.about__icon(src="../../assets/logo-#{ community.icon }-dark.svg", alt="#{ community.legend }", width="150", height="150")
-  //-       else
-  //-         img.about__icon(src="../../assets/logo-#{ community.icon }.svg", alt="#{ community.legend }", width="150", height="150")
-  //-       strong.about__headline #{ slug }
-  //-       small.about__legend #{ community.desc }
+  .about__info
+    .about__photo
+      picture.about__image
+        source(srcset="../assets/image-story.webp", type="image/webp")
+        source(srcset="../assets/image-story.png", type="image/png")
+        img.about__picture(src="../assets/image-story.png", alt="About Picture", width="100%", height="867")
+    .about__desc
+      h2.about__headline
+        | Think. Test. Repeat.
+      p Creativity has been part of my life since I was a little kid, drawing dogs and spaceships on paper.
+      p Shifting to the digital, I could learn the concept of iteration and how things could constantly be improved by getting feedback.
+      p Software is the medium through which it's possible to make the digital world more human.
+      p As a multidisciplinary designer and systems thinker, I aim to speak machine, not code, and translate that to the best user experience where communication is the key until everybody's happy.

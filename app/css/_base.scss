@@ -3,20 +3,28 @@
 @media screen, print, (prefers-color-scheme: light) {
   :root {
     @include themeLight(true);
+    --is-hero-img-hidden: none;
+    --is-hero-img-shown: inline-block;
   }
 
   #contrast-on:target {
     @include themeDark(true);
+    --is-hero-img-hidden: inline-block;
+    --is-hero-img-shown: none;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     @include themeDark(false);
+    --is-hero-img-hidden: inline-block;
+    --is-hero-img-shown: none;
   }
 
   #contrast-on:target {
     @include themeLight(false);
+    --is-hero-img-hidden: none;
+    --is-hero-img-shown: inline-block;
   }
 }
 
@@ -122,10 +130,6 @@ small {
   overflow: hidden;
   padding: 4.5rem 1rem;
   text-align: center;
-
-  @media screen and (min-width: 1171px) {
-    margin: 0 1.5rem 2rem;
-  }
 }
 
 %button {

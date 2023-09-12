@@ -157,10 +157,14 @@
     margin: auto;
     position: relative;
     z-index: 1;
+  }
 
-    // @media screen and (max-width: 1000px) {
-    //   opacity: .25;
-    // }
+  &__image--light {
+    display: var(--is-hero-img-shown);
+  }
+
+  &__image--dark {
+    display: var(--is-hero-img-hidden);
   }
 
   &__picture {

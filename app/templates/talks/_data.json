@@ -16,7 +16,7 @@
     "url": "https://calendly.com/matheusagcosta/one-on-one?back=1&month=2023-09"
   },
   "unsplash": {
-    "title": "Free Photos",
+    "title": "My Photography",
     "event": "Unsplash",
     "date": "2021",
     "link": "Unsplash",
@@ -62,5 +62,13 @@
     "link": "Slides",
     "icon": "🖼",
     "url": "https://slideshare.net/tdc-globalcode/pra-mim-tanto-faz-se-less-stylus-ou-sass-53384931?qid=0704d88f-c1d0-47f5-902f-d356175bd137&v=&b=&from_search=1"
+  },
+  "css-drawing": {
+    "title": "CSS Drawing",
+    "event": "Medium",
+    "date": "2014",
+    "link": "Medium",
+    "icon": "✏️",
+    "url": "https://medium.com/helabs/o-poder-do-css-3-desenhando-formas-ce1d3402037b"
   }
 }
