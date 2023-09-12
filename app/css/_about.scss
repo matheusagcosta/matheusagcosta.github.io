@@ -29,19 +29,16 @@
   }
 
   &__title {
+    margin-bottom: 0;
     mix-blend-mode: var(--title-effect);
     width: 100%;
 
     @media screen and (min-width: 1025px) {
-      margin: 0 auto 7rem;
-      padding-top: 6rem;
+      margin: 0 auto;
+      padding-top: 3rem;
       display: block;
       min-width: 1044px;
       max-width: 75%;
-    }
-
-    @media screen and (max-width: 1024px) {
-      margin-bottom: 1.5rem;
     }
   }
 
@@ -61,34 +58,58 @@
   }
 
   &__helper {
-    padding: 1rem 1.5rem 1.5rem;
+    mix-blend-mode: difference;
+    padding: 0 1.5rem;
     position: relative;
 
     @media screen and (min-width: 801px) {
-      margin: 3rem 0;
+      margin: 1rem 0;
     }
 
     @media screen and (max-width: 800px) {
-      margin: 1rem 0;
+      display: flex;
+      margin-bottom: -50px;
+      max-width: 300px;
+      transform: translateX(-100px);
     }
+
+    * {
+      font-size: 13.6px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__badge {
+    animation: rotate 5s linear infinite;
+    fill: var(--main-border-color);
+    position: relative;
+    display: block;
+    top: -10px;
+  }
+
+  &__badge,
+  &__helper::before,
+  &__helper::after {
+    left: 0;
+    margin: auto;
+    right: 0;
   }
 
   &__helper::before,
   &__helper::after {
+    animation: fade 1.5s linear infinite alternate;
     border-color: var(--main-border-color);
     border-style: solid;
     content: '';
     display: block;
-    left: 0;
-    position: absolute;
     top: 50%;
+    position: absolute;
     transform-origin: 50% 50%;
   }
 
   &__helper::before {
     border-width: 2px 2px 0 0;
     height: 10px;
-    margin: 5px 0 0 -5px;
     transform: rotate(135deg);
     width: 10px;
   }
@@ -96,7 +117,7 @@
   &__helper::after {
     border-width: 0 2px 0 0;
     height: 40px;
-    transform: translate(-1px, -26px);
+    transform: translate(0px, -30px);
     width: 0;
   }
 
@@ -125,7 +146,7 @@
     }
 
     @media screen and (max-width: 1024px) {
-      min-width: 390px;
+      min-width: 550px;
       opacity: .45;
       width: 100%;
     }
@@ -147,26 +168,26 @@
     width: 100%;
   }
 
-  &__emoji {
-    animation: wave infinite 1s linear;
-    display: inline-block;
+  // &__emoji {
+  //   animation: wave infinite 1s linear;
+  //   display: inline-block;
+  // }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
-@keyframes wave {
-  0% {
-    transform: rotate(30deg);
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
   }
-  25% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-30deg);
-  }
-  75% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(30deg);
+  to {
+    transform: rotate(0);
   }
 }

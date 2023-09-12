@@ -18,7 +18,16 @@ section#about.about
       //-     | #{''} or just #{''}
       //-     a.about__link(href="mailto:hi@matheusagcosta.com" aria-label="Link to Contact") contact me
       //-     |.
-      //- p.about__helper Keep Scrolling
+      p.about__helper
+        svg.about__badge(version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='300px' height='300px' viewBox='0 0 300 300' enable-background='new 0 0 300 300' xml:space='preserve')
+          defs
+            path#circlePath(d='M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 ')
+          circle(cx='150' cy='100' r='75' fill='none')
+          g
+            use(xlink:href='#circlePath' fill='none')
+            text
+              textpath(xlink:href='#circlePath') Scroll down for more • Scroll down for more •
+
     .about__photo
       picture.about__image
         source(srcset="../assets/image-about.webp", type="image/webp")
