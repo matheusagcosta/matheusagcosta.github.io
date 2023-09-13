@@ -18,6 +18,20 @@
     position: fixed;
   }
 
+  &__actions {
+    width: 73px;
+  }
+
+  &__icon {
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+
+    @media screen and (min-width: 801px) {
+      width: 73px;
+    }
+  }
+
   &__logo {
     align-self: center;
     height: 24px;
@@ -35,10 +49,6 @@
   &__menu,
   &__switcher {
     width: auto;
-  }
-
-  &__actions {
-    width: 73px;
   }
 
   &__switcher {
