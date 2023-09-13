@@ -28,6 +28,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-display: auto;
   font-family: 'Prompt', sans-serif;
@@ -98,8 +102,12 @@ a {
 }
 
 button {
+  background-color: transparent;
   border: 0;
+  color: var(--main-link-color);
   cursor: pointer;
+  font-family: 'Prompt', sans-serif;
+  font-size: 1rem;
 }
 
 p {

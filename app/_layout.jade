@@ -39,5 +39,6 @@ html.no-js(lang="en")
     if current.source != '404'
       != partial("templates/_header")
     != yield
-    //- if current.source == 'index'
+    if current.source == 'index'
+      script(src="./js/scroll.js" defer)
     //-   script(src="./js/drag.js" defer)

@@ -58,19 +58,25 @@
   }
 
   &__helper {
+    background: transparent;
+    cursor: pointer;
     mix-blend-mode: difference;
+    overflow: hidden;
     padding: 0 1.5rem;
     position: relative;
+    transition: mix-blend-mode, transform .2s linear;
+    height: 150px;
+    width: 150px;
 
     @media screen and (min-width: 801px) {
-      margin: 1rem 0;
+      margin: 5rem auto;
     }
 
     @media screen and (max-width: 800px) {
-      display: flex;
-      margin: -25px 0 -50px;
-      max-width: 300px;
-      transform: translateX(-100px);
+      // display: flex;
+      margin: 2.5rem 0;
+      // max-width: 300px;
+      // transform: translateX(-100px);
     }
 
     * {
@@ -79,19 +85,24 @@
     }
   }
 
+  &__helper:hover {
+    mix-blend-mode: inherit;
+    transform: scale(1.1);
+  }
+
   &__badge {
     animation: rotate 5s linear infinite;
     fill: var(--main-border-color);
     position: relative;
     display: block;
-    top: -10px;
+    margin-left: -100% !important;
+    margin-top: -75% !important;
   }
 
   &__badge,
   &__helper::before,
   &__helper::after {
     left: 0;
-    margin: auto;
     right: 0;
   }
 
@@ -102,7 +113,7 @@
     border-style: solid;
     content: '';
     display: block;
-    top: 50%;
+    margin: auto;
     position: absolute;
     transform-origin: 50% 50%;
   }
@@ -110,13 +121,15 @@
   &__helper::before {
     border-width: 2px 2px 0 0;
     height: 10px;
+    top: calc(50% + 10px);
     transform: rotate(135deg);
     width: 10px;
   }
 
   &__helper::after {
     border-width: 0 2px 0 0;
-    height: 40px;
+    height: 50px;
+    top: 50%;
     transform: translate(0px, -30px);
     width: 0;
   }

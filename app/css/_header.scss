@@ -1,6 +1,5 @@
 .header {
-  align-items: flex-start;
-  // background: var(--main-bg-color);
+  align-items: center;
   display: flex;
   justify-content: space-between;
   left: 0;
@@ -39,7 +38,7 @@
   }
 
   &__actions {
-    width: 100%;
+    width: 73px;
   }
 
   &__switcher {
