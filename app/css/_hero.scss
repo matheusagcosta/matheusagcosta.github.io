@@ -60,6 +60,7 @@
   &__helper {
     background: transparent;
     cursor: pointer;
+    display: flex;
     mix-blend-mode: difference;
     overflow: hidden;
     padding: 0 1.5rem;
@@ -95,10 +96,10 @@
   &__badge {
     animation: rotate 5s linear infinite;
     fill: var(--main-border-color);
-    position: relative;
+    position: absolute;
     display: block;
-    margin-left: -100% !important;
-    margin-top: -75% !important;
+    margin-left: -50% !important;
+    margin-top: -50% !important;
   }
 
   &__badge,
