@@ -1,8 +1,9 @@
 footer#contact.footer(role="contentinfo")
   .footer__info
-    h2.footer__heading
-      | Let's #{''}
-      a.footer__link(class="footer__link" href="mailto:hi@matheusagcosta.com" aria-label="Get in touch") connect
+    h3.footer__heading
+      a.footer__link(class="footer__link" href="mailto:hi@matheusagcosta.com" aria-label="Drop me a line") Drop me a line ✉️
+      | #{''} or #{''}
+      a.footer__link(class="footer__link" href="https://calendly.com/matheusagcosta/one-on-one" target="_blank" aria-label="let's e-meet") let's e-meet 👋
     //- p Reaching out with an invitation to speak, or just want to say hi? Drop me a line at <a class="footer__link" href="mailto:hi@matheusagcosta.com" aria-label="Get in touch">hi@matheusagcosta.com</a>
     nav.footer__nav
       each social, slug in public.templates.footer._data
