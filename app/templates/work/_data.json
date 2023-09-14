@@ -3,21 +3,21 @@
     "show": true,
     "case": true,
     "target": "_self",
-    "title": "Enhancing Employee Management",
+    "title": "Enhancing employee management",
     "legend": "Screenshot of HS Members",
-    "desc": "Help customers leverage their members' information.",
+    "desc": "Help organizations leverage their members' information.",
     "url": "/hs",
-    "action": "Read More"
+    "action": "Read more"
   },
   "unicorn": {
     "show": true,
     "case": true,
     "target": "_self",
-    "title": "Scaling Design at Eventene",
+    "title": "Scaling design at Eventene",
     "legend": "Screenshot of Unicorn Design System",
     "desc": "Develop a common language to align the products.",
     "url": "/eventene",
-    "action": "Read More"
+    "action": "Read more"
   },
   "camelias": {
     "show": true,
@@ -27,17 +27,17 @@
     "legend": "Screenshot of Camelias Dashboard",
     "desc": "Provide a digital solution for service providers.",
     "url": "/camelias",
-    "action": "Read More"
+    "action": "Read more"
   },
   "rockford": {
     "show": true,
     "case": false,
     "target": "_blank",
-    "title": "Elevating RockfordFosgate dashboard",
+    "title": "Elevating RockfordFosgate Dashboard",
     "legend": "Screenshot of RF Dashboard",
-    "desc": "Deliver a better user experience for internal and external users.",
+    "desc": "Deliver a better user experience for customers.",
     "url": "https://db.rockfordcorp.com/",
-    "action": "Visit Site"
+    "action": "Visit site"
   },
   "eventene-app": {
     "show": false,
@@ -93,6 +93,6 @@
     "legend": "Screenshot of Fintechdev Design System",
     "desc": "Components library made for a merchant dashboard.",
     "url": "https://fintechdev.github.io/x2-ui/",
-    "action": "Visit Site"
+    "action": "Visit site"
   }
 }
