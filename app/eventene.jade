@@ -27,10 +27,10 @@ main.project(role="main")
     p.project__text The Eventene 1.x product was amazing. It had many useful features but some of them were hard to discover.
     p.project__text At the time, the company was not familiar with modern Design Principles. I therefore spent many months reviewing and completely redesigning the product.
     p.project__text To start, I updated their product branding, bringing modern color shades and applying gradients to stand out a bit more and giving a fresh look to the product.
-  .project__frame.project__frame--eventene
+  .project__frame
     img.has-no-shadow(src="../assets/eventene/project-eventene-logos.png", alt="Old and New Eventene Logos")
     legend.project__legend Refreshed logo
-  .project__frame.project__frame--eventene
+  .project__frame
     img.has-no-shadow(src="../assets/eventene/project-eventene-colors.png", alt="Updated Eventene Colors")
     legend.project__legend Updated color scheme
   .project__block
@@ -48,7 +48,7 @@ main.project(role="main")
   .project__block
     p.project__text In our model we had a slight difference through the steps, keeping the pages as templates so wireframes are only visible for designers, that way we could remove the friction for developers.
     p.project__text We also created a closer language by using the unicorn paradigm so the team can find which piece of the animal is missing associating that with the UI component.
-  .project__frame.project__frame--eventene
+  .project__frame
     img.has-no-shadow(src="../assets/eventene/project-eventene-atomic-unicorn.png", alt="Unicorn's Atomic Design Model")
     legend.project__legend Unicorn’s Atomic Design Model
   .project__block
@@ -91,8 +91,8 @@ main.project(role="main")
       | To organize files and folders we used #{''}
       a(href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/" target="_blank" rel="noopener" aria-label="ITCSS Article") ITCSS
       | #{''}. Basically you draw an inverted triangle and slice it by folders as layers from low-specificity selectors to more specific ones and from generic styles to explicit ones.
-  .project__frame.project__frame--eventene
-    img.has-no-shadow(src="../assets/eventene/project-eventene-itcss.png", alt="Inverted Triangle Methodology")
+  .project__frame
+    img(src="../assets/eventene/project-eventene-itcss.png", alt="Inverted Triangle Methodology")
     legend.project__legend ITCSS Folder Structure and Selectors Usage
   .project__block
     p.project__text
@@ -101,8 +101,8 @@ main.project(role="main")
       | #{''} methodology and combining to #{''}
       a(href="https://sass-lang.com/" target="_blank" rel="noopener" aria-label="Sass Documentation") Sass
       | #{''} preprocessor it worked like a charm to find nested rules quickly.
-  .project__frame.project__frame--eventene
-    img.has-no-shadow(src="../assets/eventene/project-eventene-bem.png", alt="Block Element Modifier Methodology")
+  .project__frame
+    img(src="../assets/eventene/project-eventene-bem.png", alt="Block Element Modifier Methodology")
     legend.project__legend BEM Naming Convention
   .project__block
     p.project__text To use these styles across all the products we created a Github package and each new version we simply add a tag number. So if for some reason a page breaks that can be quickly rolled back to the previous version.

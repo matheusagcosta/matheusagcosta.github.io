@@ -50,17 +50,13 @@
   }
 
   &__frame {
-    background-color: var(--light-bg-color);
-    width: 100%;
-  }
-
-  &__frame {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
     padding: 3rem 1.5rem;
+    width: 100%;
 
     img:not(.has-no-shadow) {
       box-shadow: 0 0 5px rgba($black,.1);
@@ -76,8 +72,8 @@
     }
   }
 
-  &__frame--eventene {
-    background-color: var(--eventene-bg-color);
+  &__frame--more {
+    background-color: var(--light-bg-color);
   }
 
   &__headline {
