@@ -24,16 +24,15 @@
     width: 100%;
   }
 
-  &__item {
+  &__link {
     align-items: center;
     border-bottom: 1px solid $gray;
     display: flex;
-    justify-content: space-between;
     padding: 1rem 0;
     transition: opacity .25s linear,border .25s linear;
   }
 
-  &__nav:hover .talks__item:not(:hover) {
+  &__nav:hover .talks__link:not(:hover) {
     opacity: .25;
   }
 
@@ -50,20 +49,27 @@
   }
 
   &__headline {
-    align-items: center;
     display: flex;
     margin: 0;
+  }
+
+  &__text {
+    display: flex;
+    width: 100%;
+
+    @media screen and (min-width: 801px) {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
   }
 
   &__info {
     margin: auto;
     max-width: 1440px;
     padding: 0 1.5rem;
-  }
-
-  &__legend {
-    color: $gray;
-    margin-left: 1rem;
-    text-align: right;
   }
 }

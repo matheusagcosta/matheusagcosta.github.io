@@ -7,8 +7,9 @@ section#talks.talks
     h2 Talks & Side Projects
     nav.talks__nav
       each talks, slug in public.templates.talks._data
-        a.talks__item(href="#{ talks.url }" target="_blank" rel="noopener" aria-label="#{ talks.title }")
-          h3.talks__headline
+        a.talks__link(href="#{ talks.url }" target="_blank" rel="noopener" aria-label="#{ talks.title }")
+          p.talks__headline
             .talks__icon #{ talks.icon }
-            .talks__link #{ talks.title }
-          small.talks__legend #{ talks.event }, #{ talks.date }
+            .talks__text
+              strong #{ talks.title }
+              small.talks__legend #{ talks.event }, #{ talks.date }
