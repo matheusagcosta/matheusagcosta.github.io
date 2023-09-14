@@ -62,7 +62,6 @@
     cursor: pointer;
     display: flex;
     mix-blend-mode: difference;
-    overflow: hidden;
     padding: 0 1.5rem;
     position: relative;
     transition: mix-blend-mode, transform .2s linear;
@@ -78,11 +77,6 @@
       transform: scale(0.8);
       transform-origin: left center;
     }
-
-    * {
-      font-size: 13.6px;
-      text-transform: uppercase;
-    }
   }
 
   &__helper:hover {
@@ -93,16 +87,18 @@
     }
   }
 
-  &__badge {
+  &__svg {
     animation: rotate 5s linear infinite;
+    bottom: 0;
     fill: var(--main-border-color);
+    left: 0;
+    margin: auto;
     position: absolute;
-    display: block;
-    margin-left: -50% !important;
-    margin-top: -50% !important;
+    right: 0;
+    top: 0;
+    width: 100%;
   }
 
-  &__badge,
   &__helper::before,
   &__helper::after {
     left: 0;
@@ -124,7 +120,7 @@
   &__helper::before {
     border-width: 2px 2px 0 0;
     height: 10px;
-    top: calc(50% + 10px);
+    top: calc(50% + 14px);
     transform: rotate(135deg);
     width: 10px;
   }
@@ -132,8 +128,8 @@
   &__helper::after {
     border-width: 0 2px 0 0;
     height: 50px;
-    top: 50%;
-    transform: translate(0px, -30px);
+    bottom: 0;
+    top: 0;
     width: 0;
   }
 
