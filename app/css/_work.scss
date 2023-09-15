@@ -38,6 +38,7 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    padding: 1.5rem 0 0;
     width: 100%;
   }
 
@@ -64,23 +65,31 @@
   }
 
   &__headline {
+    font-weight: bold;
     margin-bottom: .5rem;
-    padding: 1.5rem 0 0;
-    transition: color .175s linear;
+    transition: color, filter .175s linear;
 
     @media (min-width: 1001px) {
       font-size: 1.75rem;
     }
 
     @media (max-width: 1000px) {
-      font-size: 1.2rem;
+      font-size: 1.45rem;
     }
+  }
+
+  &__headline:hover {
+    filter: brightness(.75);
   }
 
   &__legend {
     display: block;
     padding: 0 0 1.5rem;
     font-size: 1.2rem;
+  }
+
+  &__legend--soon {
+    font-style: italic;
   }
 
   &__link,

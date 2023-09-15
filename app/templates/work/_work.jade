@@ -11,12 +11,9 @@ section#work.work
               source(srcset="../../assets/image-#{ slug }.png", type="image/png")
               img(src="../../assets/image-#{ slug }.png", alt="#{ work.legend }", width="758", height="506")
           .work__details
-            h3.work__headline #{ work.title }
-            small.work__legend #{ work.desc }
-            a.work__button(href="#{ work.url }" target="#{ work.target }" rel="noopener" aria-label="#{ work.legend }")
-              | #{ work.action }
-              if work.case == false
-                span.work__icon ↗️
+            a.work__headline(href="#{ work.url }" target="#{ work.target }" rel="noopener" aria-label="#{ work.title }")
+              | #{ work.title }
+            small.work__legend(class="#{ work.case == false ? 'work__legend--soon' : '' }") #{ work.desc }
 
         .work__card.is-dark-visible
           a.work__preview(href="#{ work.url }#contrast-on" target="#{ work.target }" rel="noopener" aria-label="#{ work.legend }")
@@ -25,9 +22,6 @@ section#work.work
               source(srcset="../../assets/image-#{ slug }.png", type="image/png")
               img(src="../../assets/image-#{ slug }.png", alt="#{ work.legend }", width="758", height="506")
           .work__details
-            h3.work__headline #{ work.title }
-            small.work__legend #{ work.desc }
-            a.work__button(href="#{ work.url }#contrast-on" target="#{ work.target }" rel="noopener" aria-label="#{ work.legend }")
-              | #{ work.action }
-              if work.case == false
-                span.work__icon ↗️
+            a.work__headline(href="#{ work.url }" target="#{ work.target }" rel="noopener" aria-label="#{ work.title }")
+              | #{ work.title }
+            small.work__legend(class="#{ work.case == false ? 'work__legend--soon' : '' }") #{ work.desc }
