@@ -40,7 +40,8 @@
   }
 
   &__link,
-  &__link:hover {
+  &__link:hover,
+  &__link:visited {
     color: $white;
     text-decoration: underline;
   }

@@ -1,6 +1,7 @@
 .work {
   @extend %box;
   background-color: var(--light-bg-color);
+  overflow: unset;
   padding: 4.5rem 0 0;
   position: relative;
 
@@ -8,17 +9,35 @@
     text-align: left;
   }
 
-  &__info,
-  &__nav {
+  &__info {
+    display: flex;
     margin: auto;
     max-width: $max-width;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+  }
+
+  &__nav {
+    @media (min-width: 1001px) {
+      max-width: calc(100% - 290px);
+    }
+  }
+
+  &__text {
+    @media (min-width: 1001px) {
+      padding-bottom: 5rem;
+    }
   }
 
   &__title {
     padding: 0 1.5rem;
 
     @media (min-width: 1001px) {
-      margin-bottom: 3rem;
+      position: sticky;
+      top: 1.5rem;
+      width: 290px;
     }
   }
 
@@ -55,7 +74,7 @@
 
     @media (min-width: 1001px) {
       margin-bottom: 4rem;
-      width: calc(100% / 2 - 3rem);
+      width: 100%;
     }
   }
 
