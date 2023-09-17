@@ -8,4 +8,12 @@
   &__image:hover {
     opacity: .75;
   }
+
+  &__image--light {
+    display: var(--is-hero-img-shown);
+  }
+
+  &__image--dark {
+    display: var(--is-hero-img-hidden);
+  }
 }

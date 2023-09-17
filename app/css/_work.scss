@@ -14,14 +14,18 @@
     margin: auto;
     max-width: $max-width;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 800px) {
       flex-direction: column;
     }
   }
 
   &__nav {
     @media (min-width: 1001px) {
-      max-width: calc(100% - 290px);
+      max-width: calc(100% - 270px);
+    }
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      padding-top: 1.5rem;
     }
   }
 
@@ -32,49 +36,95 @@
   }
 
   &__title {
+    font-size: 2rem;
     padding: 0 1.5rem;
 
-    @media (min-width: 1001px) {
+    @media (min-width: 801px) {
       position: sticky;
-      top: 1.5rem;
-      width: 290px;
+      top: 4rem;
+      width: 270px;
     }
   }
 
+  &__card,
   &__nav {
     display: flex;
 
     @media (min-width: 1001px) {
       flex-wrap: wrap;
     }
+  }
+
+  &__item {
+    margin-bottom: 1rem;
+
+    @media (min-width: 1001px) {
+      margin-bottom: 4rem;
+      width: 100%;
+    }
 
     @media (max-width: 1000px) {
-      flex-direction: column;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
     }
+  }
+
+  &__item:not(:first-of-type) {
+    margin-top: 1rem;
   }
 
   &__details {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    padding: 1.5rem 0 0;
-    width: 100%;
+
+    @media (min-width: 1001px) {
+      max-width: calc(100% - 435px);
+      position: relative;
+      transition: transform .175s linear;
+      z-index: 111;
+    }
   }
 
   &__card {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 1.5rem;
     overflow: hidden;
     position: relative;
     text-align: left;
     text-decoration: none;
-    transition: opacity .175s linear;
 
     @media (min-width: 1001px) {
-      margin-bottom: 4rem;
-      width: 100%;
+      align-items: center;
+      min-height: 300px;
+      transition: opacity .175s linear;
+    }
+
+    @media (max-width: 1000px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__card:hover .work__headline,
+  &__card:hover .work__legend {
+    @media (min-width: 1001px) {
+      filter: brightness(.75);
+    }
+  }
+
+  &__card:hover .work__details {
+    @media (min-width: 1001px) {
+      transform: translateX(10px);
+    }
+  }
+
+  &__card:hover .work__preview {
+    @media (min-width: 1001px) {
+      transform: translateX(-10px);
+    }
+  }
+
+  &__card:hover .work__image * {
+    @media (min-width: 1001px) {
+      transform: translateY(-3%) scale(1.25);
     }
   }
 
@@ -86,10 +136,11 @@
   &__headline {
     font-weight: bold;
     margin-bottom: .5rem;
-    transition: color, filter .175s linear;
 
     @media (min-width: 1001px) {
-      font-size: 1.75rem;
+      font-size: 3rem;
+      line-height: 4rem;
+      transition: color, filter .175s linear;
     }
 
     @media (max-width: 1000px) {
@@ -97,14 +148,14 @@
     }
   }
 
-  &__headline:hover {
-    filter: brightness(.75);
-  }
-
   &__legend {
     display: block;
     padding: 0 0 1.5rem;
     font-size: 1.2rem;
+
+    @media (min-width: 1001px) {
+      transition: filter .175s linear;
+    }
   }
 
   &__legend--soon {
@@ -123,12 +174,21 @@
   &__preview {
     display: block;
     border-radius: 25px;
-    max-height: 428px;
     overflow: hidden;
-  }
 
-  &__image:hover * {
-    transform: translateY(-3%) scale(1.1);
+    @media (min-width: 1001px) {
+      max-height: 370px;
+      max-width: 370px;
+      position: absolute;
+      right: 1.5rem;
+      transition: transform .175s linear;
+    }
+
+    @media (max-width: 1000px) {
+      max-height: 250px;
+      max-width: 250px;
+      margin-bottom: 1rem;
+    }
   }
 
   &__image {
