@@ -164,7 +164,7 @@
   }
 
   &__image {
-    // background: linear-gradient(to top, $salmon 0%,$salmon 50%,transparent 50%,transparent 100%);
+    animation: kenburns-top 5s ease-in-out infinite alternate both;
     display: block;
     margin: auto;
     position: relative;
@@ -204,5 +204,16 @@
   }
   to {
     transform: rotate(0);
+  }
+}
+
+@keyframes kenburns-top {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+  }
+  100% {
+    transform: scale(1.15) translateY(-15px);
+    transform-origin: top;
   }
 }
