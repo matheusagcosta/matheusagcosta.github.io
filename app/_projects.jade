@@ -2,64 +2,70 @@
   h2.project__heading Other Projects
   nav.project__actions
     if current.source != 'hs'
-      .work__card.is-light-visible
-        a.work__preview(href="/hs" target="_self" rel="noopener" aria-label="Screenshot of HS Members")
-          picture.work__image
-            source(srcset="../../assets/image-hs.webp", type="image/webp")
-            source(srcset="../../assets/image-hs.png", type="image/png")
-            img(src="../../assets/image-hs.png", alt="Screenshot of HS Members", width="758", height="506")
-        .work__details
-          a.work__headline(href="/hs" target="_self" rel="noopener" aria-label="Enhancing employee management") Enhancing employee management
-          small.work__legend Help organizations leverage their members' information.
+      .work__item.is-light-visible
+        a.work__card(href="/hs" target="_self" rel="noopener" aria-label="Enhancing employee management")
+          .work__details
+            span.work__headline Enhancing employee management
+            small.work__legend Help organizations leverage their members' information.
+          .work__preview
+            picture.work__image
+              source(srcset="../../assets/image-hs.webp", type="image/webp")
+              source(srcset="../../assets/image-hs.png", type="image/png")
+              img(src="../../assets/image-hs.png", alt="Screenshot of HS Members", width="758", height="506")
 
-      .work__card.is-dark-visible
-        a.work__preview(href="/hs#contrast-on" target="_self" rel="noopener" aria-label="Screenshot of HS Members")
-          picture.work__image
-            source(srcset="../../assets/image-hs.webp", type="image/webp")
-            source(srcset="../../assets/image-hs.png", type="image/png")
-            img(src="../../assets/image-hs.png", alt="Screenshot of HS Members", width="758", height="506")
-        .work__details
-          a.work__headline(href="/hs#contrast-on" target="_self" rel="noopener" aria-label="Enhancing employee management") Enhancing employee management
-          small.work__legend Help organizations leverage their members' information.
+      .work__item.is-dark-visible
+        a.work__card(href="/hs#contrast-on" target="_self" rel="noopener" aria-label="Enhancing employee management")
+          .work__details
+            span.work__headline Enhancing employee management
+            small.work__legend Help organizations leverage their members' information.
+          .work__preview
+            picture.work__image
+              source(srcset="../../assets/image-hs.webp", type="image/webp")
+              source(srcset="../../assets/image-hs.png", type="image/png")
+              img(src="../../assets/image-hs.png", alt="Screenshot of HS Members", width="758", height="506")
 
     if current.source != 'eventene'
-      .work__card.is-light-visible
-        a.work__preview(href="/eventene" target="_self" rel="noopener" aria-label="Screenshot of Unicorn Design System")
-          picture.work__image
-            source(srcset="../../assets/image-unicorn.webp", type="image/webp")
-            source(srcset="../../assets/image-unicorn.png", type="image/png")
-            img(src="../../assets/image-unicorn.png", alt="Screenshot of Unicorn Design System", width="758", height="506")
-        .work__details
-          a.work__headline(href="/eventene" target="_self" rel="noopener" aria-label="Scaling design at Eventene") Scaling design at Eventene
-          small.work__legend Develop a common language to align the products.
+      .work__item.is-light-visible
+        a.work__card(href="/eventene" target="_self" rel="noopener" aria-label="Scaling design at Eventene")
+          .work__details
+            span.work__headline Scaling design at Eventene
+            small.work__legend Develop a common language to align the products.
+          .work__preview
+            picture.work__image
+              source(srcset="../../assets/image-unicorn.webp", type="image/webp")
+              source(srcset="../../assets/image-unicorn.png", type="image/png")
+              img(src="../../assets/image-unicorn.png", alt="Screenshot of Unicorn Design System", width="758", height="506")
 
       .work__card.is-dark-visible
-        a.work__preview(href="/eventene#contrast-on" target="_self" rel="noopener" aria-label="Screenshot of Unicorn Design System")
-          picture.work__image
-            source(srcset="../../assets/image-unicorn.webp", type="image/webp")
-            source(srcset="../../assets/image-unicorn.png", type="image/png")
-            img(src="../../assets/image-unicorn.png", alt="Screenshot of Unicorn Design System", width="758", height="506")
-        .work__details
-          a.work__headline(href="/eventene#contrast-on" target="_self" rel="noopener" aria-label="Scaling design at Eventene") Scaling design at Eventene
-          small.work__legend Develop a common language to align the products.
+        a.work__card(href="/eventene#contrast-on" target="_self" rel="noopener" aria-label="Scaling design at Eventene")
+          .work__details
+            span.work__headline Scaling design at Eventene
+            small.work__legend Develop a common language to align the products.
+          .work__preview
+            picture.work__image
+              source(srcset="../../assets/image-unicorn.webp", type="image/webp")
+              source(srcset="../../assets/image-unicorn.png", type="image/png")
+              img(src="../../assets/image-unicorn.png", alt="Screenshot of Unicorn Design System", width="758", height="506")
 
     if current.source != 'camelias'
-      .work__card.is-light-visible
-        a.work__preview(href="/camelias" target="_self" rel="noopener" aria-label="Camelias Dashboard")
-          picture.work__image
-            source(srcset="../../assets/image-camelias.webp", type="image/webp")
-            source(srcset="../../assets/image-camelias.png", type="image/png")
-            img(src="../../assets/image-camelias.png", alt="Camelias Dashboard", width="758", height="506")
-        .work__details
-          a.work__headline(href="/camelias" target="_self" rel="noopener" aria-label="Connecting Residents at Camelias") Connecting Residents at Camelias
-          small.work__legend Provide a digital solution for service providers.
+      .work__item.is-light-visible
+        a.work__card(href="/camelias" target="_self" rel="noopener" aria-label="Connecting Residents at Camelias")
+          .work__details
+            span.work__headline Connecting Residents at Camelias
+            small.work__legend Provide a digital solution for service providers.
+          .work__preview
+            picture.work__image
+              source(srcset="../../assets/image-camelias.webp", type="image/webp")
+              source(srcset="../../assets/image-camelias.png", type="image/png")
+              img(src="../../assets/image-camelias.png", alt="Camelias Dashboard", width="758", height="506")
 
       .work__card.is-dark-visible
-        a.work__preview(href="/camelias#contrast-on" target="_self" rel="noopener" aria-label="Camelias Dashboard")
-          picture.work__image
-            source(srcset="../../assets/image-camelias.webp", type="image/webp")
-            source(srcset="../../assets/image-camelias.png", type="image/png")
-            img(src="../../assets/image-camelias.png", alt="Camelias Dashboard", width="758", height="506")
-        .work__details
-          a.work__headline(href="/camelias#contrast-on" target="_self" rel="noopener" aria-label="Connecting Residents at Camelias") Connecting Residents at Camelias
-          small.work__legend Provide a digital solution for service providers.
+        a.work__card(href="/camelias#contrast-on" target="_self" rel="noopener" aria-label="Connecting Residents at Camelias")
+          .work__details
+            span.work__headline Connecting Residents at Camelias
+            small.work__legend Provide a digital solution for service providers.
+          .work__preview
+            picture.work__image
+              source(srcset="../../assets/image-camelias.webp", type="image/webp")
+              source(srcset="../../assets/image-camelias.png", type="image/png")
+              img(src="../../assets/image-camelias.png", alt="Camelias Dashboard", width="758", height="506")
