@@ -5,19 +5,7 @@ section#work.work
     ul.work__nav
       each work, slug in public.templates.work._data
         if work.show == true
-          li.work__item.is-light-visible
-            a.work__card(href="#{ work.url }" target="#{ work.target }" rel="noopener" aria-label="#{ work.title }")
-              .work__details
-                span.work__headline
-                  | #{ work.title }
-                small.work__legend(class="#{ work.case == false ? 'work__legend--soon' : '' }") #{ work.desc }
-              .work__preview
-                picture.work__image
-                  source(srcset="../../assets/image-#{ slug }.webp", type="image/webp")
-                  source(srcset="../../assets/image-#{ slug }.png", type="image/png")
-                  img(src="../../assets/image-#{ slug }.png", alt="#{ work.legend }", width="758", height="506")
-
-          li.work__item.is-dark-visible
+          li.work__item
             a.work__card(href="#{ work.url }" target="#{ work.target }" rel="noopener" aria-label="#{ work.title }")
               .work__details
                 span.work__headline

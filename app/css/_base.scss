@@ -7,7 +7,7 @@
     --is-hero-img-shown: inline-block;
   }
 
-  #contrast-on:target {
+  .darkmode--activated {
     @include themeDark(true);
     --is-hero-img-hidden: inline-block;
     --is-hero-img-shown: none;
@@ -21,7 +21,7 @@
     --is-hero-img-shown: none;
   }
 
-  #contrast-on:target {
+  .darkmode--activated {
     @include themeLight(false);
     --is-hero-img-hidden: none;
     --is-hero-img-shown: inline-block;
@@ -153,4 +153,20 @@ small {
     background-color: var(--main-border-color);
     color: var(--main-bg-color);
   }
+}
+
+.darkmode-background {
+  display: none;
+}
+
+.darkmode-layer {
+  mix-blend-mode: normal !important;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.darkmode-toggle {
+  background-color: transparent !important;
+  width: 73px !important;
+  z-index: 77777;
 }

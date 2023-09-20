@@ -35,10 +35,10 @@ html.no-js(lang="en")
     link(rel="shortcut icon", href="/assets/favicon/favicon.ico?v=zXbkA6lpMr")
     link(rel="stylesheet" href="/css/#{ current.source }.css")
     title #{ title }
-  body#contrast-on
+  body
     if current.source != '404'
       != partial("templates/_header")
     != yield
     if current.source == 'index'
       script(src="./js/scroll.js" defer)
-    //-   script(src="./js/drag.js" defer)
+    script(src="./js/darkmode.js" defer)
