@@ -1,7 +1,14 @@
 .about {
   @extend %box;
   background: var(--main-bg-color);
-  padding: 4.5rem 0 0;
+
+  @media (min-width: 1001px) {
+    padding: 4.5rem 0;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 2.5rem 0 0;
+  }
 
   &__info {
     align-items: center;

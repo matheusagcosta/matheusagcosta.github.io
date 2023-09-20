@@ -2,8 +2,15 @@
   @extend %box;
   background-color: var(--light-bg-color);
   overflow: unset;
-  padding: 4.5rem 0;
   position: relative;
+
+  @media (min-width: 1001px) {
+    padding: 4.5rem 0;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 2.5rem 0 0;
+  }
 
   > *:not(a) {
     text-align: left;
@@ -23,7 +30,7 @@
   &__nav {
 
     @media (min-width: 1001px) {
-      max-width: calc(100% - 270px);
+      max-width: calc(100% - 200px);
       margin: 0;
       padding: 0;
     }
@@ -35,8 +42,9 @@
   }
 
   &__nav:hover .work__item:not(:hover) {
-    border-color: transparent;
-    opacity: .25;
+    @media (min-width: 801px) {
+      opacity: .25;
+    }
   }
 
   &__text {
@@ -52,7 +60,7 @@
     @media (min-width: 801px) {
       position: sticky;
       top: 4rem;
-      width: 270px;
+      width: 200px;
     }
   }
 
@@ -80,11 +88,10 @@
   }
 
   &__item:not(:nth-child(7)):not(:last-of-type) {
-    border-bottom: 1px solid;
+    border-bottom: 2px solid;
   }
 
-  &__item--projects,
-  &__item:hover {
+  &__item--projects {
     border-color: transparent !important;
   }
 
@@ -98,7 +105,7 @@
     flex-direction: column;
 
     @media (min-width: 1001px) {
-      max-width: calc(100% - 435px);
+      max-width: calc(100% - 330px);
       position: relative;
       transition: transform .175s linear;
       z-index: 111;
@@ -119,6 +126,7 @@
 
     @media (max-width: 1000px) {
       flex-direction: column;
+      padding-bottom: 1.5rem;
     }
   }
 

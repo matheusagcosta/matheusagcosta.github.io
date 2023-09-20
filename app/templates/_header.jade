@@ -24,7 +24,10 @@ header.header(role="banner")
       button.header__link.js-scroll-to-about About
       button.header__link.js-scroll-to-work Work
     if current.source != 'index'
-      a.header__link(href="/" aria-label="Link to Home" class="#{ current.source == 'index' ? 'is-active' : '' }") Back to Index
+      a.header__link(href="/#talks" aria-label="Link to More") More
+      a.header__link(href="/#about" aria-label="Link to About") About
+      a.header__link(href="/#work" aria-label="Link to Work") Work
+      a.header__link(href="/" aria-label="Link to Home" class="#{ current.source == 'index' ? 'is-active' : '' }") Home
 
   //- .header__actions
   //-   nav.header__switcher

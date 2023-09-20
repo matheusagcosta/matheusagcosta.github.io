@@ -3,8 +3,15 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 4.5rem 0;
   z-index: 912;
+
+  @media (min-width: 1001px) {
+    padding: 4.5rem 0;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 2.5rem 0 0;
+  }
 
   &__image {
     border-radius: 50px 0 0;
@@ -26,14 +33,16 @@
 
   &__link {
     align-items: center;
-    border-bottom: 1px solid $gray;
+    border-bottom: 2px solid $gray;
     display: flex;
     padding: 1rem 0;
     transition: opacity .25s linear,border .25s linear;
   }
 
   &__nav:hover .talks__link:not(:hover) {
-    opacity: .25;
+    @media (min-width: 801px) {
+      opacity: .25;
+    }
   }
 
   &__icon {
