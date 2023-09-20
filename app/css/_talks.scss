@@ -10,7 +10,7 @@
   }
 
   @media (max-width: 1000px) {
-    padding: 2.5rem 0 0;
+    padding: 5rem 0 2.5rem;
   }
 
   &__image {
@@ -33,10 +33,13 @@
 
   &__link {
     align-items: center;
-    border-bottom: 2px solid $gray;
     display: flex;
     padding: 1rem 0;
     transition: opacity .25s linear,border .25s linear;
+  }
+
+  &__link:not(:last-of-type) {
+    border-bottom: 2px solid $gray;
   }
 
   &__nav:hover .talks__link:not(:hover) {
