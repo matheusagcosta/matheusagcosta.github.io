@@ -105,15 +105,19 @@
     margin: 0;
   }
 
-  &__actions {
+  &__nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
   }
 
+  &__nav:hover .work__item:not(:hover) {
+    opacity: .25;
+  }
+
   &__heading {
-    padding: 0 1.5rem 1.5rem;
+    padding: 0 0 1.5rem;
     width: 100%;
 
     @media (min-width: 1001px) {
