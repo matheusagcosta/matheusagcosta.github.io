@@ -2,7 +2,7 @@
   @extend %box;
   background-color: var(--light-bg-color);
   overflow: unset;
-  padding: 4.5rem 0 0;
+  padding: 4.5rem 0;
   position: relative;
 
   > *:not(a) {
@@ -13,6 +13,7 @@
     display: flex;
     margin: auto;
     max-width: $max-width;
+    padding: 0 1.5rem;
 
     @media (max-width: 800px) {
       flex-direction: column;
@@ -20,8 +21,11 @@
   }
 
   &__nav {
+
     @media (min-width: 1001px) {
       max-width: calc(100% - 270px);
+      margin: 0;
+      padding: 0;
     }
     @media (max-width: 1000px) {
       flex-direction: column;
@@ -29,15 +33,20 @@
     }
   }
 
+  &__nav:hover .work__item:not(:hover) {
+    border-color: transparent;
+    opacity: .25;
+  }
+
   &__text {
     @media (min-width: 1001px) {
-      padding: 5rem 0;
+      padding: 4.5rem 0;
     }
   }
 
   &__title {
     font-size: 2rem;
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 0 0;
 
     @media (min-width: 801px) {
       position: sticky;
@@ -56,22 +65,31 @@
   }
 
   &__item {
-    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: opacity, .175s linear;
 
     @media (min-width: 1001px) {
-      margin-bottom: 4rem;
       width: 100%;
     }
 
     @media (max-width: 1000px) {
+      margin-bottom: 1.5rem;
       margin-left: 1.5rem;
-      margin-right: 1.5rem;
     }
   }
 
-  &__item:not(:first-of-type) {
-    margin-top: 1rem;
+  &__item:not(:nth-child(7)):not(:last-of-type) {
+    border-bottom: 1px solid;
   }
+
+  &__item--projects,
+  &__item:hover {
+    border-color: transparent !important;
+  }
+
+  // &__item:hover {
+  //   background: var(--main-bg-color);
+  // }
 
   &__details {
     align-items: flex-start;
@@ -116,15 +134,19 @@
     }
   }
 
+  &__card:not(:hover) .work__preview:not(.work__preview--projects) {
+    transform: translateX(100%);
+  }
+
   &__card:hover .work__preview {
     @media (min-width: 1001px) {
-      transform: translateX(-10px);
+      transform: translateX(0);
     }
   }
 
   &__card:hover .work__image * {
     @media (min-width: 1001px) {
-      transform: translateY(-3%) scale(1.25);
+
     }
   }
 
@@ -172,23 +194,26 @@
   }
 
   &__preview {
-    display: block;
     border-radius: 25px;
     overflow: hidden;
 
     @media (min-width: 1001px) {
+      display: block;
       max-height: 370px;
       max-width: 370px;
       position: absolute;
-      right: 1.5rem;
+      right: 0;
       transition: transform .175s linear;
+      transform-origin: right center;
     }
 
     @media (max-width: 1000px) {
-      max-height: 250px;
-      max-width: 250px;
-      margin-bottom: 1rem;
+      display: none;
     }
+  }
+
+  &__preview--projects {
+    transform: scale(.75);
   }
 
   &__image {
@@ -198,7 +223,6 @@
     width: 100%;
 
     * {
-      border-radius: 25px;
       position: relative;
       transition: transform .25s ease-in-out;
       transform-origin: center;

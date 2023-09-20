@@ -1,11 +1,11 @@
 section#work.work
   .work__info
     .work__text
-      h3.work__title Selected work
-    .work__nav
+      h3.work__title Work
+    ul.work__nav
       each work, slug in public.templates.work._data
         if work.show == true
-          .work__item.is-light-visible
+          li.work__item.is-light-visible
             a.work__card(href="#{ work.url }" target="#{ work.target }" rel="noopener" aria-label="#{ work.title }")
               .work__details
                 span.work__headline
@@ -17,7 +17,7 @@ section#work.work
                   source(srcset="../../assets/image-#{ slug }.png", type="image/png")
                   img(src="../../assets/image-#{ slug }.png", alt="#{ work.legend }", width="758", height="506")
 
-          .work__item.is-dark-visible
+          li.work__item.is-dark-visible
             a.work__card(href="#{ work.url }" target="#{ work.target }" rel="noopener" aria-label="#{ work.title }")
               .work__details
                 span.work__headline
