@@ -21,3 +21,9 @@ document.querySelector('.js-scroll-to-talks').addEventListener('click', function
   e.preventDefault();
   document.querySelector('.talks').scrollIntoView({ behavior: 'smooth' });
 });
+
+// scroll into talks view
+document.querySelector('.js-scroll-to-hero').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('.hero').scrollIntoView({ behavior: 'smooth' });
+});

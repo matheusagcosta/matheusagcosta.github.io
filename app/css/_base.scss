@@ -168,5 +168,18 @@ small {
 .darkmode-toggle {
   background-color: transparent !important;
   width: 73px !important;
+  margin: auto;
+  bottom: auto !important;
   z-index: 77777;
+
+  @media (min-width: 801px) {
+    left: 0 !important;
+    right: 0 !important;
+    top: .5rem;
+  }
+  @media (max-width: 800px) {
+    left: 70px !important;
+    right: auto !important;
+    top: .3rem;
+  }
 }

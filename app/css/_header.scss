@@ -1,12 +1,6 @@
 .header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
   left: 0;
   right: 0;
-  margin: auto;
-  max-width: $max-width;
-  padding: 1rem 1.5rem;
   width: 100%;
   z-index: 222;
 
@@ -15,7 +9,19 @@
   }
 
   &--fixed {
+    background: rgba(var(--main-header-color),.75);
+    backdrop-filter: blur(5px);
     position: fixed;
+    top: 0;
+  }
+
+  &__info {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: $max-width;
+    padding: 1rem 1.5rem;
   }
 
   &__icon {
@@ -55,6 +61,9 @@
     width: auto;
   }
 
+  &__menu {
+
+  }
 
   &__actions {
     width: 73px;
@@ -62,7 +71,7 @@
 
   &__switcher {
     background-color: var(--switcher-bg-color);
-    border: 2px solid $gainsboro;
+    border: 2px solid transparent;
     border-radius: 50px;
     justify-content: space-between;
     padding: 8px;
@@ -125,6 +134,7 @@
     font-weight: bold;
     padding: 0 .45rem;
     position: relative;
+    text-shadow: var(--header-text-shadow);
     transition: opacity .25s linear;
   }
 

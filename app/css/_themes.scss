@@ -3,6 +3,8 @@
   --main-border-color: #{$black};
   --main-text-color: #{$black};
   --main-link-color: #{$mine};
+  --main-header-color: 255, 255, 255;
+  --header-text-shadow: none;
   --light-bg-color: #{$gainsboro};
   --eventene-bg-color: #{$athens};
   --switcher-bg-color: #{$darken-gainsboro};
@@ -31,6 +33,8 @@
   --main-border-color: #{$white};
   --main-text-color: #{$white};
   --main-link-color: #{$white};
+  --main-header-color: 68, 68, 68;
+  --header-text-shadow: 0 0 4px rgba(0,0,0,.5);
   --light-bg-color: #{$mine};
   --eventene-bg-color: #{$mine};
   --switcher-bg-color: #{$mine};
