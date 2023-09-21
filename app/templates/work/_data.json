@@ -7,6 +7,8 @@
     "legend": "Screenshot of HS Members",
     "desc": "Help organizations leverage their members' information.",
     "url": "/hs",
+    "width": "2050",
+    "height": "1637",
     "action": "Read more"
   },
   "unicorn": {
@@ -17,6 +19,8 @@
     "legend": "Screenshot of Unicorn Design System",
     "desc": "Develop a common language to align the products.",
     "url": "/eventene",
+    "width": "2050",
+    "height": "1637",
     "action": "Read more"
   },
   "camelias": {
@@ -27,6 +31,8 @@
     "legend": "Screenshot of Camelias Dashboard",
     "desc": "Provide a digital solution for service providers.",
     "url": "/camelias",
+    "width": "2050",
+    "height": "1637",
     "action": "Read more"
   },
   "rockford": {
@@ -37,6 +43,8 @@
     "legend": "Screenshot of RockFord Fosgate dashboard",
     "desc": "Case study coming soon.",
     "url": "https://db.rockfordcorp.com/",
+    "width": "4100",
+    "height": "3274",
     "action": "Visit site"
   },
   "eventene-app": {

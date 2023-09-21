@@ -136,6 +136,10 @@
     position: relative;
     text-shadow: var(--header-text-shadow);
     transition: opacity .25s linear;
+
+    @media screen and (max-width: 480px) {
+      font-size: .75rem;
+    }
   }
 
   &__link:not(.is-active):hover {

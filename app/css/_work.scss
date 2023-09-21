@@ -38,6 +38,7 @@
       flex-direction: column;
       margin: 0;
       padding: 0;
+      width: 100%;
     }
   }
 
@@ -88,7 +89,15 @@
   }
 
   &__item:not(:nth-child(7)):not(:last-of-type) {
-    border-bottom: 2px solid;
+    border-bottom-style: solid;
+
+    @media screen and (min-width: 801px) {
+      border-bottom-width: 2px;
+    }
+
+    @media screen and (max-width: 800px) {
+      border-bottom-width: 1px;
+    }
   }
 
   &__item--projects {
