@@ -7,7 +7,7 @@ section#talks.talks
     h2 Speaking, writing & more
     nav.talks__nav
       each talks, slug in public.templates.talks._data
-        a.talks__link(href="#{ talks.url }" target="_blank" rel="noopener" aria-label="#{ talks.title } #{ talks.event }, #{ talks.date }")
+        a.talks__link(href="#{ talks.url }" target="_blank" rel="noopener" aria-label="#{ talks.icon } #{ talks.title } #{ talks.event }, #{ talks.date }")
           p.talks__headline
             .talks__icon(aria-hidden="true") #{ talks.icon }
             .talks__text
