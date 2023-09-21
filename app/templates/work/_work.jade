@@ -15,4 +15,4 @@ section#work.work
                 picture.work__image
                   source(srcset="../../assets/image-#{ slug }.webp", type="image/webp")
                   source(srcset="../../assets/image-#{ slug }.png", type="image/png")
-                  img(src="../../assets/image-#{ slug }.png", alt="#{ work.legend }", width="#{ work.width }", height="#{ work.height }")
+                  img(src="../../assets/image-#{ slug }.png", alt="#{ work.legend }", width="#{ work.width }", height="#{ work.height }", loading="lazy")

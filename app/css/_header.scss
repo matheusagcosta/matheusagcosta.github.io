@@ -11,6 +11,7 @@
   &--fixed {
     background: rgba(var(--main-header-color),.75);
     backdrop-filter: blur(5px);
+    height: 72px;
     position: fixed;
     top: 0;
   }
@@ -18,6 +19,7 @@
   &__info {
     align-items: center;
     display: flex;
+    height: 100%;
     justify-content: space-between;
     margin: auto;
     max-width: $max-width;
