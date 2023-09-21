@@ -137,7 +137,7 @@
     text-shadow: var(--header-text-shadow);
     transition: opacity .25s linear;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 410px) {
       font-size: .75rem;
     }
   }
