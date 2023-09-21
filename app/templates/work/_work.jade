@@ -6,11 +6,11 @@ section#work.work
       each work, slug in public.templates.work._data
         if work.show == true
           li.work__item
-            a.work__card(href="#{ work.url }" target="#{ work.target }" rel="noopener" aria-label="#{ work.title }. #{ work.desc }")
+            a.work__card(href="#{ work.url }" target="#{ work.target }" rel="noopener" aria-label="#{ work.title }")
               .work__details
                 span.work__headline
                   | #{ work.title }
-                small.work__legend(class="#{ work.case == false ? 'work__legend--soon' : '' }") #{ work.desc }
+                small.work__legend(class="#{ work.case == false ? 'work__legend--soon' : '' }" aria-hidden="true") #{ work.desc }
               .work__preview
                 picture.work__image
                   source(srcset="../../assets/image-#{ slug }.webp", type="image/webp")

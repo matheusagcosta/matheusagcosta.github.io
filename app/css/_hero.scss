@@ -165,11 +165,16 @@
   }
 
   &__image {
-    animation: kenburns-top 5s ease-in-out infinite alternate both;
-    display: block;
-    margin: auto;
-    position: relative;
-    z-index: 1;
+    @media screen and (min-width: 681px) {
+      animation: kenburns-top 5s ease-in-out infinite alternate both;
+      display: block;
+      margin: auto;
+      position: relative;
+      z-index: 1;
+    }
+    @media screen and (max-width: 680px) {
+      display: none !important;
+    }
   }
 
   &__image--light {
@@ -183,11 +188,6 @@
   &__picture {
     width: 100%;
   }
-
-  // &__emoji {
-  //   animation: wave infinite 1s linear;
-  //   display: inline-block;
-  // }
 }
 
 @keyframes fade {
