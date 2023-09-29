@@ -12,7 +12,7 @@ section#work.work
                   | #{ work.title }
                 small.work__legend(class="#{ work.case == false ? 'work__legend--soon' : '' }" aria-hidden="true") #{ work.desc }
               .work__preview
-                picture.work__image
-                  source(srcset="../../assets/image-#{ slug }.webp", type="image/webp")
-                  source(srcset="../../assets/image-#{ slug }.png", type="image/png")
-                  img(src="../../assets/image-#{ slug }.png", alt="#{ work.legend }", width="#{ work.width }", height="#{ work.height }", loading="lazy")
+                picture.work__picture
+                  source.work__image(srcset="../../assets/image-#{ slug }.webp", type="image/webp")
+                  source.work__image(srcset="../../assets/image-#{ slug }.png", type="image/png")
+                  img.work__image(src="../../assets/image-#{ slug }.png", alt="#{ work.legend }", width="#{ work.width }", height="#{ work.height }", loading="auto")

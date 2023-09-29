@@ -155,6 +155,18 @@
     }
   }
 
+  &__card:not(:hover) .work__image {
+    @media (min-width: 1001px) {
+      animation-play-state: paused;
+    }
+  }
+
+  &__card:hover .work__image {
+    @media (min-width: 1001px) {
+      animation-play-state: running;
+    }
+  }
+
   &__card:hover .work__preview--projects {
     @media (min-width: 1001px) {
       transform: scale(1);
@@ -173,7 +185,6 @@
     @media (min-width: 1001px) {
       font-size: 3rem;
       line-height: 4rem;
-      transition: color, filter .175s linear;
     }
 
     @media (max-width: 1000px) {
@@ -184,10 +195,6 @@
   &__legend {
     display: block;
     font-size: 1.2rem;
-
-    @media (min-width: 1001px) {
-      transition: filter .175s linear;
-    }
   }
 
   &__legend--soon {
@@ -226,26 +233,51 @@
     transform: scale(.75);
   }
 
+  &__picture,
   &__image {
-    padding: 0;
+    display: block;
     position: relative;
-    transition: filter .25s ease-in-out;
     width: 100%;
+  }
 
-    * {
-      position: relative;
-      transition: transform .25s ease-in-out;
-      transform-origin: center;
-      width: 100%;
+  &__picture {
+    padding: 0;
+  }
 
-      @media (min-width: 1001px) {
-        display: block;
-      }
+  &__image {
+    transition: transform .25s ease-in-out;
+    transform-origin: center;
+
+    @media (min-width: 1001px) {
+      animation-delay: 0;
+      animation-name: kenburns-top;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-fill-mode: both;
     }
   }
 
   &__icon {
     font-size: 1rem;
     margin-left: 8px;
+  }
+}
+
+@keyframes kenburns-top {
+  0% {
+    transform: scale(1) translate(0);
+  }
+  25% {
+    transform: scale(2) translateY(15%);
+  }
+  50% {
+    transform: scale(1.5) translateX(15%);
+  }
+  75% {
+    transform: scale(1.75) translateX(-15%);
+  }
+  100% {
+    transform: scale(1) translate(0);
   }
 }
