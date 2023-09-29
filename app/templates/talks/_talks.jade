@@ -4,12 +4,18 @@ section#talks.talks
   //-   source(srcset="../assets/image-speaking.png", type="image/png")
   //-   img(src="../assets/image-speaking.png", alt="Photo of Matheus Speaking at DevCamp", width="854", height="1112")
   .talks__info
-    h2 Speaking, writing & more
-    nav.talks__nav
-      each talks, slug in public.templates.talks._data
-        a.talks__link(href="#{ talks.url }" target="_blank" rel="noopener" aria-label="#{ talks.title } #{ talks.event }, #{ talks.date }")
-          p.talks__headline
-            //- span.talks__icon(aria-hidden="true", class="talks__icon--#{ talks.icon }")
-            span.talks__text
-              strong #{ talks.title }
-              small.talks__legend #{ talks.event }, #{ talks.date }
+    .talks__container
+      h2 Speaking, writing & more
+      nav.talks__nav
+        each talks, slug in public.templates.talks._data
+          a.talks__link(href="#{ talks.url }" target="_blank" rel="noopener" aria-label="#{ talks.title } #{ talks.event }, #{ talks.date }")
+            p.talks__headline
+              //- span.talks__icon(aria-hidden="true", class="talks__icon--#{ talks.icon }")
+              span.talks__text
+                strong #{ talks.title }
+                small.talks__legend #{ talks.event }, #{ talks.date }
+    picture.talks__picture
+      source(srcset="../assets/image-talks-bg.webp", type="image/webp")
+      source(srcset="../assets/image-talks-bg.png", type="image/png")
+      img.talks__image(src="../assets/image-talks-bg.png", alt="Several Pictures of Matheus", width="1920", height="2242", loading="lazy")
+

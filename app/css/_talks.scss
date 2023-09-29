@@ -1,7 +1,6 @@
 .talks {
   background: var(--main-bg-color);
   display: flex;
-  flex-wrap: wrap;
   margin: 0;
   z-index: 912;
 
@@ -13,21 +12,38 @@
     padding: 5rem 0 2.5rem;
   }
 
+  &__nav,
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+  }
+
+  &__container,
+  &__picture {
+    @media (min-width: 1001px) {
+      max-width: 50%;
+    }
+  }
+
+  &__picture {
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+
   &__image {
-    border-radius: 50px 0 0;
-    filter: saturate(1.25);
-    max-width: 854px;
-    min-width: 320px;
-    overflow: hidden;
-    padding: 0 1.5rem 0 0;
-    width: 40%;
+    max-width: 75%;
+    display: block;
+    margin: auto
   }
 
   &__info,
   &__nav {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
   }
 
@@ -110,9 +126,15 @@
       margin-left: 1rem;
     }
   }
+
   &__info {
+    align-items: center;
     margin: auto;
     max-width: $max-width;
     padding: 0 1.5rem;
+
+    @media (min-width: 1001px) {
+      justify-content: space-around;
+    }
   }
 }
