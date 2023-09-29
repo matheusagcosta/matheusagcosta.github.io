@@ -104,9 +104,11 @@
     border-color: transparent !important;
   }
 
-  // &__item:hover {
-  //   background: var(--main-bg-color);
-  // }
+  &__details--projects {
+    @media (min-width: 1001px) {
+      width: 65%;
+    }
+  }
 
   &__details {
     align-items: flex-start;
@@ -169,7 +171,7 @@
 
   &__card:hover .work__preview--projects {
     @media (min-width: 1001px) {
-      transform: scale(1);
+      transform: scale(.85);
     }
   }
 
