@@ -4,7 +4,7 @@
     "event": "Podcast",
     "date": "2023",
     "link": "Spotify",
-    "icon": "🎵",
+    "icon": "audio",
     "url": "https://open.spotify.com/episode/5R9MGsykxbUjqpMR51C8FA?si=118edbaa9f82404e"
   },
   "unsplash": {
@@ -12,7 +12,7 @@
     "event": "Side",
     "date": "2021",
     "link": "Unsplash",
-    "icon": "📸",
+    "icon": "photo",
     "url": "https://unsplash.com/@matheusagcosta"
   },
   "home-office": {
@@ -20,7 +20,7 @@
     "event": "Talk",
     "date": "2018",
     "link": "Slides",
-    "icon": "🖼",
+    "icon": "slides",
     "url": "https://docs.google.com/presentation/d/e/2PACX-1vTYFkCaXtMgDIHXCmWiCVjNH33oPjWM2lhNcQQZkc86Nv853u_ImpCNoacdI6M6jIRgmgOrJB-c-JQ3/pub?start=false&loop=false&delayms=3000#slide=id.p"
   },
   "hackathon": {
@@ -28,7 +28,7 @@
     "event": "Podcast",
     "date": "2018",
     "link": "Github",
-    "icon": "🎵",
+    "icon": "audio",
     "url": "https://devtalksbauru.github.io/podcasts/02"
   },
   "atomic-design": {
@@ -36,7 +36,7 @@
     "event": "Talk",
     "date": "2017",
     "link": "Slides",
-    "icon": "🖼",
+    "icon": "slides",
     "url": "https://speakerdeck.com/matheusagcosta/back-end-and-front-end-em-harmonia-com-atomic-design"
   },
   "remote-culture": {
@@ -44,7 +44,7 @@
     "event": "Talk",
     "date": "2016",
     "link": "Video",
-    "icon": "🎥",
+    "icon": "video",
     "url": "https://www.infoq.com/br/presentations/to-remoto-ta-tranquilo-ta-favoravel"
   },
   "less-stylus-sass": {
@@ -52,7 +52,7 @@
     "event": "Talk",
     "date": "2015",
     "link": "Slides",
-    "icon": "🖼",
+    "icon": "slides",
     "url": "https://slideshare.net/tdc-globalcode/pra-mim-tanto-faz-se-less-stylus-ou-sass-53384931?qid=0704d88f-c1d0-47f5-902f-d356175bd137&v=&b=&from_search=1"
   },
   "css-drawing": {
@@ -60,7 +60,7 @@
     "event": "Article",
     "date": "2014",
     "link": "Medium",
-    "icon": "✏️",
+    "icon": "text",
     "url": "https://medium.com/helabs/o-poder-do-css-3-desenhando-formas-ce1d3402037b"
   }
 }
