@@ -22,10 +22,15 @@
     }
   }
 
-  &__container,
+  &__container {
+    @media (min-width: 1001px) {
+      width: 55%;
+    }
+  }
+
   &__picture {
     @media (min-width: 1001px) {
-      max-width: 50%;
+      max-width: 45%;
     }
   }
 
@@ -36,9 +41,9 @@
   }
 
   &__image {
-    max-width: 75%;
+    max-width: 80%;
     display: block;
-    margin: auto
+    float: right;
   }
 
   &__info,
@@ -134,7 +139,7 @@
     padding: 0 1.5rem;
 
     @media (min-width: 1001px) {
-      justify-content: space-around;
+      justify-content: space-between;
     }
   }
 }
