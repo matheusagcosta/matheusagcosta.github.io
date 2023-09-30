@@ -32,7 +32,22 @@
   }
 
   &__headline {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 54px;
+  }
+
+  &__text {
+    animation: text-focus-in 3s linear infinite alternate both;
+    margin-right: .75rem;
+  }
+
+  &__text--two {
+    animation-delay: 1s;
+  }
+
+  &__text--three {
+    animation-delay: 2s;
   }
 
   &__photo {
@@ -47,3 +62,15 @@
     }
   }
 }
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  50% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+

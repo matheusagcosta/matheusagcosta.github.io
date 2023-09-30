@@ -16,22 +16,20 @@
     position: relative;
   }
 
-  // &__desc {
-
-  //   @media screen and (max-width: 680px) {
-  //     hyphens: auto;
-  //     word-break: break-word;
-  //   }
-  // }
-
   &__logo {
     margin: -1rem 0 1.5rem;
     width: 54px;
   }
 
   &__title {
+    animation: textGradient 15s linear infinite alternate;
+    color: transparent;
+    background: linear-gradient(-45deg, rgba(0,0,0,0.5), #AAA, rgba(0,0,0,0.85), #BBB, #888, rgba(0,0,0,0.75));
+    background-size: 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
     margin-bottom: 0;
-    mix-blend-mode: var(--title-effect);
+    // mix-blend-mode: var(--title-effect);
     width: 100%;
 
     @media screen and (min-width: 1025px) {
@@ -220,5 +218,17 @@
     transform-origin: 50% 0%;
     filter: blur(0px);
     opacity: 1;
+  }
+}
+
+@keyframes textGradient {
+  0% {
+    background-position: 0px 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0px 50%;
   }
 }
