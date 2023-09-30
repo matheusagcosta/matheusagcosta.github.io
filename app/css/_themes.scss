@@ -43,7 +43,7 @@
   --switcher-opacity-inactive: 1;
   --about-icon: none;
   --about-icon-hidden: inline-block;
-  --title-effect: difference;
+  --title-effect: hard-light;
 
   @if $bool {
     --is-hidden: inline-block;
