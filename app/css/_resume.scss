@@ -1,8 +1,6 @@
 .resume {
-  margin: auto;
-  max-width: $max-width;
   padding-bottom: 4rem;
-  padding-top: 4rem;
+  padding-top: 4.5rem;
 
   a:not(:hover) {
     text-decoration: underline;
@@ -46,6 +44,13 @@
 
   &__headline * {
     color: $white;
+  }
+
+  &__headline,
+  &__content {
+    margin: auto;
+    width: $max-width;
+    max-width: 100%;
   }
 
   &__heading {
