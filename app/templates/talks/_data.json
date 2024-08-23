@@ -1,4 +1,12 @@
 {
+  "open-design-system": {
+    "title": "Open Source Design System",
+    "event": "Podcast",
+    "date": "2024",
+    "link": "Youtube",
+    "icon": "audio",
+    "url": "https://www.youtube.com/watch?v=xD3mi_5SQVE&list=LL&index=3"
+  },
   "design-system": {
     "title": "Dev + Design System",
     "event": "Podcast",
