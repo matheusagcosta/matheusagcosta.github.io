@@ -93,8 +93,16 @@
     font-size: 18px;
   }
 
+  &__text a {
+    font-weight: bold;
+  }
+
   &__legend {
     margin-top: 2rem;
+  }
+
+  &__text a:hover {
+    text-decoration: underline;
   }
 
   &__legend:not(:last-of-type) {

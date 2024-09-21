@@ -144,6 +144,13 @@
     }
   }
 
+  &__link:last-child {
+
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
+  }
+
   &__link:not(.is-active):hover {
     opacity: .85;
   }
