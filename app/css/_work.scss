@@ -147,11 +147,11 @@
     }
   }
 
-  &__card:not(:hover) .work__preview:not(.work__preview--projects) {
-    transform: translateX(100%);
-  }
+  // &__card:not(:hover) .work__preview:not(.work__preview--projects) {
+  //   transform: translateX(100%);
+  // }
 
-  &__card:hover .work__preview:not(.work__preview--projects) {
+  &__card .work__preview:not(.work__preview--projects) {
     @media (min-width: 1001px) {
       transform: translateX(0) scale(.75);
     }

@@ -1,0 +1,32 @@
+site_url: "https://matheusagcosta.com"
+display_url: "https://matheusagcosta.com"
+
+# If you deploy this site on Netlify:
+# - Enable Netlify Identity
+# - Enable Git Gateway
+# Then `git-gateway` will work with no extra auth server.
+backend:
+  name: git-gateway
+  branch: develop
+
+# Optional: lets you run a local proxy (Decap Server) while developing.
+# See: https://decapcms.org/docs/working-with-a-local-git-repository/
+local_backend: true
+
+media_folder: "app/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    label_singular: "Post"
+    folder: "app/posts"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Date", name: "date", widget: "datetime", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
